@@ -1,0 +1,7 @@
+PH 2 Final
+Source snapshot: BytechJO/Playhouse_Grade_2 at 220661e0a26cfe877af08eab436503ddb92ab362.
+Independent repository: BytechJO/PH-2-Final. Original repository unchanged.
+References: Playhouse-Grade-2-QA.xlsx (24 issues), Playhouse Missing grad 2.xlsx (104 rows), Student Book and Workbook PDFs in G2 Pdf.
+
+G2-01: Corrected U10 Review Sequence 3 answer c to bump and e to lump. Source: Student Book printed page 80. Browser validation passed: all five correct answers received green ticks.
+All other QA and Missing Parts entries remain pending verification. No supplied artwork or video changed.
