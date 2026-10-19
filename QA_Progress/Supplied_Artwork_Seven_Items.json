@@ -1,0 +1,21 @@
+{
+  "installed": [
+    "units\\Playhouse_G2_U7\\images\\pages\\page-1\\sb54-dialogue-1.png",
+    "units\\Playhouse_G2_U11\\images\\pages\\page-1\\sb82-dialogue-1.png",
+    "units\\Playhouse_G2_U11\\images\\pages\\page-1\\sb82-dialogue-2.png",
+    "units\\Playhouse_G2_U12\\images\\pages\\page-1\\sb88-dialogue-1.png",
+    "units\\Playhouse_G2_U12\\images\\pages\\page-1\\sb88-dialogue-2.png",
+    "units\\Playhouse_G2_U13\\images\\pages\\page-1\\sb98-dialogue-1.png",
+    "units\\Playhouse_G2_U13\\images\\pages\\page-1\\sb98-dialogue-2.png",
+    "units\\Playhouse_G2_U14\\images\\pages\\page-1\\sb104-dialogue-1.png",
+    "units\\Playhouse_G2_U14\\images\\pages\\page-1\\sb104-dialogue-2.png",
+    "units\\Playhouse_G2_U15\\images\\pages\\page-1\\sb110-dialogue-1.png",
+    "units\\Playhouse_G2_U15\\images\\pages\\page-1\\sb110-dialogue-2.png",
+    "units\\Playhouse_G2_U9\\Playhouse_Review_G1_U1\\images\\pages\\activities\\sb74-cat.png",
+    "units\\Playhouse_G2_U9\\Playhouse_Review_G1_U1\\images\\pages\\activities\\sb74-cats.png"
+  ],
+  "source": "D:/Playhouse/image/Grade 2",
+  "unchanged_copies": true,
+  "pending": "Supplied speech art omits apostrophes: SB82 Whats/Its; SB88 Whats/Its; SB110 Whats/Its. No raster edits made.",
+  "validation": "Six dialogue popups rendered all supplied images; cats accepted and dogs rejected in browser. Plural rows rearranged to prevent overlap; final layout screenshot verified."
+}

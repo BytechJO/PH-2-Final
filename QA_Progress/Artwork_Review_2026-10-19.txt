@@ -145,3 +145,5 @@ http://127.0.0.1:8766/units/Playhouse_G2_U14/views/playhouse_intro.html
 ART-35 | Student Book U15 source page 110 | Replacement required
 Wrong dinosaur conversation. Correct: What's number 12? / It's a watch. Supply both speech images.
 http://127.0.0.1:8766/units/Playhouse_G2_U15/views/playhouse_intro.html
+
+FOLLOW-UP: All seven replacement cases now have supplied artwork installed (13 unchanged PNGs). Cats accepted; dogs rejected. All six popups verified. Supplied SB82/SB88/SB110 speech images omit apostrophes in Whats/Its; source artwork correction remains. Earlier replacement requests above are superseded.

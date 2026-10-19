@@ -19,12 +19,12 @@ var fillin_data = {
      [
         {
           "singleword": false,
-          "text": "<img src='../images/pages/activities/Asset_22.png' width='150px'>[_]<img src='../images/pages/activities/Asset_26.png' width='150px'>",
+          "text": "<img src='../images/pages/activities/sb74-cat.png' width='150px'>[_]<img src='../images/pages/activities/sb74-cats.png' width='150px'>",
           "textaudios": ["../audios/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["dogs"],
+          "answer": ["cats"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no  
           "strictorder": "yes", // yes (or) no              

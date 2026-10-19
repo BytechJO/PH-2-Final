@@ -47,3 +47,5 @@ The previous seven-unlinked-file list is superseded: five alternative instructio
 Farm song follow-up: lyrics now own the audio click target. Subtitle no longer plays the song. No separate matching instruction recording found by filename in supplied files or repo. Browser verified subtitle has no audioIcon and lyrics enter playing state. Clicking lyrics restarts playback using existing shared behavior.
 
 2026-10-19 artwork content review: all35 tracker entries compared. 28 present/resolved;7 replacement-artwork cases confirmed. See Artwork_Review_2026-10-19.txt for corrected book references, expected speech, and URLs. These are content mismatches despite valid image file paths. No artwork modified.
+
+FOLLOW-UP: All seven replacement cases now have supplied artwork installed (13 unchanged PNGs). Cats accepted; dogs rejected. All six popups verified. Supplied SB82/SB88/SB110 speech images omit apostrophes in Whats/Its; source artwork correction remains. Earlier replacement requests above are superseded.
