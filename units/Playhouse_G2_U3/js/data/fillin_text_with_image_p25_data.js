@@ -28,7 +28,7 @@ var fillin_data = {
   subTitleTextLeft: '<span class="red_text">1</span> Point, ask and answer.',
   subTitleTextRight: "",
   subTitleIcons: [],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/supplied/point-ask-and-answer.mp3",
   activityheading:
     "Practise it! Complete the conversation using the Word Power words",
   activityheading_audio: "../audios/under.mp3",

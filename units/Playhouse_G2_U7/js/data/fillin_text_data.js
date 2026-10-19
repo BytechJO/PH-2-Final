@@ -26,7 +26,7 @@ var fillin_data = {
   mainTitleIconPos: { right: "100px" },
   mainTitleAudio: "../audios/page_55/CONVERSATION.mp3",
   subTitleTextLeft:
-    '<span class="red_text">3</span> What things do your mother or father tell you to do ? Write aboutabout it.it.',
+    '<span class="red_text">3</span> What things do your mother or father tell you to do? Write about it.',
   subTitleTextRight: "",
   subTitleIcons: ["../images/pages/sb-icons/gram_2_icon.png"],
   subTitleAudio: "../audios/under.mp3",

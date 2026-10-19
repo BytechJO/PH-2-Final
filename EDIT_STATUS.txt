@@ -4,4 +4,10 @@ Independent repository: BytechJO/PH-2-Final. Original repository unchanged.
 References: Playhouse-Grade-2-QA.xlsx (24 issues), Playhouse Missing grad 2.xlsx (104 rows), Student Book and Workbook PDFs in G2 Pdf.
 
 G2-01: Corrected U10 Review Sequence 3 answer c to bump and e to lump. Source: Student Book printed page 80. Browser validation passed: all five correct answers received green ticks.
-All other QA and Missing Parts entries remain pending verification. No supplied artwork or video changed.
+
+
+2026-10-19 batch:
+G2-02 through G2-21 implemented (20 QA items). G2-24 sidebar cause fixed; full count reconciliation pending.
+103 supplied recordings copied unchanged; 125 subtitle mappings plus Listen and say in 15 unit snapshot files. Hashes and HTTP200 verified. No claim of full semantic listening verification.
+G2-22 source-book editorial inconsistency pending; G2-23 needs correct SB97 artwork and poem.
+See QA_Progress for mapping, QA status and unverified artwork queue. Source Missing Parts rows are not all closed. No artwork or video changed.

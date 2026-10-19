@@ -25,7 +25,7 @@ var fillin_data = {
     "mainTitleIcon"         : "../images/pages/sb-icons/readwrite_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-44px"},
     "mainTitleAudio"        : "../../../../../audios/PHONICS_and_Sentence_Building.mp3",
-    "subTitleTextLeft"      : "<span class='blue_text'>1</span> Look. Then write each short ‘<b>oo</b>’ words.",
+    "subTitleTextLeft"      : "<span class='blue_text'>1</span> Look. Then write each short ‘<b>oo</b>’ word.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/under.mp3",

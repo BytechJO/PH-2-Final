@@ -27,7 +27,7 @@ var reading_data = {
     "<span class='orange_text'>1</span> Listen and read the story.",
   subTitleTextRight: "",
   subTitleIcons: ["../images/pages/sb-icons/conv_1_icon.png"],
-  subTitleAudio: "../audios/page_48/1_Listen_and_read_the_story.mp3",
+  subTitleAudio: "../audios/supplied/listen-and-read-the-story.mp3",
   haveAudio: true,
   video: "../videos/p49.mp4",
   slides: [

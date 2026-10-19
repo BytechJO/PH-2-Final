@@ -26,7 +26,7 @@ var reading_data = {
   "subTitleTextLeft": "<span class='red_text'>1</span> Look and say.",
   "subTitleTextRight": "",
   "subTitleIcons": [],
-  "subTitleAudio": "../audios/page_24/1_Look_and_say.mp3",
+  "subTitleAudio": "../audios/supplied/look-and-say.mp3",
   "slides": [
   {
       
@@ -34,7 +34,7 @@ var reading_data = {
     "welcomeImage":"../images/pages/page-3/welcome-img.png",
     "parentClassName": "grammar_slide",
     "group_styles": "",
-    "letters":["G","R","A","M","M","E","R"],
+    "letters":["G","R","A","M","M","A","R"],
     "gram_title":"<span class='red_text'>Questions</span>",
     "audio": ["../audios/page_24/Pg6_2.1_Stella.mp3","../audios/page_24/dough.mp3","../audios/page_24/sauce.mp3","../audios/page_24/sprinkle.mp3","../audios/page_24/cheese.mp3","../audios/page_24/add.mp3","../audios/page_24/pepperoni.mp3","../audios/page_24/slice.mp3"],
     "slide_1_title":"<span class='red_text'> do/does </span> ",

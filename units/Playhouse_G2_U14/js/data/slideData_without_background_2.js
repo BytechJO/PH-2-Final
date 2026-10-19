@@ -44,7 +44,7 @@ var reading_data = {
       ],
       word: [
         "<b>1</b> Last week we visited the Highclere Castle.",
-        "<b>2</b> It is located in Hampshire, England We learnt that for a short time it was a hospital. ",
+        "<b>2</b> It is located in Hampshire, England. We learnt that for a short time it was a hospital. ",
         "<b>3</b> Our tour guide talked about many things. ",
         "<b>4</b> We saw the beautiful gardens.",
         "<b>5</b> We walked through old rooms with old furniture.",

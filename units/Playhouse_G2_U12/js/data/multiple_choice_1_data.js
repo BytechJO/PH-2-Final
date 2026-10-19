@@ -29,7 +29,7 @@ var mcq_data = {
     "<span class='red_text'>1</span> Circle the correct adverb of manner.",
   subTitleTextRight: "",
   subTitleIcons: [],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/supplied/circle-the-correct-adverb-of-manner.mp3",
   select: "single", // single (or) multiple
   shape: "roundrect", // circle (or) roundrect (or) rectangle (or) svg (or) cross (or) checkbox
   bgcolor: "none",

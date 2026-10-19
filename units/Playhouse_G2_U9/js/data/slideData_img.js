@@ -27,7 +27,7 @@ var reading_data = {
     "<span class='red_text'>1</span> Listen, read and practise.",
   subTitleTextRight: "",
   subTitleIcons: ["../images/pages/sb-icons/phonics_1_icon.png"],
-  subTitleAudio: "../audios/page_70/1_Listen_read_and_practise.mp3",
+  subTitleAudio: "../audios/supplied/listen-read-and-practise.mp3",
   slides: [
     {
       layout: "grid_columns",

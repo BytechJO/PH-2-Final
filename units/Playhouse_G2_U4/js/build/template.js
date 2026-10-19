@@ -625,7 +625,7 @@ function buildStudentPagesSidebar() {
         function (index, page) {
             if (
                 page &&
-                page.build == "yes" &&
+                page.menuHidden !== true &&
                 page.file
             ) {
                 var pageLabel =

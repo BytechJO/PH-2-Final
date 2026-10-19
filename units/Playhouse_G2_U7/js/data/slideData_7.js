@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='red_text'>1</span> Read and say.",
     "subTitleTextRight": "",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/page_56/1_Read_and_say.mp3",
+    "subTitleAudio": "../audios/supplied/read-and-say.mp3",
     "slides": [
     {
         
@@ -34,7 +34,7 @@ var reading_data = {
         "welcomeImage":"../images/pages/page-3/welcome-img.png",
         "parentClassName": "grammar_slide",
         "group_styles": "",
-        "letters":["G","R","A","M","M","E","R"],
+        "letters":["G","R","A","M","M","A","R"],
         "audio": ["../audios/page_56/Pg6_2.1_Stella.mp3","../audios/page_56/dough.mp3","../audios/page_56/sauce.mp3","../audios/page_56/sprinkle.mp3","../audios/page_56/cheese.mp3","../audios/page_56/add.mp3","../audios/page_56/pepperoni.mp3","../audios/page_56/slice.mp3"],
         "word": [
             "<span class='red_text'>Imperatives</span>",

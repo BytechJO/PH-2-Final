@@ -25,7 +25,7 @@ var mcq_data = {
     "mainTitleIcon"         : "../images/pages/sb-icons/phonics_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-20px"},
     "mainTitleAudio"        : "../audios/page_48/PHONICS.mp3",
-    "subTitleTextLeft"      : "<span class='red_text'>2</span> Circle the ‘<span class='red_text'>u magic e</span>’ words in the poem",
+    "subTitleTextLeft"      : "<span class='red_text'>2</span> Circle the ‘<span class='red_text'>ai</span>’ words in the poem",
     "subTitleTextRight"     : "",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
@@ -127,7 +127,7 @@ var mcq_data = {
                     "audioenable"   : "default", // correct (or) default
                 },
                 {
-                    "text"          : "compl<span class='red_text'>ni</span>n.",
+                    "text"          : "compl<span class='red_text'>ai</span>n.",
                     "image"         : "",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default

@@ -25,7 +25,7 @@ var fillin_data = {
   mainTitleIcon: "../images/pages/sb-icons/word_main_title_icon.png",
   mainTitleIconPos: { right: "-18px" },
   mainTitleAudio: "../../../../../audios/WORD_POWER.mp3",
-  subTitleTextLeft: "<span class='blue_text'>1</span> Label the town.",
+  subTitleTextLeft: "<span class='blue_text'>1</span> Label the map.",
   subTitleTextRight: "",
   subTitleIcons: [],
   subTitleAudio: "../audios/under.mp3",

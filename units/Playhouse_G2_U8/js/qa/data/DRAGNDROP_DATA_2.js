@@ -25,7 +25,7 @@ var _activity_json = {
   mainTitleIcon: "../images/pages/sb-icons/gram_main_title_icon.png",
   mainTitleAudio: "../audios/page_63/PHONICS.mp3",
   mainTitleIconPos: { right: "-18px" },
-  subTitleTextLeft: '<span class="red_text">1</span> Write the contractio.',
+  subTitleTextLeft: '<span class="red_text">1</span> Write the contractions.',
   subTitleTextRight: "",
   subTitleIcons: [],
   subTitleAudio: "../audios/under.mp3",

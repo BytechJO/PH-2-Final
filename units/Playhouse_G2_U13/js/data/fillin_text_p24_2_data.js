@@ -38,7 +38,7 @@ var fillin_data = {
   subTitleTextLeft: '<span class="red_text">2</span> Write.',
 
   subTitleTextRight:
-    "Lilly has a new e-friend. Help her complete her letter. Then check your answers.",
+    "Gina has a new e-friend. Help her complete her letter. Then check your answers.",
 
   subTitleIcons: [],
 

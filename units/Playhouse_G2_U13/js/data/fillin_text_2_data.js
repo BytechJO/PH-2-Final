@@ -29,7 +29,7 @@ var fillin_data = {
     '<span class="red_text">1</span> Write an opposite sentence for each.',
   subTitleTextRight: "",
   subTitleIcons: [],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/supplied/write-an-opposite-sentence-for-each.mp3",
   image: "",
   imageposition: "front", // "front" (or) "back"
   defaultAnswer: 1,

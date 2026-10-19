@@ -29,7 +29,7 @@ var mcq_tick_data = {
     "<span class='red_text'>1</span> Listen and tick <span class='red_text'>✓</span> the correct answer.",
   subTitleTextRight: "",
   subTitleIcons: ["../images/pages/sb-icons/conv_1_icon.png"],
-  subTitleAudio: "../audios/page_40/1_Listen_and_tick_the_correct_answer.mp3",
+  subTitleAudio: "../audios/supplied/listen-and-tick-the-correct-answer.mp3",
   select: "single", // single (or) multiple
   shape: "tickbox", // circle (or) roundrect (or) rectangle (or) svg (or) cross (or) tickbox
   bgcolor: "none",

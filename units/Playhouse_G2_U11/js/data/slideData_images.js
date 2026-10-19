@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='red_text'>1</span> Listen and read. Then act it out.",
     "subTitleTextRight": "",
     "subTitleIcons": ["../images/pages/sb-icons/conv_1_icon.png"],
-    "subTitleAudio" : "../audios/page_83/1_Listen_and_read._Then_act_it_out.mp3",
+    "subTitleAudio" : "../audios/supplied/listen-and-read-then-act-it-out.mp3",
     "haveAudio": true,
     "video" : "../videos/p83.mp4",
     "slides": [

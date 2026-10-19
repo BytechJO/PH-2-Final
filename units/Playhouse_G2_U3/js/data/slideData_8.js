@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft"      : '<span class="red_text">1</span> Point, ask and answer.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../audios/supplied/point-ask-and-answer.mp3",
     "slides": [
         {
 

@@ -26,7 +26,7 @@ var fillin_data = {
   mainTitleIconPos: { right: "-18px" },
   mainTitleAudio: "../../../../../audios/WRITING.mp3",
   subTitleTextLeft:
-    '<span class="blue_text">1</span> Write a persuasive essay.',
+    '<span class="blue_text">1</span> Write sentences about your family. Use the model to help you.',
   subTitleTextRight: "",
   subTitleIcons: [],
   subTitleAudio: "../audios/under.mp3",

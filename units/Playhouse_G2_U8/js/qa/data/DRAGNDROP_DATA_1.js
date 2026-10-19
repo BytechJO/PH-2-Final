@@ -29,7 +29,7 @@ var _activity_json = {
     '<span class="red_text">1</span> Complete the conversation.',
   subTitleTextRight: "",
   subTitleIcons: [],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/supplied/complete-the-conversation.mp3",
   image: "new_drag_drop.png",
   type: "drag_drop",
   images: [],

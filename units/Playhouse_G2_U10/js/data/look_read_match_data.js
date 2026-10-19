@@ -32,7 +32,7 @@ var look_read_match_data = {
 
   subTitleIcons: [],
 
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/supplied/look-read-and-match.mp3",
 
   /*
         الإجابات:

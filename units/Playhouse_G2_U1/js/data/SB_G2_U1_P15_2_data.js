@@ -8,7 +8,7 @@ var mcq_tick_data = {
     "subTitleTextLeft"      : "<span class='red_text'>2</span> Read and tick.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : ["../images/pages/sb-icons/gram_2_icon.png"],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../audios/supplied/read-and-tick.mp3",
     "activityheading"            : '',
     "activityheading_audio"      : "../audios/under.mp3",
     "main_activityheading"       :"../images/pages/activities/conversation.jpg",

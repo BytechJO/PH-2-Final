@@ -27,7 +27,7 @@ var linedraw_data = {
     "subTitleTextLeft"      : "<span class='red_text'>2</span> Read and choose",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : ["../images/pages/sb-icons/phonics_3_icon.png"],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../audios/supplied/read-and-choose.mp3",
     "image"                 : "",
     "rightImage"            : "../images/pages/activities/adv_2_right-background.png",
     "rightText"             : ["<span class='right_title'>Find in the story:</span>","<span class='red_text'>✓</span> Definitely!","<span class='red_text'>✓</span> bottle of juice"],

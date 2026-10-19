@@ -85,6 +85,10 @@ FillIn.prototype = {
                     _cAns[cc] = (_case == 'yes')? _cAns[cc]: _cAns[cc].toLowerCase();  
                    _cAns[cc] = (_cAns[cc]).replace(/\s/g, '');
                    _uAns[cc] = (_uAns[cc]).replace(/\s/g, '');
+                    if (fDataObj.optionalFinalPeriod === true) {
+                        _cAns[cc] = _cAns[cc].replace(/\.$/, '');
+                        _uAns[cc] = _uAns[cc].replace(/\.$/, '');
+                    }
                     if(_cAns[cc] == _uAns[cc]){
                         _corr++;
                         // if(_isReadOnly[cc] != 1)  {

@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='red_text'>1</span> Listen and read the story.",
     "subTitleTextRight": "",
     "subTitleIcons": ["../images/pages/sb-icons/conv_1_icon.png"],
-    "subTitleAudio" : "../audios/page_59/1_Listen_and_read_the_story.mp3",
+    "subTitleAudio" : "../audios/supplied/listen-and-read-the-story.mp3",
     "haveAudio": true,
     "video" : "../videos/p59.mp4",
     "slides": [

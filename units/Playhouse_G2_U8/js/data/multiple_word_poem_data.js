@@ -104,7 +104,7 @@ var mcq_data = {
           audioenable: "default", // correct (or) default
         },
         {
-          text: "juice",
+          text: "juice from",
           image: "",
           audio: "no",
           audioenable: "default", // correct (or) default

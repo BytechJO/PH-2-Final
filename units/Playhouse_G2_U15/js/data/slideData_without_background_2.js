@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='red_text'>1</span> Practise with a friend. Ask and answer.",
     "subTitleTextRight": "",
     "subTitleIcons": [""],
-    "subTitleAudio": "../audios/under.mp3",
+    "subTitleAudio": "../audios/supplied/practise-with-a-friend-ask-and-answer.mp3",
     "slides": [
         {
             "layout": "grid_columns",

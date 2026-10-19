@@ -187,7 +187,7 @@ var mcq_data = {
           audioenable: "default", // correct (or) default
         },
         {
-          text: "rhinocerous",
+          text: "rhinoceros",
           image: "",
           audio: "no",
           audioenable: "default", // correct (or) default

@@ -27,7 +27,7 @@ var mcq_data = {
   mainTitleIconPos: { right: "-18px" },
   mainTitleAudio: "../../../../../audios/GRAMMAR_PRACTICE.mp3",
   subTitleTextLeft:
-    "<span class='blue_text'>1</span> Circle the verb in each sentence. Rewrite it by adding ‘- ed ’ to the end of the verb.",
+    "<span class='blue_text'>1</span> Circle the verb in each sentence. Rewrite the sentence in the past tense. Add ‘-ed’ to the base form of the verb.",
   subTitleTextRight: "",
   subTitleIcons: [],
   subTitleAudio: "../audios/under.mp3",

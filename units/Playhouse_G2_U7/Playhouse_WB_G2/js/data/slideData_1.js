@@ -56,7 +56,7 @@ var reading_data = {
                 "<span class='blue_text'>Mum:</span>",
                 "No. We have a lot to do today. I want you to clean your room. Can you wash your father’s car, please?",
                 "<b>Max:</b>",
-                "es, I can. Why are Saturdays always busy? The other days are not busy.",
+                "Yes, I can. Why are Saturdays always busy? The other days are not busy.",
                 "<span class='blue_text'>Mum:</span>",
                 "Not for me! Now, I want you to wash your hands and face. I want you to make your bed. Your breakfast is ready",
             ],

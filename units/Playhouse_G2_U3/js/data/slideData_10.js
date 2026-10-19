@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='orange_text'>2</span> You do it.",
     "subTitleTextRight": "<span class='orange_text'>Talk about what you do on your birthday.</span>",
     "subTitleIcons": ["../images/pages/sb-icons/conv_3_icon.png"],
-    "subTitleAudio": "../audios/under.mp3",
+    "subTitleAudio": "../audios/supplied/you-do-it.mp3",
     "slides": [
         {
             "mainTitle": "../images/pages/page-2/1-title_1.png",

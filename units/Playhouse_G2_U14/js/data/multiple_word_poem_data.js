@@ -26,7 +26,7 @@ var mcq_data = {
   mainTitleIconPos: { right: "-20px" },
   mainTitleAudio: "../audios/page_108/PHONICS.mp3",
   subTitleTextLeft:
-    "<span class='red_text'>2</span> Circle the hard ‘<span class='red_text'>-old</span>’ letters in the poem.",
+    "<span class='red_text'>2</span> Circle the ‘<span class='red_text'>-old</span>’ words in the poem.",
   subTitleTextRight: "",
   subTitleTextRight: "",
   subTitleIcons: [],

@@ -28,7 +28,7 @@ var fillin_data = {
     "subTitleTextLeft"      : '<span class="red_text">1</span> Rewrite the sentences.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../audios/supplied/rewrite-the-sentences.mp3",
     "activityheading"       : "",
     "activityheading_audio" : "../audios/under.mp3",
     "activityicon"          : "../images/icons/key_icon.png",
@@ -45,7 +45,8 @@ var fillin_data = {
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/p20_4_1.png",
             "answer": ["They are skipping"],
-            "strictcase": "no", // yes (or) no              
+            "strictcase": "no",
+            "optionalFinalPeriod": true,
             "type": "text", // text (or) number
         },
         {
@@ -54,7 +55,8 @@ var fillin_data = {
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/p20_4_2.png",
             "answer": ["He is running"],
-            "strictcase": "no", // yes (or) no              
+            "strictcase": "no",
+            "optionalFinalPeriod": true,
             "type": "text", // text (or) number
         },
        

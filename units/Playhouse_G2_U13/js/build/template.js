@@ -470,7 +470,7 @@ function buildStudentPagesSidebar() {
   sStmt += '<div class="studentPagesSidebarList">';
 
   $.each(_activityData.list, function (index, page) {
-    if (page && page.build == "yes" && page.file) {
+    if (page && page.menuHidden !== true && page.file) {
       var pageLabel = page.title || page.label || "Page " + (index + 1);
 
       var activeClass = page.file.toLowerCase() == currentFile ? "active" : "";

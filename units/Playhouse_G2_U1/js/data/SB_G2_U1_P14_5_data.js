@@ -28,7 +28,7 @@ var mcq_data = {
 
   subTitleTextRight: "",
   subTitleIcons: [],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../audios/supplied/underline-the-nouns-and-circle-the-verbs.mp3",
 
   activityheading: "",
   activitysubheading: "",

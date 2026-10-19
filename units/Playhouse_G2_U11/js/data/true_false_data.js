@@ -28,8 +28,7 @@ var mcq_data = {
     "subTitleTextLeft"      : "<span class='red_text'>1</span> Look and read. Write <span class='red_text'>true</span> or <span class='red_text'>false</span>",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
-    "subTitleAudio"         : "../audios/under.mp3", 
+    "subTitleAudio"         : "../audios/supplied/look-and-read-write-true-or-false.mp3",
     "select"                : "single", // single (or) multiple
     "shape"                 : "roundrect", // circle (or) roundrect (or) rectangle (or) svg (or) cross (or) checkbox
     "bgcolor"               : "none",

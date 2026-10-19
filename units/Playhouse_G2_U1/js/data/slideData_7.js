@@ -26,7 +26,7 @@ var reading_data = {
   "subTitleTextLeft": "<span class='red_text'>1</span> Read and say.",
   "subTitleTextRight": "",
   "subTitleIcons": [],
-  "subTitleAudio": "../audios/page_12/1_Read_and_say.mp3",
+  "subTitleAudio": "../audios/supplied/read-and-say.mp3",
   "slides": [
   {
       
@@ -34,7 +34,7 @@ var reading_data = {
     "welcomeImage":"../images/pages/page-3/welcome-img.png",
     "parentClassName": "grammar_slide",
     "group_styles": "",
-    "letters":["G","R","A","M","M","E","R"],
+    "letters":["G","R","A","M","M","A","R"],
     "gram_title":"<span class='red_text'></span>",
     "audio": ["../audios/page_12/Pg6_2.1_Stella.mp3","../audios/page_12/dough.mp3","../audios/page_12/sauce.mp3","../audios/page_12/sprinkle.mp3","../audios/page_12/cheese.mp3","../audios/page_12/add.mp3","../audios/page_12/pepperoni.mp3","../audios/page_12/slice.mp3"],
     "slide_1_title":"<span class='red_text'> this/that </span> ",

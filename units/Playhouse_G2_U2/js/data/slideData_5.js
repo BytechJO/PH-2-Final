@@ -26,7 +26,7 @@ var reading_data = {
   "subTitleTextLeft": "<span class='red_text'>1</span> Look, read and say.",
   "subTitleTextRight": "",
   "subTitleIcons": [],
-  "subTitleAudio": "../audios/page_18/1_Look_read_and_say.mp3",
+  "subTitleAudio": "../audios/supplied/look-read-and-say.mp3",
   "slides": [
   {
       
@@ -34,7 +34,7 @@ var reading_data = {
     "welcomeImage":"../images/pages/page-3/welcome-img.png",
     "parentClassName": "grammar_slide",
     "group_styles": "",
-    "letters":["G","R","A","M","M","E","R"],
+    "letters":["G","R","A","M","M","A","R"],
     "gram_title":"<span class='red_text'>'-ing' Verbs</span>",
     "audio": ["../audios/page_18/.mp3","../audios/page_18/.mp3","../audios/page_18/.mp3","../audios/page_18/.mp3","../audios/page_18/.mp3","../audios/page_18/.mp3","../audios/page_18/.mp3","../audios/page_18/.mp3"],
     "slide_1_title":"<span class='red_text'> Rule </span> ",

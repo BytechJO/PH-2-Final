@@ -29,7 +29,7 @@ var mcq_data = {
     "subTitleTextRight"     : "",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../audios/supplied/circle-the-o-magic-e-words-in-the-poem.mp3",
     "activityheading"       : "",
     "activitysubheading"    : "",
     "activityicon"          : "../images/icons/hand_icon.png",    
@@ -169,7 +169,7 @@ var mcq_data = {
                     "audioenable"   : "default", // correct (or) default
                 },
                 {
-                    "text"          : "made",
+                    "text"          : "and made",
                     "image"         : "",
                     "audio"         : "no",
                     "audioenable"   : "default", // correct (or) default

@@ -61,7 +61,7 @@ var fillin_data = {
       text: "[_]",
       textaudios: ["../audios/under.mp3", "../audios/under.mp3"],
       audio: "",
-      options_words: ["always Jan lunch buy school at."],
+      options_words: ["always Jan lunch buys school at."],
       options_words_audios: [
         "../audios/under.mp3",
         "../audios/under.mp3",

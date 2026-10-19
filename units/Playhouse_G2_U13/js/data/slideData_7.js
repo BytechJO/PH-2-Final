@@ -26,7 +26,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='red_text'>1</span> Read and say.",
     "subTitleTextRight": "",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/page_100/1_Read_and_say.mp3",
+    "subTitleAudio": "../audios/supplied/read-and-say.mp3",
     "slides": [
     {
         
@@ -35,7 +35,7 @@ var reading_data = {
         "parentClassName": "grammar_slide",
         "group_styles": "",
         "gram_title":"<span class='red_text'>was / were</span>",
-        "letters":["G","R","A","M","M","E","R"],
+        "letters":["G","R","A","M","M","A","R"],
         "audio": ["../audios/page_100/Pg6_2.1_Stella.mp3","../audios/page_100/dough.mp3","../audios/page_100/sauce.mp3","../audios/page_100/sprinkle.mp3","../audios/page_100/cheese.mp3","../audios/page_100/add.mp3","../audios/page_100/pepperoni.mp3","../audios/page_100/slice.mp3"],
         "word": [
 
