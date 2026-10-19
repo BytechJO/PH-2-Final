@@ -1,0 +1,413 @@
+.all_cont {
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  overflow-x: hidden;
+}
+
+/* ======================================================
+   Main questions container
+====================================================== */
+
+.group_elm {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* كل الأسئلة تحت بعضها */
+.tick_group {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  flex: 0 0 auto;
+}
+
+/* ======================================================
+   Question row
+====================================================== */
+
+/* الحرف والجملة بنفس السطر */
+.que {
+  position: relative;
+
+  width: 100% !important;
+  height: auto;
+
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: baseline !important;
+  justify-content: flex-start !important;
+
+  padding: 10px 4px;
+  margin: 0;
+
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-size: 28px;
+}
+
+/* الجزء الذي يحتوي A: أو B: */
+.q_part {
+  width: auto !important;
+  min-width: auto !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: baseline !important;
+
+  flex: 0 0 auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  letter-spacing: 1px;
+  color: #d2232a;
+}
+
+/* ترقيم السؤال، إن وُجد */
+.q_num_space {
+  width: auto !important;
+  min-width: 38px !important;
+
+  flex: 0 0 auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-weight: bolder;
+}
+
+/* نص السؤال مثل A: أو B: */
+.q_part .question {
+  width: auto !important;
+
+  display: inline-block !important;
+
+  flex: 0 0 auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #d2232a;
+  white-space: nowrap;
+}
+
+/* ======================================================
+   Sentence/options
+====================================================== */
+
+/* الجملة تأتي بجانب A: أو B: */
+.picks_grp {
+  width: auto !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: baseline !important;
+  justify-content: flex-start !important;
+
+  flex: 1 1 auto !important;
+
+  margin: 0 0 0 10px !important;
+  padding: 0 !important;
+  gap: 10px;
+}
+
+.pick {
+  width: auto !important;
+  height: auto !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: baseline !important;
+  justify-content: flex-start !important;
+
+  flex: 0 1 auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  text-align: left !important;
+  font-size: 28px;
+
+  border: 2px solid transparent;
+  border-radius: 10px !important;
+}
+
+/* إخفاء ترقيم الخيارات إن كان موجودًا */
+.pick > .q_num_space {
+  display: none !important;
+}
+
+.pick .txt {
+  width: auto !important;
+
+  display: inline-block !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #000;
+  text-align: left;
+  white-space: normal;
+}
+
+.pick img {
+  width: 50% !important;
+  height: 100% !important;
+
+  padding: 0 5px;
+
+  object-fit: contain;
+}
+
+/* ======================================================
+   Images
+====================================================== */
+
+.img_space {
+  flex: 0 0 auto;
+}
+
+.img_space img {
+  width: 180px !important;
+  object-fit: contain;
+}
+
+.roundedCorners {
+  border-radius: 10px;
+}
+
+/* ======================================================
+   Correct/wrong icons
+====================================================== */
+
+.icon_wrap {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+
+  transform: translateY(-50%);
+}
+
+.tick,
+.cross {
+  width: 25px;
+  height: 25px;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* ======================================================
+   Side image
+====================================================== */
+
+.image-container {
+  height: 170px;
+  margin-right: -50px;
+}
+
+.image-container img {
+  height: 100%;
+  object-fit: contain;
+}
+
+#shakingImage {
+  position: absolute;
+  top: -49px;
+  left: -70px;
+
+  height: 150px;
+}
+
+.right_container {
+  position: relative;
+}
+
+.right-image-container {
+  position: relative;
+
+  display: none;
+
+  width: 291px;
+  height: 253px;
+
+  margin-top: 0;
+  margin-right: 35px;
+
+  background: #f9f9da;
+
+  border: 4px solid #d2232a;
+  border-radius: 15px;
+}
+
+.right-image {
+  width: 350px;
+}
+
+.right-image-container .header {
+  display: block;
+
+  width: 100%;
+  height: 40px;
+
+  background: #d2232a;
+
+  border: 1px solid #f9f9da;
+  border-radius: 12px;
+}
+
+.textOnImage-container {
+  position: absolute;
+  top: 2px;
+  left: 28px;
+
+  width: 256px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 22px;
+}
+
+.right_title {
+  margin-left: 35px;
+
+  color: #fff;
+  font-size: 26px;
+}
+
+/* ======================================================
+   Pulse animation
+====================================================== */
+
+.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.95);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* ======================================================
+   Responsive
+====================================================== */
+
+@media (max-width: 1799.98px) {
+  .que {
+    padding: 9px 4px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .que {
+    padding: 7px 4px;
+    font-size: 26px;
+  }
+
+  .pick {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .group_elm {
+    width: 90%;
+  }
+
+  .que,
+  .pick {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .group_elm {
+    width: 94%;
+  }
+
+  .que,
+  .pick {
+    font-size: 22px;
+  }
+
+  .q_num_space {
+    min-width: 34px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .group_elm {
+    width: 96%;
+  }
+
+  .que,
+  .pick {
+    font-size: 20px;
+  }
+
+  .picks_grp {
+    margin-left: 7px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .que,
+  .pick {
+    font-size: 18px;
+  }
+
+  .q_num_space {
+    min-width: 30px !important;
+  }
+}
+
+@media (max-width: 475.98px) {
+  .que {
+    flex-wrap: wrap !important;
+  }
+
+  .pick,
+  .que {
+    font-size: 17px;
+  }
+
+  .tickBox {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+  }
+}

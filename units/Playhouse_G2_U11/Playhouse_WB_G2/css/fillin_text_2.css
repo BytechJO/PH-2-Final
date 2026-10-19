@@ -1,0 +1,376 @@
+.all_cont {
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.screen_elements {
+  width: 90%;
+  height: 100%;
+}
+
+.group_elm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: unset;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.activityHeading b {
+  color: #000;
+}
+
+.q_num_space {
+  width: 40px;
+  font-weight: bold;
+}
+
+.image_space {
+  width: 75%;
+  height: 342px;
+  margin: 0px auto;
+}
+
+.image_space img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.q_order {
+  width: 50px;
+  font-weight: bolder;
+}
+
+.ques {
+  width: 80%;
+  height: 75%;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img_space {
+  width: 400px;
+}
+
+.q_box {
+  width: 100%;
+  height: 70px;
+}
+
+.fill_in .que {
+  width: 250px;
+  height: 70px;
+  border: 1px solid #56c8f4;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fillin_gr .q_space {
+  width: 100%;
+}
+.fillin_set {
+  font-family: Arcon;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fillin_set input:focus {
+  outline: none;
+}
+
+.fillin_set input {
+  width: 50px;
+  height: 50px;
+  color: black;
+  /* padding-left: 20px; */
+  text-align: center;
+  border: none;
+  /* margin: 0px 15px; */
+  border-radius: 50%;
+  border: 2px solid #56c8f4;
+  position: absolute;
+  right: -19px;
+  top: 9px;
+}
+
+.icon_wrap {
+  /* position: absolute;
+    margin-top: -35px; 
+    right: 100px; */
+}
+
+.tick,
+.cross {
+  width: 35px;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+}
+
+.image_wrap {
+  display: none;
+}
+
+.clue_word {
+  padding: 2px 27px;
+  font-size: 22px;
+}
+
+.word_options {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #c3f4ff8c;
+}
+
+.word_opt_sticky {
+  width: 100%;
+  margin: 0px auto;
+  position: -webkit-sticky;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 5;
+  border: 2px solid var(--temp);
+  border-radius: 10px;
+}
+
+.words-list li {
+  height: 110px;
+  font-weight: bolder;
+  color: black;
+  border: 1px solid black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.right-content .p-0 {
+  height: 110px;
+  border: 1px solid black;
+}
+
+.tips_content img {
+  height: 30px;
+  width: auto;
+  margin-top: 10px;
+}
+
+.image-container {
+  position: absolute;
+  right: 260px;
+  bottom: 50px;
+}
+
+.image-container img {
+  width: 300px;
+  height: 210px;
+  margin: 0px 70px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #36a0c7;
+}
+
+/* ************************************************* */
+/* ************************************************* */
+@media (max-width: 991.98px) {
+  .fill_in .que {
+    width: 160px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .fill_in .que {
+    width: 200px;
+  }
+}
+
+@media (max-width: 475.98px) {
+  /* .fill_in .que {
+        width: 200px;
+    } */
+} /* =====================================================
+   Scrambled sentences layout
+   3 columns × 3 rows
+===================================================== */
+
+.fill_in .ques {
+  width: 90%;
+  max-width: 1050px;
+  height: auto;
+
+  margin: 0 auto;
+  padding: 15px 35px;
+
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 75px;
+  row-gap: 22px;
+
+  align-items: center;
+  justify-items: center;
+
+  overflow: visible;
+}
+
+/* كل قطعة من الجملة */
+.fill_in .ques > .que {
+  width: 100% !important;
+  max-width: 245px;
+  height: 58px;
+
+  margin: 0 !important;
+  padding: 0 25px 0 18px;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  border: 2px solid #56c8f4;
+  border-radius: 18px;
+
+  box-sizing: border-box;
+}
+
+/* إزالة أي مساحات داخلية غير مطلوبة */
+.fill_in .fillin_gr {
+  width: 100%;
+  height: 100%;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.fill_in .fillin_gr .q_space {
+  width: 100%;
+  height: 100%;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.fill_in .fillin_set {
+  width: 100%;
+  height: 100%;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: nowrap !important;
+
+  font-family: Arcon;
+  font-size: 20px;
+  color: #000;
+  white-space: nowrap;
+}
+
+/* النص داخل كل مستطيل */
+.fill_in .fillin_set .audioIcon {
+  width: 100%;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* الدائرة الموجودة على يمين كل مستطيل */
+.fill_in .fillin_set input.text_input_area {
+  width: 48px !important;
+  height: 48px !important;
+
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  transform: translateY(-50%);
+
+  border: 2px solid #56c8f4;
+  border-radius: 50%;
+  background-color: #fff;
+
+  text-align: center;
+  color: #000;
+
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* إخفاء مكان الصح والخطأ حتى لا يؤثر على التنسيق */
+.fill_in .icon_wrap_holder {
+  position: absolute;
+  right: -55px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* =====================================================
+   أرقام الصفوف
+===================================================== */
+
+.fill_in .ques > .que:nth-child(1)::before,
+.fill_in .ques > .que:nth-child(4)::before,
+.fill_in .ques > .que:nth-child(7)::before {
+  position: absolute;
+  left: -38px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.fill_in .ques > .que:nth-child(1)::before {
+  content: "1";
+}
+
+.fill_in .ques > .que:nth-child(4)::before {
+  content: "2";
+}
+
+.fill_in .ques > .que:nth-child(7)::before {
+  content: "3";
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 900px) {
+  .fill_in .ques {
+    column-gap: 45px;
+    padding-inline: 30px;
+  }
+
+  .fill_in .ques > .que {
+    max-width: 210px;
+  }
+
+  .fill_in .fillin_set {
+    font-size: 17px;
+  }
+}
+

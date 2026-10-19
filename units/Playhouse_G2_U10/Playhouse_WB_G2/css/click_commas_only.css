@@ -1,0 +1,411 @@
+:root {
+  --comma-blue: #18a9e1;
+  --comma-red: #e5353f;
+  --comma-text: #2d2d2d;
+}
+
+/* =========================================================
+   Main activity
+========================================================= */
+
+.click_commas_only_options {
+  width: 100%;
+  height: 100%;
+}
+
+.click_commas_only_all_cont {
+  position: relative;
+
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.click_commas_only_all_cont .screen_elements {
+  width: 100%;
+  height: 100%;
+}
+
+.click_commas_only_wrapper {
+  position: relative;
+
+  width: 82%;
+  height: 92%;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* =========================================================
+   Questions wrapper
+========================================================= */
+
+.click_commas_only_questions {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-evenly;
+}
+
+/* =========================================================
+   Question
+========================================================= */
+
+.click_commas_only_question {
+  position: relative;
+
+  width: 100%;
+  min-height: 95px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.click_commas_only_question_content {
+  position: relative;
+
+  width: 70%;
+
+  display: grid;
+
+ grid-template-columns:
+    45px
+    minmax(0, 1fr)
+    42px;
+
+  column-gap: 10px;
+
+  align-items: center;
+
+}
+
+/* =========================================================
+   Question number
+========================================================= */
+
+.click_commas_question_number {
+  width: 45px;
+
+  padding: 0;
+
+  color: #222222;
+
+  font-family: Arcon;
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+  text-align: center;
+}
+
+/* =========================================================
+   Sentence
+========================================================= */
+
+.click_commas_only_sentence {
+  width: 100%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  color: var(--comma-text);
+
+  font-family: Arcon;
+
+  font-size: 24px;
+
+  line-height: 1.7;
+
+  text-align: left;
+}
+
+.click_commas_only_word {
+  display: inline-flex;
+
+  align-items: center;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   Clickable comma spaces
+========================================================= */
+
+.comma_click_space {
+  position: relative;
+
+  width: 15px;
+  height: 34px;
+
+  margin: 0 2px;
+
+  padding: 0;
+
+  border: none;
+
+  outline: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+.comma_click_space:hover {
+  background-color: rgba(24, 169, 225, 0.08);
+
+  border-radius: 6px;
+}
+
+.comma_symbol {
+  position: absolute;
+
+  left: 50%;
+  bottom: -2px;
+
+  display: none;
+
+  color: var(--comma-red);
+
+  font-family: Arcon;
+
+  font-size: 30px;
+
+  font-weight: bold;
+
+  line-height: 1;
+
+  transform: translateX(-50%);
+}
+
+.comma_click_space.selected {
+  width: 19px;
+}
+
+.comma_click_space.selected .comma_symbol {
+  display: block;
+}
+
+/* =========================================================
+   Tick and cross
+========================================================= */
+
+.click_commas_only_question .icon_wrap_holder {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.click_commas_only_question .icon_wrap {
+  display: none;
+
+  width: 34px;
+  height: 34px;
+}
+
+.click_commas_only_question .tick,
+.click_commas_only_question .cross {
+  display: none;
+
+  width: 34px;
+  height: 34px;
+}
+
+.click_commas_only_question .tick img,
+.click_commas_only_question .cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Optional images
+========================================================= */
+
+.click_commas_only_image_holder {
+  position: absolute;
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+.click_commas_only_image_holder img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* Car image */
+
+.car_image {
+  width: 260px;
+  height: 150px;
+
+  right: -125px;
+  top: -35px;
+}
+
+/* Teddy bear image */
+
+.teddy_image {
+  width: 170px;
+  height: 185px;
+
+  right: -75px;
+  top: -45px;
+}
+
+/* =========================================================
+   Subtitle
+========================================================= */
+
+.click_commas_only .page_sub_title {
+  align-items: center;
+}
+
+.click_commas_only .page_sub_title p {
+  margin-bottom: 0;
+}
+
+.click_commas_only .page_sub_title img {
+  width: auto;
+  height: 44px;
+
+  margin-left: 8px;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Prevent project styles from shrinking questions
+========================================================= */
+
+.click_commas_only .que {
+  width: 100%;
+  height: auto;
+}
+
+.click_commas_only .group_elm {
+  width: 82%;
+  height: 92%;
+}
+
+.click_commas_only .q_num_space {
+  width: 45px;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .click_commas_only_wrapper,
+  .click_commas_only .group_elm {
+    width: 92%;
+  }
+
+  .click_commas_only_question_content {
+    grid-template-columns:
+      38px
+      minmax(0, 1fr)
+      36px;
+
+    column-gap: 6px;
+  }
+
+  .click_commas_question_number {
+    width: 38px;
+
+    font-size: 19px;
+  }
+
+  .click_commas_only_sentence {
+    font-size: 20px;
+
+    line-height: 1.6;
+  }
+
+  .comma_click_space {
+    width: 12px;
+    height: 30px;
+
+    margin: 0 1px;
+  }
+
+  .comma_click_space.selected {
+    width: 16px;
+  }
+
+  .comma_symbol {
+    font-size: 26px;
+  }
+
+  .car_image {
+    width: 190px;
+    height: 115px;
+
+    right: -55px;
+    top: -20px;
+  }
+
+  .teddy_image {
+    width: 130px;
+    height: 145px;
+
+    right: -30px;
+    top: -30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .click_commas_only_wrapper,
+  .click_commas_only .group_elm {
+    width: 96%;
+  }
+
+  .click_commas_only_question {
+    min-height: 85px;
+  }
+
+  .click_commas_only_sentence {
+    font-size: 17px;
+  }
+
+  .car_image,
+  .teddy_image {
+    opacity: 0.35;
+  }
+}

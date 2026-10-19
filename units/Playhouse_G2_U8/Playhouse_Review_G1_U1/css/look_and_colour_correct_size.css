@@ -1,0 +1,335 @@
+:root {
+  --size-blue: #20b7f3;
+  --size-text: #2c2c2c;
+  --size-selected-bg: #ffffff;
+}
+
+.look_colour_size_activity,
+.look_colour_size_activity * {
+  box-sizing: border-box;
+}
+
+.look_colour_size_activity {
+  width: 100%;
+  color: var(--size-text);
+  font-family: Arcon, sans-serif;
+}
+
+.look_colour_size_activity .title-order {
+  display: inline-block;
+  margin-right: 10px;
+  color: #e3252c;
+  font-weight: bold;
+}
+
+.look_colour_size_activity .options,
+.look_colour_size_activity .all_cont,
+.look_colour_size_activity .screen_elements,
+.look_colour_size_activity .group_elm {
+  width: 100%;
+}
+
+.look_colour_size_activity .group_elm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+  padding: 12px;
+}
+
+/* ===================================== */
+/* Question rows */
+/* ===================================== */
+
+.look_colour_size_activity .size_question_row {
+  display: grid;
+
+  grid-template-columns:
+    110px
+    minmax(320px, 560px)
+    44px;
+
+  align-items: center;
+
+  width: 90%;
+  max-width: 760px;
+
+  column-gap: 18px;
+}
+
+.look_colour_size_activity .size_label {
+  color: #3b3b3b;
+  font-family: Arcon, sans-serif;
+  font-size: 27px;
+  text-align: right;
+}
+
+.look_colour_size_activity .size_options_group {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+/* ===================================== */
+/* Option box */
+/* ===================================== */
+
+.look_colour_size_activity .size_option {
+  position: relative;
+
+  width: 100%;
+  height: 150px;
+
+  padding: 8px;
+
+  border: 2px solid var(--size-blue);
+  border-radius: 20px;
+
+  outline: 0;
+  background: #fff;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.look_colour_size_activity .size_option:hover {
+  transform: scale(1.02);
+}
+
+.look_colour_size_activity .size_option:focus-visible {
+  box-shadow:
+    0 0 0 4px
+    rgba(32, 183, 243, 0.25);
+}
+
+/* الخيار المحدد */
+.look_colour_size_activity .size_option.selected {
+  background-color:
+    var(--size-selected-bg);
+
+  box-shadow:
+    inset 0 0 0 4px
+      var(--size-blue),
+    0 6px 15px
+      rgba(32, 183, 243, 0.2);
+}
+
+/* ===================================== */
+/* Image wrapper */
+/* ===================================== */
+
+.look_colour_size_activity
+  .size_option_image_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.look_colour_size_activity
+  .size_tshirt_visual {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  transform:
+    scale(var(--shirt-scale, 1));
+
+  transform-origin:
+    center center;
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+/* ===================================== */
+/* Shirt image */
+/* ===================================== */
+
+.look_colour_size_activity
+  .size_tshirt_outline {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  pointer-events: none;
+
+  transition:
+    filter 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* البلوزة نفسها تصير حمراء */
+.look_colour_size_activity
+  .size_option.selected
+  .size_tshirt_outline {
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(38%)
+    sepia(92%)
+    saturate(2200%)
+    hue-rotate(165deg)
+    brightness(82%)
+    contrast(110%);
+}
+/* حركة خفيفة وقت الاختيار */
+.look_colour_size_activity
+  .size_option.selected
+  .size_tshirt_visual {
+  animation:
+    shirtColourPop
+    0.28s ease;
+
+  filter:
+    drop-shadow(
+      0 4px 5px
+      rgba(0, 0, 0, 0.12)
+    );
+}
+
+/* ===================================== */
+/* Result icons */
+/* ===================================== */
+
+.look_colour_size_activity
+  .size_result_holder {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+}
+
+.look_colour_size_activity
+  .size_tick,
+.look_colour_size_activity
+  .size_cross {
+  position: absolute;
+  inset: 0;
+
+  display: none;
+
+  width: 40px;
+  height: 40px;
+}
+
+.look_colour_size_activity
+  .size_tick img,
+.look_colour_size_activity
+  .size_cross img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* ===================================== */
+/* Animation */
+/* ===================================== */
+
+@keyframes shirtColourPop {
+  0% {
+    transform:
+      scale(
+        calc(
+          var(--shirt-scale, 1)
+          * 0.92
+        )
+      );
+  }
+
+  65% {
+    transform:
+      scale(
+        calc(
+          var(--shirt-scale, 1)
+          * 1.04
+        )
+      );
+  }
+
+  100% {
+    transform:
+      scale(
+        var(--shirt-scale, 1)
+      );
+  }
+}
+
+/* ===================================== */
+/* Responsive */
+/* ===================================== */
+
+@media (max-width: 991.98px) {
+  .look_colour_size_activity
+    .size_question_row {
+    grid-template-columns:
+      90px
+      minmax(280px, 500px)
+      40px;
+
+    width: 94%;
+    column-gap: 12px;
+  }
+
+  .look_colour_size_activity
+    .size_label {
+    font-size: 23px;
+  }
+
+  .look_colour_size_activity
+    .size_option {
+    height: 135px;
+  }
+}
+
+@media (max-width: 700px) {
+  .look_colour_size_activity
+    .size_question_row {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+  .look_colour_size_activity
+    .size_label {
+    text-align: left;
+  }
+
+  .look_colour_size_activity
+    .size_result_holder {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .look_colour_size_activity
+    .size_options_group {
+    grid-template-columns: 1fr;
+  }
+
+  .look_colour_size_activity
+    .size_option {
+    height: 145px;
+  }
+}

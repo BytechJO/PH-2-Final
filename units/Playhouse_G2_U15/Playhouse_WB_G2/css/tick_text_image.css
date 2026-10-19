@@ -1,0 +1,227 @@
+:root{
+  --temp: rgb(0, 185, 242);
+}
+.all_cont {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.group_elm {
+  width: 75%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.tick_group {
+  margin: 5px auto;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.tickBox {
+  color: black;
+  padding: 0;
+  margin-top: 3px;
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  /* margin-left: -16px; */
+}
+.icon_wrap_holder {
+  right: 40px;
+}
+.cont_ht_sf.activity_area {
+  width: 100%;
+}
+.activityTitle {
+  margin-left: 60px;
+}
+.que {
+  position: relative;
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: 100%;
+  /* margin: auto; */
+  /* margin-bottom: 12px; */
+  border-radius: 12px;
+  /* justify-content: space-between; */
+}
+.que .image_wrap {
+  width: 300px;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-right: 20px;
+}
+.que .image_wrap img {
+  width: 100%;
+  margin: auto;
+  border-radius: 15px;
+  object-fit: contain;
+}
+.que_group {
+  /* height: 56px; */
+  width: 445px;
+}
+.ans_grup{
+  height: 100%;
+}
+.tick_fields {
+  height: 100%;
+}
+.tickBox {
+  border: none;
+  border: 2px solid #00aeef !important;
+  border-radius: 15px;
+}
+.pick {
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: max-content;
+  margin-bottom: 7px;
+}
+.tick_fields .tickContent {
+  font-family: Arcon;
+  letter-spacing: 1px;
+  border-radius: 3%;
+  padding: 10px 20px;
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: max-content;
+  border-radius: 20px;
+  min-width: 360px;
+  font-size: 24px;
+}
+.question_div {
+  margin-bottom: 2%;
+}
+.question_div .heading {
+  padding: 10px;
+  padding-left: 10px;
+}
+.q_num_space {
+  /* padding: 0 10px 10px; */
+  width: 40px;
+}
+.heading{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 60px;
+  /* color: #f7a548; */
+}
+
+.icon_wrap_holder {
+  position: absolute;
+  z-index: 2;
+  height: auto;
+  right: 10px;
+  border-radius: 12px;
+}
+.tick img,
+.cross img {
+  padding-top: 8px;
+}
+.tick_group{
+  width: 963px;
+}
+.que {
+  width: 770px;
+  /* height: 479px; */
+  /* padding: 10px; */
+  align-items: center;
+  /* box-shadow: 5px 2px 8px #6c6b6b; */
+}
+
+/**End**/
+
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+/* ------------------------------------------------ */
+/*              M Q max-width: 1199.98px */
+/* ------------------------------------------------*/
+@media (max-width: 1199.98px) {
+  .que .image_wrap {
+    height: 20vh;
+  }
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {
+  .que .image_wrap {
+    height: 27vh;
+  }
+  .tick_fields {
+    margin: auto 19px;
+    width: 100%;
+  }
+
+  .tick_fields .tickContent {
+    width: 100%;
+  }
+  .tick_field {
+    width: 100%;
+  }
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+@media (max-width: 767.98px) {
+  .que .image_wrap {
+    width: 100%;
+  }
+  .pick {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .tick_group {
+    padding-top: 10px;
+  }
+  .tick_field {
+    margin-left: 0;
+  }
+
+  .icon_wrap_holder {
+    right: 11%;
+  }
+}
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+@media (max-width: 575.98px) {
+}
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+@media (max-width: 475.98px) {
+  .pick {
+    margin-bottom: 10px;
+  }
+
+  .que .image_wrap img {
+    width: auto;
+  }
+  .que .image_wrap {
+    height: 27vh;
+    width: auto !important;
+    min-height: 167px;
+  }
+  .tick_fields {
+    width: 89%;
+    margin: auto 5px;
+    /* padding: 0 49px; */
+  }
+}
+@media (max-width: 320px) {
+  .tick_fields {
+    padding: 2px;
+  }
+}

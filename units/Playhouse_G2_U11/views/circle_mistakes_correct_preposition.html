@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
+
+    <title>
+        playhouse
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/jquery-ui.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/bootstrap/bootstrap.css"
+    >
+
+    <style id="ui_style">
+    </style>
+
+    <link
+        rel="stylesheet"
+        href="../css/all.min.css"
+    >
+
+    <!-- Font Awesome -->
+    <!-- <script src="../js/build/fontawesome.js"></script> -->
+
+    <link
+        rel="stylesheet"
+        href="../css/draw.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/styles.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/unit_styles.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/activities.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/audio.css"
+    >
+
+    <!-- Activity CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/circle_mistakes_correct_preposition.css"
+    >
+
+    <!-- jQuery -->
+    <script
+        src="../js/jquery-3.4.1.min.js"
+        type="text/javascript"
+    ></script>
+
+    <script
+        src="../js/jquery-ui.min.js"
+        type="text/javascript"
+    ></script>
+
+    <script
+        src="../js/bootstrap/bootstrap.bundle.min.js"
+        type="text/javascript"
+    ></script>
+
+    <script
+        src="../js/jquery.ui.touch-punch.min.js"
+        type="text/javascript"
+    ></script>
+
+    <!-- Header and Footer data -->
+    <script
+        src="../js/data/templateData.js"
+        type="text/javascript"
+    ></script>
+
+    <!-- Activity list -->
+    <script
+        src="../js/data/activityList.js"
+        type="text/javascript"
+    ></script>
+
+    <!-- Activity data -->
+    <script
+        src="../js/data/circle_mistakes_correct_preposition_data.js"
+        type="text/javascript"
+    ></script>
+
+    <script src="../js/build/jsonRender.js"></script>
+</head>
+
+<body>
+
+    <div class="mask_parent">
+        <div class="mask_left"></div>
+        <div class="mask_right"></div>
+    </div>
+
+    <div class="loading">
+        <div class="loader"></div>
+    </div>
+
+    <header class="fixed-top"></header>
+
+    <div class="mainContent">
+
+        <!-- Feedback popup -->
+        <div
+            id="feedbackPopup"
+            class="modal fade"
+            role="dialog"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div>
+                        <button
+                            type="button"
+                            class="close closeFeedback"
+                            data-dismiss="modal"
+                        >
+                            &times;
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <video
+                            id="video_1"
+                            src="../videos/goodjob.mp4"
+                            preload
+                        ></video>
+
+                        <video
+                            id="video_2"
+                            src="../videos/tryagain.mp4"
+                            preload
+                        ></video>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container content_wrap activity_wrap">
+
+            <!-- Screen numbering -->
+            <div
+                class="fixed-top screen_numbers_wrap"
+                style="z-index: 2;"
+            ></div>
+
+            <!-- Activity panel content -->
+            <div
+                class="activity_buts d-none"
+                data-buttons="ccss,link,tips,homework"
+            >
+
+                <div
+                    class="ccss_content"
+                    data-height=""
+                >
+                    L.1.1
+                </div>
+
+                <div
+                    class="link_content"
+                    data-height=""
+                >
+                    <a
+                        href="../../../ARC_1_1_SB/ARC_1_1_SB_U3/index.html"
+                        target="blank"
+                    >
+                        Playhouse Reading Unit 3 &ndash; All Aboard!
+                    </a>
+                </div>
+
+                <div
+                    class="tips_content"
+                    data-height=""
+                >
+                    <span class="pop_title">
+                        Prepositions of Place
+                    </span>
+
+                    <br>
+
+                    <span>
+                        Prepositions of place show where something is.
+                        Examples include:
+                        <b>above</b>,
+                        <b>under</b>,
+                        <b>near</b>,
+                        and
+                        <b>next to</b>.
+                    </span>
+                </div>
+
+                <div
+                    class="homework_content"
+                    data-height=""
+                >
+                    Ask your child to identify the incorrect prepositions
+                    and write the correct ones.
+                </div>
+
+            </div>
+
+            <!-- Activity interactive area -->
+            <div
+                class="activity_container activity_area circle_mistakes mx-auto"
+                data-activity="circle_mistakes"
+            >
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Activity panel popup -->
+    <div
+        class="modal fade activityCtrlPanel"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+    >
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <div class="ctrlIcon">
+                    </div>
+
+                    <h4 class="modal-title"></h4>
+
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                    >
+                        &times;
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="sub_footer">
+
+        <div class="container sub_footer_buttons_wrap">
+        </div>
+
+    </div>
+
+    <footer class="fixed-bottom"></footer>
+
+    <script>
+        var _mediaList = {
+            image: [],
+            audio: [],
+            video: []
+        };
+    </script>
+
+    <!-- Common Playhouse build files -->
+    <script
+        src="../js/build/toolbar.js"
+        type="text/javascript"
+    ></script>
+
+    <script
+        src="../js/build/template.js"
+        type="text/javascript"
+    ></script>
+
+    <!-- Activity build -->
+    <script
+        src="../js/build/circle_mistakes_correct_preposition_build.js"
+        type="text/javascript"
+    ></script>
+
+    <script src="../js/build/audio.js"></script>
+
+    <script
+        src="../js/build/radio_build.js"
+        type="text/javascript"
+    ></script>
+
+    <script
+        src="../js/generalfunctions.js"
+        type="text/javascript"
+    ></script>
+
+    <!-- Activity logic -->
+    <script
+        src="../js/activity/circle_mistakes_correct_preposition.js"
+        type="text/javascript"
+    ></script>
+
+    <script
+        src="../js/activities.js"
+        type="text/javascript"
+    ></script>
+
+    <script
+        src="../js/loading.js"
+        type="text/javascript"
+    ></script>
+
+    <script
+        src="../js/sketchpad.js"
+        type="text/javascript"
+    ></script>
+
+</body>
+
+</html>

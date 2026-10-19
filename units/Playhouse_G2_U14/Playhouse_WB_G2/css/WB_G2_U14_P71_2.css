@@ -1,0 +1,304 @@
+.all_cont {
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.screen_elements {
+    width: 90%;
+    height: 100%;
+}
+
+.group_elm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.activityHeading b {
+    color: #000;
+}
+
+/* ========================================= */
+/* words area */
+/* ========================================= */
+
+.old_words_activity {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.old_words_cloud {
+    width: 80%;
+    height: 65%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.old_word {
+    position: absolute;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-family: Arcon;
+    font-size: 58px;
+    color: white;
+    cursor: pointer;
+    line-height: 1;
+    outline: none;
+
+    -webkit-text-stroke: 0.5px #2d2d2d;
+
+    text-shadow:
+        1px 0 #2d2d2d,
+        -1px 0 #2d2d2d,
+        0 1px #2d2d2d,
+        0 -1px #2d2d2d;
+}
+
+.old_word:focus {
+    outline: none;
+}
+
+.old_word:hover {
+    transform: scale(1.05);
+}
+
+/* عند تحديد الكلمة */
+.old_word.selected {
+    color: #00aeef;
+}
+
+/* بعد الفحص */
+.old_word.correct_selection {
+    color: #00aeef;
+}
+
+.old_word.wrong_selection {
+    color: #e3342f;
+}
+
+/* ========================================= */
+/* word positions */
+/* ========================================= */
+
+.old_word_1 {
+    top: 5%;
+    left: 4%;
+}
+
+.old_word_2 {
+    top: 14%;
+    left: 26%;
+}
+
+.old_word_3 {
+    top: 18%;
+    left: 53%;
+}
+
+.old_word_4 {
+    top: 46%;
+    left: 10%;
+}
+
+.old_word_5 {
+    top: 55%;
+    left: 36%;
+}
+
+.old_word_6 {
+    top: 44%;
+    right: 6%;
+}
+
+/* ========================================= */
+/* inputs */
+/* ========================================= */
+
+.old_words_inputs {
+    width: 70%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.old_words_input_group {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.old_words_input_number {
+    width: 35px;
+    min-width: 35px;
+    font-family: Arcon;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+.old_words_input {
+    width: calc(100% - 35px);
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #00aeef;
+    background: transparent;
+    color: black;
+    font-family: Arcon;
+    font-size: 28px;
+    text-align: center;
+}
+
+.old_words_input:focus {
+    outline: none;
+}
+
+.old_words_input.correct_input {
+    color: black;
+    border-bottom: 2px solid #00aeef;
+}
+
+.old_words_input.wrong_input {
+    color: black;
+    border-bottom: 2px solid #e3342f;
+}
+
+/* ========================================= */
+/* tick / cross */
+/* ========================================= */
+
+.old_words_result {
+    position: absolute;
+    right: 15px;
+    bottom: 70px;
+    width: 40px;
+    height: 40px;
+}
+
+.old_words_tick,
+.old_words_cross {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.old_words_tick img,
+.old_words_cross img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tick,
+.cross {
+    width: 35px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
+}
+
+.image_wrap {
+    display: none;
+}
+
+/* ========================================= */
+/* responsive */
+/* ========================================= */
+
+@media (max-width: 991.98px) {
+    .screen_elements {
+        width: 95%;
+    }
+
+    .old_word {
+        font-size: 48px;
+    }
+
+    .old_words_input {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .screen_elements {
+        width: 100%;
+    }
+
+    .old_words_cloud {
+        height: 60%;
+    }
+
+    .old_word {
+        font-size: 38px;
+    }
+
+    .old_word_1 {
+        top: 3%;
+        left: 2%;
+    }
+
+    .old_word_2 {
+        top: 8%;
+        left: 38%;
+    }
+
+    .old_word_3 {
+        top: 35%;
+        left: 5%;
+    }
+
+    .old_word_4 {
+        top: 38%;
+        left: 55%;
+    }
+
+    .old_word_5 {
+        top: 68%;
+        left: 8%;
+    }
+
+    .old_word_6 {
+        top: 70%;
+        right: 5%;
+    }
+
+    .old_words_inputs {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .old_words_input_group {
+        width: 85%;
+    }
+
+    .old_words_result {
+        right: 5px;
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 475.98px) {
+    .old_word {
+        font-size: 32px;
+    }
+
+    .old_words_input {
+        font-size: 21px;
+    }
+}

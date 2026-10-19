@@ -1,0 +1,358 @@
+:root {
+  --body-parts-blue: rgb(159, 210, 236);
+  --body-parts-dark-blue: #29b6e8;
+  --body-parts-red: #d2232a;
+}
+
+.all_cont {
+  width: 100%;
+}
+
+.screen_elements {
+  width: 92%;
+}
+
+.group_elm {
+  width: 100%;
+}
+
+/* ========================================== */
+/* Header */
+/* ========================================== */
+
+.act_head_group {
+  width: 81%;
+  margin: auto;
+}
+
+.q-type-img-container {
+  margin-top: 30px;
+  margin-left: -30px;
+  position: relative;
+}
+
+.mainTitle {
+  height: 50px;
+}
+
+.mainTitleIcon {
+  position: absolute;
+  height: 70px;
+  margin-top: -15px;
+}
+
+.activityHeading {
+  margin-top: 15px;
+}
+
+.page_sub_title {
+  align-items: center;
+}
+
+.page_sub_title p {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.red_text {
+  margin-right: 8px;
+  color: var(--body-parts-red);
+  font-style: normal;
+}
+
+/* ========================================== */
+/* Word bank */
+/* ========================================== */
+
+.word_opt_sticky {
+  width: 72%;
+  margin: 5px auto 18px;
+  position: relative;
+  z-index: 5;
+  border: 2px solid var(--body-parts-blue);
+  border-radius: 10px;
+  background-color: #bde3f4;
+}
+
+.word_options {
+  width: 100%;
+  min-height: 64px;
+  padding: 8px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 4px 18px;
+
+  border-radius: 8px;
+  background-color: #bde3f4;
+}
+
+.clue_word {
+  padding: 2px 8px;
+  font-family: Arcon;
+  font-size: 20px;
+  font-weight: bold;
+  color: #111111;
+  text-align: left;
+}
+
+/* ========================================== */
+/* Images */
+/* ========================================== */
+
+.body_images_group {
+  width: 100%;
+  margin-top: 5px;
+
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 35px;
+}
+
+.body_image_card {
+  width: 43%;
+  max-width: 430px;
+
+  aspect-ratio: 0.8 / 1;
+
+  margin: 0;
+  position: relative;
+
+  border: 3px solid var(--body-parts-dark-blue);
+  border-radius: 16px;
+
+  background-color: #ffffff;
+  overflow: visible;
+}
+
+.body_person_image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: contain;
+
+  border-radius: 13px;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ========================================== */
+/* Input lines */
+/* ========================================== */
+
+.answer_line {
+  height: 36px;
+
+  position: absolute;
+  z-index: 3;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.body_part_input {
+  width: 100%;
+  height: 32px;
+
+  padding: 0 4px 2px;
+
+  border: 0;
+  outline: 0;
+  background: transparent;
+
+  font-family: Arcon;
+  font-size: 18px;
+  font-weight: bold;
+  color: #111111;
+  text-align: center;
+}
+
+.body_part_input:focus {
+  outline: none;
+}
+
+.line_border {
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  background-color: #555555;
+  pointer-events: none;
+}
+
+/* الخط المتجه نحو الجسم */
+
+.answer_line_left::after,
+.answer_line_right::before {
+  content: "";
+
+  width: 28%;
+  height: 2px;
+
+  position: absolute;
+  bottom: 0;
+
+  background-color: #555555;
+}
+
+.answer_line_left::after {
+  right: -28%;
+}
+
+.answer_line_right::before {
+  left: -28%;
+}
+
+/* ========================================== */
+/* Tick / Cross لكل input */
+/* ========================================== */
+
+.input_result_icon {
+  width: 28px;
+  height: 28px;
+
+  position: absolute;
+  right: -34px;
+  bottom: -1px;
+
+  z-index: 10;
+}
+
+.input_result_icon .tick,
+.input_result_icon .cross {
+  display: none;
+
+  width: 28px;
+  height: 28px;
+}
+
+.input_result_icon .tick img,
+.input_result_icon .cross img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: contain;
+}
+
+
+
+/* ========================================== */
+/* Navigation */
+/* ========================================== */
+
+.sub_footer_icon_left {
+  position: absolute;
+  left: 10px;
+}
+
+.sub_footer_icon_right {
+  position: absolute;
+  right: 10px;
+}
+
+/* ========================================== */
+/* Responsive */
+/* ========================================== */
+
+@media (max-width: 991.98px) {
+  .screen_elements {
+    width: 96%;
+  }
+
+  .word_opt_sticky {
+    width: 82%;
+  }
+
+  .clue_word {
+    font-size: 17px;
+  }
+
+  .body_images_group {
+    gap: 20px;
+  }
+
+  .body_image_card {
+    width: 46%;
+  }
+
+  .body_part_input {
+    font-size: 15px;
+  }
+
+  .input_result_icon {
+    width: 24px;
+    height: 24px;
+    right: -29px;
+  }
+
+  .input_result_icon .tick,
+  .input_result_icon .cross {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .body_images_group {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .body_image_card {
+    width: 75%;
+  }
+
+  .word_opt_sticky {
+    width: 90%;
+  }
+
+  .word_options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .screen_elements {
+    width: 100%;
+  }
+
+  .body_image_card {
+    width: 92%;
+  }
+
+  .word_options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clue_word {
+    font-size: 15px;
+  }
+
+  .body_part_input {
+    font-size: 14px;
+  }
+
+  .input_result_icon {
+    width: 22px;
+    height: 22px;
+    right: -26px;
+  }
+
+  .input_result_icon .tick,
+  .input_result_icon .cross {
+    width: 22px;
+    height: 22px;
+  }
+}

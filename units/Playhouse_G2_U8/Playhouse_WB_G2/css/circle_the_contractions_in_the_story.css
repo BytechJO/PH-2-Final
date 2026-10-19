@@ -1,0 +1,331 @@
+:root {
+  --contractions-blue: #20b7f3;
+  --contractions-text: #2c2c2c;
+  --contractions-shadow: rgba(32, 183, 243, 0.2);
+}
+
+.contractions_activity,
+.contractions_activity * {
+  box-sizing: border-box;
+}
+
+.contractions_activity {
+  width: 100%;
+  color: var(--contractions-text);
+  font-family: Arcon, sans-serif;
+}
+
+.contractions_activity .activityHeading {
+  font-family: Arcon, sans-serif;
+}
+
+.contractions_activity .title-order {
+  display: inline-block;
+  margin-right: 10px;
+  color: #159ed8;
+  font-weight: 700;
+}
+
+.contractions_activity .options,
+.contractions_activity .all_cont,
+.contractions_activity .screen_elements,
+.contractions_activity .group_elm {
+  width: 100%;
+}
+
+.contractions_activity .group_elm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+/* ===================================== */
+/* Story */
+/* ===================================== */
+
+.contractions_activity .ques_part_space {
+  width: 92%;
+  max-width: 1120px;
+  margin: 12px auto 0;
+}
+
+.contractions_activity .contractions_story_question {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.contractions_activity .contractions_story_words_wrap {
+  width: calc(100% - 48px);
+}
+
+.contractions_activity .contractions_story_words {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  column-gap: 7px;
+  row-gap: 5px;
+  line-height: 1.55;
+}
+
+.contractions_activity .story_line_break {
+  flex-basis: 100%;
+  width: 0;
+  height: 0;
+}
+
+.contractions_activity .contraction_word {
+  position: relative;
+  margin: 0;
+  padding: 2px 5px;
+  border: 2px solid transparent;
+  border-radius: 18px;
+  outline: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition:
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.contractions_activity .contraction_word:hover {
+  transform: scale(1.035);
+}
+
+.contractions_activity .contraction_word .txt_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--contractions-text);
+  font-family: Arcon, sans-serif;
+  font-size: 27px;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.contractions_activity .contraction_word .txt_box span {
+  white-space: nowrap;
+}
+
+.contractions_activity .contraction_word.selected {
+  border-color: var(--contractions-blue) !important;
+  background: transparent !important;
+  border-radius: 20px;
+}
+
+.contractions_activity .contraction_word.preset_answer {
+  pointer-events: none;
+}
+
+.contractions_activity .contraction_word:focus-visible {
+  box-shadow: 0 0 0 3px var(--contractions-shadow);
+}
+
+/* ===================================== */
+/* Result icons */
+/* ===================================== */
+
+.contractions_activity .story_result_holder,
+.contractions_activity .inputs_group_result {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  margin-left: 8px;
+}
+
+.contractions_activity .icon_wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contractions_activity .story_tick,
+.contractions_activity .story_cross,
+.contractions_activity .inputs_group_tick,
+.contractions_activity .inputs_group_cross {
+  position: absolute;
+  inset: 0;
+  display: none;
+  width: 38px;
+  height: 38px;
+}
+
+.contractions_activity .story_tick img,
+.contractions_activity .story_cross img,
+.contractions_activity .inputs_group_tick img,
+.contractions_activity .inputs_group_cross img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ===================================== */
+/* Image and answer boxes */
+/* ===================================== */
+
+.contractions_activity .story_bottom_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92%;
+  max-width: 1120px;
+  margin: 22px auto 0;
+  gap: 28px;
+}
+
+.contractions_activity .story_image_space {
+  width: 48%;
+  max-width: 500px;
+  flex-shrink: 0;
+}
+
+.contractions_activity .story_image_space img {
+  display: block;
+  width: 100%;
+  height: 270px;
+  border: 2px solid var(--contractions-blue);
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.contractions_activity .contractions_answer_area {
+  display: flex;
+  align-items: center;
+  width: 48%;
+  max-width: 530px;
+  gap: 10px;
+}
+
+.contractions_activity .contractions_fill_group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: calc(100% - 48px);
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.contractions_activity .contraction_input_wrap {
+  position: relative;
+  width: 100%;
+}
+
+.contractions_activity .contraction_input_wrap:nth-child(5) {
+  grid-column: 1 / 2;
+}
+
+.contractions_activity .contraction_input {
+  width: 100%;
+  height: 44px;
+  padding: 5px 14px;
+  border: 2px solid var(--contractions-blue);
+  border-radius: 14px;
+  outline: 0;
+  background: #fff;
+  color: #222;
+  font-family: Arcon, sans-serif;
+  font-size: 19px;
+  text-align: left;
+  transition:
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.contractions_activity .contraction_input:not([readonly]):hover {
+  transform: scale(1.01);
+}
+
+.contractions_activity .contraction_input:focus {
+  box-shadow: 0 0 0 3px var(--contractions-shadow);
+}
+
+.contractions_activity .contraction_input[readonly] {
+  cursor: default;
+}
+
+.contractions_activity .correct_input .contraction_input,
+.contractions_activity .wrong_input .contraction_input {
+  color: #222;
+  background: #fff;
+}
+
+/* ===================================== */
+/* Responsive */
+/* ===================================== */
+
+@media (max-width: 1199.98px) {
+  .contractions_activity .contraction_word .txt_box {
+    font-size: 24px;
+  }
+
+  .contractions_activity .story_image_space img {
+    height: 245px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .contractions_activity .story_bottom_section {
+    gap: 20px;
+  }
+
+  .contractions_activity .contraction_word .txt_box {
+    font-size: 22px;
+  }
+
+  .contractions_activity .story_image_space img {
+    height: 225px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .contractions_activity .ques_part_space,
+  .contractions_activity .story_bottom_section {
+    width: 94%;
+  }
+
+  .contractions_activity .story_bottom_section {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .contractions_activity .story_image_space,
+  .contractions_activity .contractions_answer_area {
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .contractions_activity .story_image_space img {
+    height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contractions_activity .contraction_word {
+    padding: 2px 3px;
+  }
+
+  .contractions_activity .contraction_word .txt_box {
+    font-size: 18px;
+  }
+
+  .contractions_activity .contractions_fill_group {
+    grid-template-columns: 1fr;
+  }
+
+  .contractions_activity .contraction_input_wrap:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .contractions_activity .contraction_input {
+    height: 42px;
+    font-size: 17px;
+  }
+}

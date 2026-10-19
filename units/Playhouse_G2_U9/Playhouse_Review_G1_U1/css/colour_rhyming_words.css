@@ -1,0 +1,550 @@
+:root {
+  --rhyming-text: #2f2f2f;
+  --rhyming-border: #777777;
+
+  --green-colour: #67c66d;
+  --blue-colour: #5aafe8;
+  --yellow-colour: #f5d44f;
+  --red-colour: #ee6668;
+}
+
+/* =========================================================
+   Main activity
+========================================================= */
+
+.colour_rhyming {
+  width: 100%;
+  height: 100%;
+}
+
+.rhyming_activity_wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   Colour palette
+========================================================= */
+
+.colour_palette {
+  flex-shrink: 0;
+
+  width: auto;
+
+  margin: 5px auto 8px;
+  padding: 7px 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  border: 2px solid #d2d2d2;
+  border-radius: 18px;
+
+  background-color: #ffffff;
+
+  z-index: 5;
+}
+
+.colour_button {
+  min-width: 95px;
+
+  padding: 5px 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  border: 2px solid transparent;
+  border-radius: 11px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 17px;
+  color: #333333;
+
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.colour_button:hover {
+  transform: scale(1.04);
+}
+
+.colour_button.active {
+  border-color: #444444;
+  background-color: #f3f3f3;
+}
+
+.colour_circle {
+  width: 27px;
+  height: 27px;
+
+  display: block;
+
+  border: 2px solid #777777;
+  border-radius: 50%;
+}
+
+.colour_green {
+  background-color: var(--green-colour);
+}
+
+.colour_blue {
+  background-color: var(--blue-colour);
+}
+
+.colour_yellow {
+  background-color: var(--yellow-colour);
+}
+
+.colour_red {
+  background-color: var(--red-colour);
+}
+
+.colour_name {
+  font-weight: bold;
+}
+
+/* =========================================================
+   Words area
+========================================================= */
+.rhyming_words_area {
+  position: relative;
+
+  width: 520px;
+  max-width: 95%;
+
+  height: 350px;
+  min-height: 350px;
+
+  margin: 0 auto;
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   Word item
+========================================================= */
+
+.rhyming_word_item {
+  position: absolute;
+
+  width: 115px;
+  height: 88px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+
+  transition: transform 0.15s ease;
+
+  z-index: 2;
+}
+
+.rhyming_word_item:hover {
+  transform: scale(1.04);
+  z-index: 4;
+}
+
+.rhyming_word_item:active {
+  transform: scale(0.98);
+}
+
+/* =========================================================
+   Shape base
+========================================================= */
+
+.rhyming_shape {
+  position: absolute;
+
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  border: 2px solid var(--rhyming-border);
+
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+/* =========================================================
+   Rectangle
+========================================================= */
+
+.shape_rectangle .rhyming_shape {
+  left: 7px;
+  top: 14px;
+
+  width: calc(100% - 14px);
+  height: calc(100% - 28px);
+
+  border-radius: 0;
+}
+
+/* =========================================================
+   Oval
+========================================================= */
+
+.shape_oval .rhyming_shape {
+  left: 4px;
+  top: 15px;
+
+  width: calc(100% - 8px);
+  height: calc(100% - 30px);
+
+  border-radius: 50%;
+}
+
+/* =========================================================
+   Starburst
+========================================================= */
+
+.shape_starburst .rhyming_shape {
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+  background-color: var(--rhyming-border);
+
+  clip-path: polygon(
+    29.29% 0%,
+    70.71% 0%,
+    100% 29.29%,
+    100% 70.71%,
+    70.71% 100%,
+    29.29% 100%,
+    0% 70.71%,
+    0% 29.29%
+  );
+
+  filter: none;
+}
+
+.shape_starburst .rhyming_shape::before {
+  content: "";
+
+  position: absolute;
+  inset: 2px;
+
+  background-color: #ffffff;
+
+  clip-path: polygon(
+    29.29% 0%,
+    70.71% 0%,
+    100% 29.29%,
+    100% 70.71%,
+    70.71% 100%,
+    29.29% 100%,
+    0% 70.71%,
+    0% 29.29%
+  );
+
+  transition: background-color 0.18s ease;
+}
+/* =========================================================
+   Pentagon
+========================================================= */
+
+.shape_pentagon .rhyming_shape {
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+  background-color: var(--rhyming-border);
+
+  clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+
+  filter: none;
+}
+
+.shape_pentagon .rhyming_shape::before {
+  content: "";
+
+  position: absolute;
+  inset: 2px;
+
+  background-color: #ffffff;
+
+  clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+
+  transition: background-color 0.18s ease;
+}
+
+.rhyming_word_item.shape_pentagon {
+  width: 105px;
+  height: 100px;
+}
+/* =========================================================
+   Word text
+========================================================= */
+
+.rhyming_word_text {
+  position: relative;
+
+  z-index: 3;
+
+  pointer-events: none;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: normal;
+
+  color: var(--rhyming-text);
+
+  text-align: center;
+}
+
+/* =========================================================
+   Selected colours
+========================================================= */
+
+/* Rectangle + Oval */
+
+.selected_green:not(.shape_starburst):not(.shape_pentagon) .rhyming_shape {
+  background-color: var(--green-colour);
+}
+
+.selected_blue:not(.shape_starburst):not(.shape_pentagon) .rhyming_shape {
+  background-color: var(--blue-colour);
+}
+
+.selected_yellow:not(.shape_starburst):not(.shape_pentagon) .rhyming_shape {
+  background-color: var(--yellow-colour);
+}
+
+.selected_red:not(.shape_starburst):not(.shape_pentagon) .rhyming_shape {
+  background-color: var(--red-colour);
+}
+
+/* Octagon */
+
+.selected_green.shape_starburst .rhyming_shape::before {
+  background-color: var(--green-colour);
+}
+
+.selected_blue.shape_starburst .rhyming_shape::before {
+  background-color: var(--blue-colour);
+}
+
+.selected_yellow.shape_starburst .rhyming_shape::before {
+  background-color: var(--yellow-colour);
+}
+
+.selected_red.shape_starburst .rhyming_shape::before {
+  background-color: var(--red-colour);
+}
+
+/* Pentagon */
+
+.selected_green.shape_pentagon .rhyming_shape::before {
+  background-color: var(--green-colour);
+}
+
+.selected_blue.shape_pentagon .rhyming_shape::before {
+  background-color: var(--blue-colour);
+}
+
+.selected_yellow.shape_pentagon .rhyming_shape::before {
+  background-color: var(--yellow-colour);
+}
+
+.selected_red.shape_pentagon .rhyming_shape::before {
+  background-color: var(--red-colour);
+}
+
+/* =========================================================
+   Tick and cross
+========================================================= */
+
+.rhyming_word_item .icon_wrap_holder {
+  position: absolute;
+
+  top: -3px;
+  right: -8px;
+
+  z-index: 10;
+
+  width: 30px;
+  height: 30px;
+
+  pointer-events: none;
+}
+
+.rhyming_word_item .icon_wrap {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+}
+
+.rhyming_word_item .tick,
+.rhyming_word_item .cross {
+  width: 30px;
+  height: 30px;
+
+  display: none;
+}
+
+.rhyming_word_item .tick img,
+.rhyming_word_item .cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Header
+========================================================= */
+
+.act_head_group {
+  margin-bottom: 2px;
+}
+
+.page_sub_title p {
+  margin-bottom: 0;
+}
+
+.activityHeading {
+  display: flex;
+  align-items: center;
+}
+
+.audioQuestionTitle {
+  width: 100%;
+}
+
+/* =========================================================
+   Project container fixes
+========================================================= */
+
+.activity_area .options {
+  width: 100%;
+  height: 100%;
+}
+
+.activity_area .all_cont {
+  width: 100%;
+  height: 100%;
+
+  align-items: flex-start !important;
+}
+
+.activity_area .cont_ht_sf {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media screen and (max-width: 900px) {
+  .rhyming_words_area {
+    width: 470px;
+    height: 400px;
+    min-height: 400px;
+  }
+
+  .rhyming_word_item {
+    width: 105px;
+    height: 80px;
+  }
+
+  .rhyming_word_text {
+    font-size: 17px;
+  }
+
+  .colour_palette {
+    gap: 8px;
+    padding: 6px 10px;
+  }
+
+  .colour_button {
+    min-width: 80px;
+    padding: 5px 7px;
+    font-size: 15px;
+  }
+
+  .colour_circle {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rhyming_words_area {
+    width: 390px;
+    max-width: 98%;
+
+    height: 360px;
+    min-height: 360px;
+  }
+
+  .rhyming_word_item {
+    width: 88px;
+    height: 68px;
+  }
+
+  .rhyming_word_text {
+    font-size: 15px;
+  }
+
+  .colour_palette {
+    width: 95%;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .colour_button {
+    min-width: auto;
+    padding: 4px 6px;
+  }
+
+  .colour_name {
+    display: none;
+  }
+
+  .colour_circle {
+    width: 22px;
+    height: 22px;
+  }
+
+  .rhyming_word_item .icon_wrap_holder {
+    width: 25px;
+    height: 25px;
+  }
+
+  .rhyming_word_item .tick,
+  .rhyming_word_item .cross {
+    width: 25px;
+    height: 25px;
+  }
+}

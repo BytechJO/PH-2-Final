@@ -1,0 +1,243 @@
+/* =========================================================
+   Main page
+========================================================= */
+
+.conversation_again_page {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.conversation_again_page .options {
+  width: 100%;
+  height: calc(100% - 90px);
+}
+
+.conversation_again_page .all_cont {
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conversation_again_page .group_elm {
+  width: 92%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================================================
+   Content
+========================================================= */
+
+.conversation_again_content {
+  position: relative;
+
+  width: 100%;
+  max-width: 1150px;
+  height: 620px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   Conversation section
+========================================================= */
+
+.conversation_section {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 70px;
+}
+
+/* First group */
+
+.conversation_section_1 {
+  top: 15px;
+  left: 100px;
+
+  width: 900px;
+}
+
+/* Second group */
+
+.conversation_section_2 {
+  right: 85px;
+  bottom: 20px;
+
+  width: 960px;
+}
+
+/* Put image after text */
+
+.conversation_reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================================================
+   Images
+========================================================= */
+
+.conversation_image_holder {
+  flex-shrink: 0;
+
+  width: 270px;
+  height: 270px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conversation_image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+    border: 3px solid red;
+    border-radius: 20px;
+  object-fit: contain;
+}
+
+/* =========================================================
+   Text
+========================================================= */
+
+.conversation_text_holder {
+  min-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.conversation_sentence {
+  width: auto;
+
+  margin: 0;
+  padding: 1px 4px;
+
+  cursor: pointer;
+
+  border: none;
+  background: transparent;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.conversation_sentence:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
+}
+
+.conversation_sentence p {
+  margin: 0;
+
+  color: #404040;
+
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.45;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   Heading
+========================================================= */
+
+.conversation_again_page .activityHeading p {
+  margin-bottom: 0;
+}
+
+.conversation_again_page .page_sub_title {
+  align-items: center;
+}
+
+.conversation_again_page .page_sub_title p {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.conversation_again_page .red_text {
+  color: #e22632;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media screen and (max-width: 1200px) {
+  .conversation_again_content {
+    max-width: 1000px;
+    height: 560px;
+  }
+
+  .conversation_section_1 {
+    left: 55px;
+  }
+
+  .conversation_section_2 {
+    right: 45px;
+  }
+
+  .conversation_image_holder {
+    width: 230px;
+    height: 230px;
+  }
+
+  .conversation_text_holder {
+    min-width: 440px;
+  }
+
+  .conversation_sentence p {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .conversation_again_content {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .conversation_section {
+    position: static;
+
+    width: 100%;
+
+    gap: 20px;
+  }
+
+  .conversation_image_holder {
+    width: 200px;
+    height: 200px;
+  }
+
+  .conversation_text_holder {
+    min-width: 0;
+  }
+
+  .conversation_sentence p {
+    font-size: 22px;
+    white-space: normal;
+  }
+}

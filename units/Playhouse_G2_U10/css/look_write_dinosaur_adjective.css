@@ -1,0 +1,295 @@
+:root {
+  --writing-red: #d7333c;
+  --writing-text: #343434;
+
+  --card-one: #ad5b61;
+  --card-two: #65751d;
+  --card-three: #61b7b7;
+
+  --line-one: #d7a2a5;
+  --line-two: #adb58b;
+  --line-three: #8fd1d1;
+}
+
+/* =========================================================
+   Main activity
+========================================================= */
+
+.activity_area {
+  width: 100%;
+  /* height: 100%; */
+}
+
+/* =========================================================
+   Show Reset only
+========================================================= */
+
+.sub_footer_buttons_wrap .checkBtn {
+  display: none !important;
+}
+
+/* =========================================================
+   Content
+========================================================= */
+
+.linked_writing_options {
+  width: 100%;
+
+  margin: 0 auto;
+
+  overflow: visible;
+}
+
+.linked_writing_all_cont {
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.linked_writing_cards {
+  width: min(96%, 1180px);
+
+  margin: 6px auto 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 35px;
+}
+
+/* =========================================================
+   Cards
+========================================================= */
+
+.linked_writing_card {
+  position: relative;
+
+  width: calc((100% - 70px) / 3);
+  height: 290px;
+
+  flex-shrink: 0;
+
+  overflow: visible;
+
+  background: #ffffff;
+
+  border: 9px solid var(--card-one);
+
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.18);
+}
+
+.dinosaur_card_2 {
+  border-color: var(--card-two);
+}
+
+.dinosaur_card_3 {
+  border-color: var(--card-three);
+}
+
+/* =========================================================
+   Images
+========================================================= */
+
+.linked_dinosaur_image_holder {
+  position: absolute;
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+.linked_dinosaur_image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* Card 1 image */
+
+.dinosaur_card_1 .linked_dinosaur_image_holder {
+  left: -51px;
+  bottom: -35px;
+
+  width: 75%;
+  height: 89%;
+}
+
+/* Card 2 image */
+
+.dinosaur_card_2 .linked_dinosaur_image_holder {
+  left: -30px;
+  bottom: -40px;
+
+  width: 115%;
+  height: 78%;
+}
+
+/* Card 3 image */
+
+.dinosaur_card_3 .linked_dinosaur_image_holder {
+  right: -59px;
+  bottom: 144px;
+
+  width: 90%;
+  height: 70%;
+}
+
+/* =========================================================
+   Inputs
+========================================================= */
+
+.linked_inputs_group {
+  position: absolute;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+/* Card 1 inputs */
+
+.dinosaur_card_1 .linked_inputs_group {
+  top: 43px;
+  right: 15px;
+
+  width: 58%;
+}
+
+/* Card 2 inputs */
+
+.dinosaur_card_2 .linked_inputs_group {
+  top: 43px;
+  left: 50%;
+
+  width: 58%;
+
+  transform: translateX(-50%);
+}
+
+/* Card 3 inputs */
+
+.dinosaur_card_3 .linked_inputs_group {
+  top: 128px;
+  left: 50%;
+
+  width: 72%;
+
+  transform: translateX(-50%);
+}
+
+.linked_writing_input {
+  display: block;
+
+  width: 100%;
+  height: 34px;
+
+  margin: 0;
+  padding: 2px 6px;
+
+  box-sizing: border-box;
+
+  color: #000000;
+  background: transparent;
+
+  border: 0;
+  border-bottom: 2px solid var(--line-one);
+
+  border-radius: 0;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+
+  line-height: 30px;
+  text-align: left;
+
+  outline: none;
+}
+
+.dinosaur_card_2 .linked_writing_input {
+  border-bottom-color: var(--line-two);
+}
+
+.dinosaur_card_3 .linked_writing_input {
+  border-bottom-color: var(--line-three);
+}
+
+.linked_writing_input:focus {
+  outline: none;
+
+  box-shadow: none;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media screen and (max-width: 1000px) {
+  .linked_writing_cards {
+    gap: 18px;
+  }
+
+  .linked_writing_card {
+    width: calc((100% - 36px) / 3);
+
+    height: 250px;
+  }
+
+  .linked_writing_input {
+    height: 30px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .linked_inputs_group {
+    gap: 6px;
+  }
+
+  .dinosaur_card_1 .linked_inputs_group,
+  .dinosaur_card_2 .linked_inputs_group {
+    top: 34px;
+  }
+
+  .dinosaur_card_3 .linked_inputs_group {
+    top: 140px;
+  }
+
+  .linked_subtitle_text {
+    font-size: 23px;
+  }
+
+  .linked_instruction_text {
+    font-size: 21px;
+  }
+}
+/* =========================================================
+   Separate instruction title
+========================================================= */
+.instruction_title_container {
+  flex: 0 0 100%;
+  width: 100%;
+
+  margin-top: 6px;
+  padding-left: 162px;
+
+  box-sizing: border-box;
+}
+
+.instruction_title_text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+
+  line-height: 1.3;
+  text-align: left;
+}

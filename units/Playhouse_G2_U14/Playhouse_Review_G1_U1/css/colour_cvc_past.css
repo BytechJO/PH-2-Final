@@ -1,0 +1,352 @@
+/* =========================================================
+   Main wrappers
+========================================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.screen_elements {
+  width: 82%;
+  height: 100%;
+
+  margin: 0 auto;
+}
+
+.activityHeading b {
+  color: #000000;
+}
+
+/* =========================================================
+   Activity screen
+========================================================= */
+
+.cvc_colour_screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 15px;
+}
+
+/* =========================================================
+   Colour toolbar
+========================================================= */
+
+.cvc_colour_toolbar {
+  width: auto;
+
+  margin: 12px auto 5px;
+  padding: 8px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  border: 2px solid #28b9ef;
+  border-radius: 14px;
+
+  background: #eefaff;
+}
+
+.toolbar_title {
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cvc_colour_palette {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.cvc_colour_button {
+  width: 32px;
+  height: 32px;
+
+  padding: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  outline: 1px solid #777777;
+
+  cursor: pointer;
+}
+
+.cvc_colour_button.selected {
+  transform: scale(1.14);
+
+  outline: 3px solid #27b9ef;
+
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+/* =========================================================
+   Questions
+========================================================= */
+
+.cvc_questions_group {
+    width: 75%;
+    height: 70% ;
+    margin: 0 auto 200px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    grid-template-rows: auto auto;
+
+    column-gap: 70px;
+    /* row-gap: 35px; */
+
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.cvc_question {
+    width: 100%;
+    min-height: 160px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+/* السؤال الثالث بالنص */
+.cvc_question:nth-child(3) {
+    grid-column: 1 / 3;
+    width: 45%;
+}
+
+.cvc_word {
+    margin-left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cvc_answer_row {
+    width: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cvc_answer_input {
+    width: 220px;
+    height: 40px;
+
+    padding: 0 8px;
+
+    border: none;
+    border-bottom: 2px solid #666666;
+
+    outline: none;
+
+    background: transparent;
+    color: #000000;
+
+    font-family: Arcon;
+    font-size: 25px;
+    text-align: center;
+}
+
+.icon_wrap_holder {
+    width: 45px;
+    min-width: 45px;
+}
+/* =========================================================
+   Word and letters
+========================================================= */
+
+.cvc_word {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-left: 15px;
+}
+
+.cvc_letter {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 58px;
+  line-height: 1;
+
+  cursor: pointer;
+  outline: none;
+
+  -webkit-text-stroke: 1px #444444;
+
+  text-shadow: none;
+}
+
+.cvc_letter:focus {
+  outline: none;
+}
+
+.cvc_letter:hover {
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   Answer row
+========================================================= */
+
+.cvc_answer_row {
+  width: 100%;
+
+  margin-top: 18px;
+
+  display: flex;
+  align-items: center;
+}
+
+.cvc_answer_input {
+  width: calc(100% - 55px);
+  height: 43px;
+
+  padding: 0 10px;
+
+  border: none;
+  border-bottom: 2px solid #666666;
+
+  outline: none;
+
+  background: transparent;
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 27px;
+
+  text-align: left;
+}
+
+.cvc_answer_input:focus {
+  border-bottom-color: #27b9ef;
+  border-bottom-width: 3px;
+}
+
+.cvc_answer_input.correct_input {
+  color: #000000;
+  border-bottom-color: #27b9ef;
+}
+
+.cvc_answer_input.wrong_input {
+  color: #000000;
+  border-bottom-color: #e53935;
+}
+
+/* =========================================================
+   Icons
+========================================================= */
+
+.icon_wrap_holder {
+  width: 50px;
+  min-width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_wrap {
+  width: 40px;
+  height: 40px;
+
+  display: none;
+}
+
+.tick,
+.cross {
+  width: 40px;
+  height: 40px;
+
+  display: none;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Tablet
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .screen_elements {
+    width: 90%;
+  }
+
+  .cvc_letter {
+    font-size: 50px;
+  }
+
+  .cvc_answer_input {
+    font-size: 24px;
+  }
+}
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 575.98px) {
+  .screen_elements {
+    width: 96%;
+  }
+
+  .cvc_colour_toolbar {
+    width: 95%;
+
+    flex-wrap: wrap;
+  }
+
+  .cvc_colour_palette {
+    flex-wrap: wrap;
+  }
+
+  .cvc_colour_button {
+    width: 27px;
+    height: 27px;
+  }
+
+  .cvc_letter {
+    font-size: 42px;
+  }
+
+  .cvc_answer_input {
+    font-size: 21px;
+  }
+}

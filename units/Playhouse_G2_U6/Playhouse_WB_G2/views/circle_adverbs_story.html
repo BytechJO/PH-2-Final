@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    />
+
+    <title>playhouse</title>
+
+    <!-- ================================================= -->
+    <!-- Main CSS files -->
+    <!-- ================================================= -->
+
+    <link
+      rel="stylesheet"
+      href="../css/jquery-ui.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap/bootstrap.css"
+    />
+
+    <style id="ui_style"></style>
+
+    <link
+      rel="stylesheet"
+      href="../css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../css/styles.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../css/unit_styles.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../css/activities.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../css/audio.css"
+    />
+
+    <!-- Activity CSS -->
+    <link
+      rel="stylesheet"
+      href="../css/circle_adverbs_story.css"
+    />
+
+    <!-- ================================================= -->
+    <!-- Main libraries -->
+    <!-- ================================================= -->
+
+    <script
+      src="../js/jquery-3.4.1.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="../js/jquery-ui.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="../js/bootstrap/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="../js/jquery.ui.touch-punch.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- ================================================= -->
+    <!-- Template data -->
+    <!-- ================================================= -->
+
+    <script
+      src="../js/data/templateData.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="../js/data/activityList.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="../js/build/jsonRender.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- ================================================= -->
+    <!-- Activity data -->
+    <!-- لازم يكون قبل activities.js -->
+    <!-- ================================================= -->
+
+    <script
+      src="../js/data/circle_adverbs_story_data.js"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <!-- ================================================= -->
+    <!-- Masks -->
+    <!-- ================================================= -->
+
+    <div class="mask_parent">
+      <div class="mask_left"></div>
+      <div class="mask_right"></div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Loader -->
+    <!-- ================================================= -->
+
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Header -->
+    <!-- ================================================= -->
+
+    <header class="fixed-top"></header>
+
+    <!-- ================================================= -->
+    <!-- Main content -->
+    <!-- ================================================= -->
+
+    <div class="mainContent">
+      <!-- Feedback popup -->
+
+      <div
+        id="feedbackPopup"
+        class="modal fade"
+        role="dialog"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered"
+        >
+          <div class="modal-content">
+            <div>
+              <button
+                type="button"
+                class="close closeFeedback"
+                data-dismiss="modal"
+              >
+                &times;
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <video
+                id="video_1"
+                src="../videos/goodjob.mp4"
+                preload
+              ></video>
+
+              <video
+                id="video_2"
+                src="../videos/tryagain.mp4"
+                preload
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================================================= -->
+      <!-- Activity wrapper -->
+      <!-- ================================================= -->
+
+      <div
+        class="container content_wrap activity_wrap"
+      >
+        <!-- Screen numbering -->
+
+        <div
+          class="fixed-top screen_numbers_wrap"
+          style="z-index: 2"
+        ></div>
+
+        <!-- Activity toolbar panel -->
+
+        <div
+          class="activity_buts d-none"
+          data-buttons="ccss,link,tips,homework"
+        >
+          <div
+            class="ccss_content"
+            data-height=""
+          >
+            L.2.1
+          </div>
+
+          <div
+            class="link_content"
+            data-height=""
+          ></div>
+
+          <div
+            class="tips_content"
+            data-height=""
+          >
+            <span class="pop_title">
+              Adverbs of Frequency
+            </span>
+
+            <br />
+
+            Circle the adverbs of frequency
+            in the story.
+          </div>
+
+          <div
+            class="homework_content"
+            data-height=""
+          >
+            Read the story and circle:
+            always, never and sometimes.
+          </div>
+        </div>
+
+        <!-- ================================================= -->
+        <!-- Activity area -->
+        <!-- مهم: mcq وليس fillin -->
+        <!-- ================================================= -->
+
+        <div
+          class="activity_container activity_area mcq mx-auto"
+          data-activity="mcq"
+        ></div>
+      </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Activity control popup -->
+    <!-- ================================================= -->
+
+    <div
+      class="modal fade activityCtrlPanel"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="ctrlIcon"></div>
+
+            <h4 class="modal-title"></h4>
+
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Sub footer -->
+    <!-- ================================================= -->
+
+    <div class="sub_footer">
+      <div
+        class="container sub_footer_buttons_wrap"
+      ></div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Footer -->
+    <!-- ================================================= -->
+
+    <footer class="fixed-bottom"></footer>
+
+    <!-- ================================================= -->
+    <!-- Media list -->
+    <!-- ================================================= -->
+
+    <script>
+      var _mediaList = {
+        image: [],
+        audio: [],
+        video: [],
+      };
+    </script>
+
+    <!-- ================================================= -->
+    <!-- Template scripts -->
+    <!-- ================================================= -->
+
+    <script
+      src="../js/build/template.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="../js/generalfunctions.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- ================================================= -->
+    <!-- Audio scripts -->
+    <!-- ================================================= -->
+
+    <script
+      src="../js/audioControls.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="../js/build/audio.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="../js/build/radio_build.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- ================================================= -->
+    <!-- Activity custom build -->
+    <!-- لازم قبل activities.js -->
+    <!-- ================================================= -->
+
+    <script
+      src="../js/build/circle_adverbs_story.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- ================================================= -->
+    <!-- Activity engine -->
+    <!-- ================================================= -->
+
+    <script
+      src="../js/activity/mcq.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- ================================================= -->
+    <!-- Activity starter -->
+    <!-- لازم ييجي بعد الداتا والـbuild والـmcq -->
+    <!-- ================================================= -->
+
+    <script
+      src="../js/activities.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- ================================================= -->
+    <!-- Loading -->
+    <!-- ================================================= -->
+
+    <script
+      src="../js/loading.js"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

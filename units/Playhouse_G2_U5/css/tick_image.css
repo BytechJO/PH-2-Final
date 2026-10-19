@@ -1,0 +1,284 @@
+.all_cont {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* =========================
+   QUESTIONS CONTAINER
+========================= */
+
+.tick_group {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* =========================
+   QUESTION
+========================= */
+
+.que {
+  width: 100%;
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+
+  height: fit-content;
+
+  padding: 10px 10px 20px;
+
+  position: relative;
+}
+
+/* =========================
+   QUESTION CONTENT
+========================= */
+
+.que_group {
+  width: 100%;
+}
+
+.tick_fields {
+  width: 100%;
+}
+
+/* =========================
+   ANSWERS GROUP
+========================= */
+
+.ans_grup {
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+/* =========================
+   EACH OPTION
+========================= */
+
+.tick_field {
+  position: relative;
+
+  width: fit-content;
+
+  margin: auto;
+}
+
+/* =========================
+   OPTION IMAGE
+========================= */
+
+.images-border {
+  width: 250px;
+
+  object-fit: contain;
+
+  border-radius: 20px;
+
+  display: block;
+}
+
+/* =========================
+   TICK BOX
+========================= */
+
+.tickBox {
+  position: absolute;
+
+  right: -55px;
+  bottom: 2px;
+
+  border-radius: 12px;
+
+  border: 2px solid #f22d2d;
+
+  height: 45px;
+  width: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   SELECTED TICK
+========================= */
+
+.selectTick {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.selectTick i {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+/* =========================
+   QUESTION NUMBER
+========================= */
+
+.q_num_space {
+  display: none;
+}
+
+/* =========================
+   QUESTION HEADING
+========================= */
+
+.question_div {
+  min-height: 100px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-content: center;
+}
+
+.heading {
+  font-weight: bold;
+
+  font-size: 27px;
+
+  position: absolute;
+}
+
+/* =========================
+   CORRECT / WRONG ICON
+========================= */
+
+/*
+  مهم:
+  كل icon_wrap_holder مربوط بالـ .que
+  لأنه .que عليها position: relative
+*/
+
+.icon_wrap_holder {
+  position: absolute;
+
+  right: 2%;
+  top: 2%;
+
+  z-index: 20;
+}
+
+.icon_wrap {
+  position: relative;
+
+  width: 45px;
+  height: 45px;
+
+  display: none;
+}
+
+.iconcontainer {
+  width: 45px;
+  height: 45px;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+.iconcontainer img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.tick {
+  display: none;
+}
+
+.cross {
+  display: none;
+}
+
+/* =========================
+   OPTIONAL IMAGE WRAP
+========================= */
+
+.image_wrap {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.image_wrap img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .images-border {
+    width: 210px;
+  }
+
+  .tickBox {
+    width: 50px;
+    height: 40px;
+
+    right: -48px;
+  }
+
+  .icon_wrap_holder {
+    right: 1%;
+    top: 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tick_group {
+    gap: 10px;
+  }
+
+  .images-border {
+    width: 180px;
+  }
+
+  .tickBox {
+    width: 45px;
+    height: 36px;
+
+    right: -42px;
+  }
+
+  .selectTick i {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .icon_wrap {
+    width: 38px;
+    height: 38px;
+  }
+
+  .iconcontainer {
+    width: 38px;
+    height: 38px;
+  }
+
+  #paper-textarea {
+    line-height: 54.7px;
+  }
+}

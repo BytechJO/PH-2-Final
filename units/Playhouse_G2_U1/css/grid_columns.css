@@ -1,0 +1,45 @@
+.grid_columns_container {
+    position: relative;
+}
+
+.snap_group_all {
+    width: 100%;
+    position: absolute;
+}
+
+.ss_text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.red_text {
+    color: red;
+}
+
+.textFroge .snap_group_all {
+    width: 84%;
+    right: -50px;
+}
+
+.textFroge .ss_text{
+    font-size: 30px;
+}
+/* =================================== */
+.textGraps {
+    width: 1016px;
+    height: 308px;
+    /* padding: 0px 20px; */
+    box-shadow: 9px 9px 10px #ccc;
+    border-radius: 20px;
+}
+.textGraps .audioIcon {
+    margin-left: 0px !important;
+}
+
+.grapes_img {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    height: 200px;
+}
+

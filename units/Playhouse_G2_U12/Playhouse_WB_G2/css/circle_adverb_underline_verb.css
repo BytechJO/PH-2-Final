@@ -1,0 +1,418 @@
+/* =========================================================
+   Main wrappers
+========================================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.screen_elements {
+  width: 94%;
+  height: 100%;
+}
+
+.activityHeading b {
+  color: #000000;
+}
+
+/* =========================================================
+   Activity screen
+========================================================= */
+
+.circle_adverb_screen {
+  box-sizing: border-box;
+
+  padding: 5px 0 15px;
+}
+
+/* =========================================================
+   Tools
+========================================================= */
+
+.marking_tools {
+  width: 100%;
+
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+}
+
+.marking_tool {
+  min-width: 155px;
+
+  padding: 7px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #27b9ef;
+  border-radius: 12px;
+
+  outline: none;
+
+  background: #ffffff;
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.marking_tool:hover {
+  background: #effbff;
+}
+
+.marking_tool.selected {
+  background: #dff7ff;
+
+  box-shadow: 0 0 0 3px rgba(39, 185, 239, 0.2);
+}
+
+.tool_label {
+  color: #000000;
+}
+
+.circle_tool_example {
+  display: inline-block;
+
+  padding: 2px 10px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  color: #000000;
+}
+
+.underline_tool_example {
+  display: inline-block;
+
+  padding: 2px 7px;
+
+  border-bottom: 3px solid #000000;
+
+  color: #000000;
+}
+
+/* =========================================================
+   Questions grid
+========================================================= */
+
+.circle_adverb_questions {
+  width: 100%;
+  max-width: 940px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(330px, 1fr));
+
+  gap: 22px 38px;
+}
+
+/* =========================================================
+   One question
+========================================================= */
+
+.circle_adverb_question {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Question number
+========================================================= */
+
+.circle_adverb_qno {
+  position: absolute;
+
+  top: -5px;
+  left: -6px;
+
+  z-index: 4;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 2px solid #27b9ef;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* =========================================================
+   Image
+========================================================= */
+
+.circle_adverb_image_wrap {
+  width: 100%;
+  height: 245px;
+
+  box-sizing: border-box;
+
+  border: 3px solid #27b9ef;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.circle_adverb_image_wrap img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   Sentence
+========================================================= */
+
+.circle_adverb_sentence {
+  width: 100%;
+  margin-top: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  font-family: Arcon;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.35;
+
+  text-align: center;
+}
+
+/* =========================================================
+   Selectable words
+========================================================= */
+
+.selectable_word {
+  position: relative;
+
+  display: inline-block;
+
+  margin: 0 4px;
+  padding: 1px 3px;
+
+  box-sizing: border-box;
+
+  border: 2px solid transparent;
+  border-bottom-width: 3px;
+  border-radius: 50%;
+
+  outline: none;
+
+  /* شكل الكتابة مثل الصورة */
+  color: #ffffff;
+  -webkit-text-stroke: 2px #000000;
+  paint-order: stroke fill;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+/* حل احتياطي للمتصفحات */
+@supports not (-webkit-text-stroke: 1px #666666) {
+  .selectable_word {
+    color: #ffffff;
+
+    text-shadow:
+      -1px -1px 0 #666666,
+      1px -1px 0 #666666,
+      -1px 1px 0 #666666,
+      1px 1px 0 #666666;
+  }
+}
+
+.selectable_word:hover {
+  background: #effbff;
+}
+
+.selectable_word:focus {
+  box-shadow: 0 0 0 2px rgba(39, 185, 239, 0.25);
+}
+
+/* =========================================================
+   Circle selection
+========================================================= */
+
+.selectable_word.marked_circle {
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+/* =========================================================
+   Underline selection
+========================================================= */
+
+.selectable_word.marked_underline {
+  border: 2px solid transparent;
+  border-bottom: 3px solid #000000;
+  border-radius: 0;
+}
+
+/* لا تغيّر شكل الكتابة بعد الإجابة */
+.selectable_word.word_correct,
+.selectable_word.word_wrong {
+  color: #ffffff;
+  -webkit-text-stroke: 2px #000000;
+  paint-order: stroke fill;
+}
+/* =========================================================
+   Result icon
+========================================================= */
+
+.question_result_wrap {
+  position: absolute;
+
+  right: -10px;
+  bottom: 5px;
+
+  z-index: 5;
+
+  width: 30px;
+  height: 30px;
+
+  display: none;
+}
+
+.question_tick,
+.question_cross {
+  position: absolute;
+
+  inset: 0;
+
+  width: 30px;
+  height: 30px;
+
+  display: none;
+}
+
+.question_tick img,
+.question_cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Correct / wrong
+========================================================= */
+
+
+/* =========================================================
+   Header
+========================================================= */
+
+.page_sub_title {
+  align-items: center;
+}
+
+.page_sub_title p {
+  margin-bottom: 0;
+}
+
+.mainTitle {
+  max-height: 48px;
+}
+
+.mainTitleIcon {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+/* =========================================================
+   Medium screens
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .screen_elements {
+    width: 98%;
+  }
+
+  .circle_adverb_questions {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+
+    gap: 18px 22px;
+  }
+
+  .circle_adverb_image_wrap {
+    height: 210px;
+  }
+
+  .circle_adverb_sentence {
+    font-size: 21px;
+  }
+
+  .marking_tool {
+    min-width: 135px;
+
+    font-size: 15px;
+  }
+}
+
+/* =========================================================
+   Small screens
+========================================================= */
+
+@media (max-width: 767.98px) {
+  .options {
+    overflow-x: auto;
+  }
+
+  .circle_adverb_screen {
+    min-width: 760px;
+  }
+
+  .circle_adverb_questions {
+    min-width: 740px;
+  }
+}

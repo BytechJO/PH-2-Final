@@ -1,0 +1,343 @@
+/* ====================================================== */
+/*                      Main area                         */
+/* ====================================================== */
+
+.all_cont {
+  width: 100%;
+}
+
+.imperative_questions {
+  width: 70%;
+  /* max-width: 950px; */
+
+  margin: 25px auto 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* ====================================================== */
+/*                    One question                        */
+/* ====================================================== */
+
+.imperative_question {
+  width:70%;
+  min-height: 105px;
+
+  display: grid;
+
+  grid-template-columns:
+    35px
+    minmax(0, 1fr)
+    150px
+    35px;
+
+  column-gap: 12px;
+
+  align-items: center;
+
+  padding: 4px 0;
+}
+
+/* ====================================================== */
+/*                       Number                           */
+/* ====================================================== */
+
+.imperative_number {
+  align-self: start;
+
+  padding-top: 8px;
+
+  color: #222222;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+/* ====================================================== */
+/*                      Options                           */
+/* ====================================================== */
+
+.imperative_options {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.imperative_pick {
+  width: max-content;
+  max-width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 2px 0;
+
+  cursor: pointer;
+
+  background-color: transparent !important;
+
+  border: none !important;
+}
+
+.imperative_sentence {
+  color: #333333;
+
+  font-size: 23px;
+  font-weight: normal;
+
+  line-height: 1.4;
+
+  white-space: nowrap;
+}
+
+/* ====================================================== */
+/*                  Line and blue tick                    */
+/* ====================================================== */
+
+.tick_line {
+  width: 80px;
+  height: 30px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 8px;
+}
+
+.tick_line .line {
+  width: 70px;
+
+  display: block;
+
+  border-bottom: 2px solid #8e8e8e;
+}
+
+.selectTick {
+  position: absolute;
+
+  left: 13px;
+  top: -20px;
+
+  display: none;
+
+  color: #08a9ed;
+
+  font-family: Arial, sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+
+  transform: rotate(-8deg);
+}
+
+.imperative_pick.selected .selectTick {
+  display: block;
+}
+
+/*
+ * نمنع شكل الاختيار العام للـ MCQ.
+ */
+
+.imperative_pick.selected,
+.imperative_pick.selectedDefault {
+  background-color: transparent !important;
+
+  color: inherit !important;
+
+  border: none !important;
+}
+
+/* ====================================================== */
+/*                        Image                           */
+/* ====================================================== */
+
+.imperative_image {
+  width: 185px;
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imperative_image img {
+  width: 180px;
+  height: 120px;
+
+  object-fit: cover;
+
+  border: 2px solid #42b9e8;
+  border-radius: 14px;
+}
+
+/* ====================================================== */
+/*                       Feedback                         */
+/* ====================================================== */
+
+.imperative_question .icon_wrap_holder {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imperative_question .icon_wrap {
+  width: 29px;
+  height: 29px;
+
+  display: none;
+
+  position: static;
+
+  margin: 0;
+  padding: 0;
+}
+
+.imperative_question .tick,
+.imperative_question .cross {
+  width: 28px;
+  height: 28px;
+
+  display: none;
+}
+
+.imperative_question .tick img,
+.imperative_question .cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* ====================================================== */
+/*                       Heading                          */
+/* ====================================================== */
+
+/* ====================================================== */
+/*                     Navigation                         */
+/* ====================================================== */
+
+.sub_footer_icon {
+  z-index: 20;
+}
+
+/* ====================================================== */
+/*                     Responsive                         */
+/* ====================================================== */
+
+@media (max-width: 1199.98px) {
+  .imperative_questions {
+    width: 94%;
+  }
+
+  .imperative_question {
+    grid-template-columns:
+      30px
+      minmax(0, 1fr)
+      130px
+      32px;
+  }
+
+  .imperative_sentence {
+    font-size: 21px;
+  }
+
+  .imperative_image {
+    width: 125px;
+    height: 90px;
+  }
+
+  .imperative_image img {
+    width: 120px;
+    height: 85px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .imperative_question {
+    grid-template-columns:
+      28px
+      minmax(0, 1fr)
+      110px
+      30px;
+
+    column-gap: 7px;
+  }
+
+  .imperative_sentence {
+    font-size: 18px;
+  }
+
+  .tick_line {
+    width: 55px;
+  }
+
+  .tick_line .line {
+    width: 50px;
+  }
+
+  .imperative_image {
+    width: 105px;
+    height: 80px;
+  }
+
+  .imperative_image img {
+    width: 100px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .act_head_group {
+    width: 94%;
+
+    flex-direction: column;
+  }
+
+  .activityHeading {
+    margin-top: 12px;
+    margin-left: 0;
+  }
+
+  .imperative_question {
+    grid-template-columns:
+      28px
+      minmax(0, 1fr)
+      90px;
+
+    min-height: 90px;
+  }
+
+  .imperative_question .icon_wrap_holder {
+    grid-column: 2;
+
+    justify-self: end;
+  }
+
+  .imperative_sentence {
+    white-space: normal;
+
+    font-size: 17px;
+  }
+
+  .imperative_image {
+    width: 85px;
+    height: 70px;
+  }
+
+  .imperative_image img {
+    width: 82px;
+    height: 66px;
+  }
+}

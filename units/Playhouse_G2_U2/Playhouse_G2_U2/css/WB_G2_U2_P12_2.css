@@ -1,0 +1,265 @@
+.all_cont {
+    width: 100%;
+}
+
+.screen_elements {
+    width: 80%;
+}
+
+.group_elm {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+:root {
+    --temp: rgb(159, 210, 236);
+}
+
+/* ========================================= */
+/* Header */
+/* ========================================= */
+
+.act_head_group {
+    width: 81%;
+    margin: auto;
+}
+
+.q-type-img-container {
+    margin-top: 30px;
+    margin-left: -30px;
+    position: relative;
+}
+
+.mainTitle {
+    height: 50px;
+}
+
+
+
+.activityHeading {
+    margin-top: 15px;
+}
+
+.page_sub_title {
+    align-items: center;
+    justify-content: center;
+}
+
+.page_sub_title p {
+    margin: 0;
+}
+
+.blue_text {
+    color: #00aeef;
+}
+
+/* ========================================= */
+/* Questions */
+/* ========================================= */
+
+.que {
+    width: 100%;
+    min-height: 115px;
+    margin-bottom: 3px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q_num_space {
+    width: 35px;
+    min-width: 35px;
+
+    color: #00aeef;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pick_set {
+    width: calc(100% - 35px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+/* ========================================= */
+/* Answer boxes */
+/* ========================================= */
+
+.pick {
+    width: 190px;
+    height: 65px;
+
+    padding: 5px 15px;
+
+    border: 2px solid var(--temp);
+    border-radius: 18px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arcon;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.pick:hover {
+    background-color: #f3fbff;
+}
+
+.pick.selected,
+.pick.selectedDefault {
+    background-color: #dceff7 !important;
+}
+
+.pick.isCorrect,
+.pick.isNotCorrect {
+    border-color: var(--temp);
+}
+
+.txt_box {
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+
+/* ========================================= */
+/* Tick and Cross */
+/* ========================================= */
+
+.icon_wrap_holder {
+    width: 40px;
+
+    position: absolute;
+    right: -50px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.icon_wrap {
+    display: none;
+}
+
+.tick,
+.cross {
+    display: none;
+    width: 35px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
+}
+
+/* ========================================= */
+/* Audio */
+/* ========================================= */
+
+.option_audio {
+    margin-left: 8px;
+}
+
+.audio_icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* ========================================= */
+/* Navigation */
+/* ========================================= */
+
+.sub_footer_icon_left {
+    position: absolute;
+    left: 10px;
+}
+
+.sub_footer_icon_right {
+    position: absolute;
+    right: 10px;
+}
+
+/* ========================================= */
+/* Responsive */
+/* ========================================= */
+
+@media (max-width: 991.98px) {
+    .screen_elements {
+        width: 90%;
+    }
+
+    .group_elm {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .pick_set {
+        gap: 30px;
+    }
+
+    .pick {
+        width: 160px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pick_set {
+        gap: 15px;
+    }
+
+    .pick {
+        width: 145px;
+        height: 58px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .screen_elements {
+        width: 96%;
+    }
+
+    .que {
+        min-height: 95px;
+    }
+
+    .pick_set {
+        gap: 8px;
+    }
+
+    .pick {
+        width: 31%;
+        height: 55px;
+
+        padding: 5px;
+
+        font-size: 16px;
+    }
+
+    .q_num_space {
+        width: 25px;
+        min-width: 25px;
+        font-size: 20px;
+    }
+
+    .icon_wrap_holder {
+        right: -30px;
+    }
+}

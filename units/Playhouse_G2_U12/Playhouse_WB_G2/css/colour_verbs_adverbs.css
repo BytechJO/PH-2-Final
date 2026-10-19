@@ -1,0 +1,396 @@
+/* =========================================================
+   Main wrappers
+========================================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.screen_elements {
+  width: 94%;
+  height: 100%;
+}
+
+.activityHeading b {
+  color: #000000;
+}
+
+/* =========================================================
+   Activity screen
+========================================================= */
+
+.colour_verbs_screen {
+  box-sizing: border-box;
+
+  padding: 5px 0 15px;
+}
+
+/* =========================================================
+   Colour tools
+========================================================= */
+
+.colour_tools {
+  width: 100%;
+
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+}
+
+.colour_tool {
+  min-width: 145px;
+
+  padding: 8px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #27b9ef;
+  border-radius: 12px;
+
+  outline: none;
+
+  background: #ffffff;
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.colour_tool:hover {
+  background: #effbff;
+}
+
+.colour_tool.selected {
+  background: #dff7ff;
+
+  box-shadow: 0 0 0 3px rgba(39, 185, 239, 0.2);
+}
+
+.colour_circle {
+  width: 24px;
+  height: 24px;
+
+  display: inline-block;
+
+  box-sizing: border-box;
+
+  border: 2px solid #666666;
+  border-radius: 50%;
+}
+
+.red_colour {
+  background: #e53935;
+}
+
+.blue_colour {
+  background: #168ed1;
+}
+
+.colour_tool_label {
+  color: #000000;
+}
+
+/* =========================================================
+   Questions grid
+========================================================= */
+
+.colour_verbs_questions {
+  width: 100%;
+  max-width: 940px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(330px, 1fr));
+
+  gap: 22px 38px;
+}
+
+/* =========================================================
+   One question
+========================================================= */
+
+.colour_verbs_question {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Question number
+========================================================= */
+
+.colour_verbs_qno {
+  position: absolute;
+
+  top: -5px;
+  left: -6px;
+
+  z-index: 4;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 2px solid #27b9ef;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* =========================================================
+   Image
+========================================================= */
+
+.colour_verbs_image_wrap {
+  width: 100%;
+  height: 245px;
+
+  box-sizing: border-box;
+
+  border: 3px solid #27b9ef;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.colour_verbs_image_wrap img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   Sentence
+========================================================= */
+
+.colour_verbs_sentence {
+  width: 100%;
+
+  margin-top: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 32px;
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+/* =========================================================
+   Selectable words
+========================================================= */
+
+.colour_selectable_word {
+  position: relative;
+
+  display: inline-block;
+
+  margin: 2px 5px;
+  padding: 2px 4px;
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  /* الشكل الأساسي */
+  color: #ffffff;
+  -webkit-text-stroke: 2px #000000;
+  paint-order: stroke fill;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.colour_selectable_word:hover {
+  transform: scale(1.06);
+}
+
+.colour_selectable_word:focus {
+  box-shadow: 0 0 0 2px rgba(39, 185, 239, 0.25);
+  border-radius: 5px;
+}
+
+/* =========================================================
+   Word colours
+========================================================= */
+
+.colour_selectable_word.coloured_red {
+  color: #e53935;
+  -webkit-text-stroke: 2px #000000;
+}
+
+.colour_selectable_word.coloured_blue {
+  color: #168ed1;
+  -webkit-text-stroke: 2px #000000;
+}
+
+
+/* =========================================================
+   Result icon
+========================================================= */
+
+.colour_question_result_wrap {
+  position: absolute;
+
+  right: -10px;
+  bottom: 5px;
+
+  z-index: 5;
+
+  width: 30px;
+  height: 30px;
+
+  display: none;
+}
+
+.colour_question_tick,
+.colour_question_cross {
+  position: absolute;
+
+  inset: 0;
+
+  width: 30px;
+  height: 30px;
+
+  display: none;
+}
+
+.colour_question_tick img,
+.colour_question_cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Correct and wrong
+========================================================= */
+
+
+/* =========================================================
+   Header
+========================================================= */
+
+.page_sub_title {
+  align-items: center;
+}
+
+.page_sub_title p {
+  margin-bottom: 0;
+}
+
+.mainTitle {
+  max-height: 48px;
+}
+
+.mainTitleIcon {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+/* =========================================================
+   Medium screens
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .screen_elements {
+    width: 98%;
+  }
+
+  .colour_verbs_questions {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+
+    gap: 18px 22px;
+  }
+
+  .colour_verbs_image_wrap {
+    height: 210px;
+  }
+
+  .colour_verbs_sentence {
+    font-size: 21px;
+  }
+
+  .colour_tool {
+    min-width: 125px;
+
+    font-size: 15px;
+  }
+}
+
+/* =========================================================
+   Small screens
+========================================================= */
+
+@media (max-width: 767.98px) {
+  .options {
+    overflow-x: auto;
+  }
+
+  .colour_verbs_screen {
+    min-width: 760px;
+  }
+
+  .colour_verbs_questions {
+    min-width: 740px;
+  }
+}

@@ -1,0 +1,448 @@
+/* =========================================================
+   Main Playhouse wrappers
+========================================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.screen_elements {
+  width: 96%;
+  height: 100%;
+}
+
+.activityHeading b {
+  color: #000000;
+}
+
+/* =========================================================
+   Activity workspace
+========================================================= */
+
+.match_clues_screen {
+  box-sizing: border-box;
+
+  padding: 4px 0 8px;
+}
+
+.match_clues_workspace {
+  width: 100%;
+  max-width: 1120px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 1fr)
+    145px
+    minmax(260px, 1fr);
+
+  gap: 32px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   Clues columns
+========================================================= */
+
+.clues_side_column_right {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+.clues_side_column_left {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-sizing: border-box;
+}
+.clue_question {
+  position: relative;
+
+  width: 100%;
+  min-height: 96px;
+
+  padding: 7px 4px 5px;
+
+  box-sizing: border-box;
+
+  color: #000000;
+
+  font-family: Arcon;
+}
+
+.clue_sentence_row {
+  width: 100%;
+  min-height: 42px;
+
+  display: flex;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+
+  text-align: left;
+}
+
+.clue_question_number {
+  width: 32px;
+  min-width: 32px;
+
+  padding-top: 2px;
+
+  color: #000000;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.clue_question_text {
+  flex: 1;
+
+  padding: 0 4px;
+
+  color: #000000;
+
+  font-size: 22px;
+  line-height: 1.35;
+
+  text-align: left;
+}
+
+/* =========================================================
+   Answer line under each clue
+========================================================= */
+
+.clue_answer_row {
+  position: relative;
+
+  width: calc(100% - 38px);
+
+  margin-left: 38px;
+  margin-top: 4px;
+
+  display: flex;
+  align-items: center;
+}
+
+.clue_answer_input {
+  width: 100%;
+  height: 32px;
+
+  padding: 2px 34px 2px 5px;
+
+  box-sizing: border-box;
+
+  border: none;
+  border-bottom: 2px solid #27b6eb;
+
+  outline: none;
+
+  background: transparent;
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 22px;
+
+  text-align: center;
+}
+
+.clue_answer_input:focus {
+  border-bottom-width: 3px;
+}
+
+.clue_answer_input.correct_input,
+.clue_answer_input.wrong_input {
+  color: #000000;
+}
+
+/* =========================================================
+   Tick / Cross under question
+========================================================= */
+
+.clue_answer_row .icon_wrap_holder {
+  position: absolute;
+
+  right: 0;
+  top: 50%;
+
+  width: 29px;
+  height: 29px;
+
+  transform: translateY(-50%);
+}
+
+.clue_answer_row .icon_wrap {
+  position: relative;
+
+  width: 29px;
+  height: 29px;
+
+  display: none;
+}
+
+.clue_answer_row .tick,
+.clue_answer_row .cross {
+  position: absolute;
+
+  inset: 0;
+
+  width: 29px;
+  height: 29px;
+
+  display: none;
+}
+
+.clue_answer_row .tick img,
+.clue_answer_row .cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Pictures middle column
+========================================================= */
+
+.pictures_middle_column {
+  width: 145px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 4px;
+
+  box-sizing: border-box;
+}
+
+.picture_number_card {
+  position: relative;
+
+  width: 132px;
+  height: 78px;
+
+  box-sizing: border-box;
+}
+
+.picture_image_wrap {
+  width: 132px;
+  height: 78px;
+
+  box-sizing: border-box;
+
+  border: 3px solid #23b8ee;
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.picture_image_wrap img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   Number input on picture corner
+========================================================= */
+
+.picture_number_input {
+  position: absolute;
+
+  top: -5px;
+  left: -9px;
+
+  z-index: 3;
+
+  width: 23px;
+  height: 23px;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  border: 2px solid #23b8ee;
+  border-radius: 6px;
+
+  outline: none;
+
+  background: #ffffff;
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 15px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.picture_number_input:focus {
+  border-color: #058fc6;
+
+  box-shadow: 0 0 0 2px rgba(35, 184, 238, 0.18);
+}
+
+/* =========================================================
+   Picture result icon
+========================================================= */
+
+.picture_number_result {
+  position: absolute;
+
+  top: -5px;
+  right: -10px;
+
+  z-index: 4;
+
+  width: 23px;
+  height: 23px;
+
+  display: none;
+}
+
+.picture_tick,
+.picture_cross {
+  position: absolute;
+
+  inset: 0;
+
+  width: 23px;
+  height: 23px;
+
+  display: none;
+}
+
+.picture_tick img,
+.picture_cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Correct / wrong states
+========================================================= */
+
+
+/* =========================================================
+   Heading
+========================================================= */
+
+.page_sub_title {
+  align-items: center;
+}
+
+.page_sub_title p {
+  margin-bottom: 0;
+}
+
+.mainTitle {
+  max-height: 48px;
+}
+
+.mainTitleIcon {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+/* =========================================================
+   Medium screens
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .screen_elements {
+    width: 99%;
+  }
+
+  .match_clues_workspace {
+    grid-template-columns:
+      minmax(210px, 1fr)
+      120px
+      minmax(210px, 1fr);
+
+    gap: 15px;
+  }
+
+  .pictures_middle_column {
+    width: 120px;
+  }
+
+  .picture_number_card,
+  .picture_image_wrap {
+    width: 112px;
+    height: 68px;
+  }
+
+  .clue_question {
+    min-height: 83px;
+  }
+
+  .clue_question_number {
+    width: 27px;
+    min-width: 27px;
+
+    font-size: 16px;
+  }
+
+  .clue_question_text {
+    font-size: 15px;
+  }
+
+  .clue_answer_row {
+    width: calc(100% - 31px);
+
+    margin-left: 31px;
+  }
+
+  .clue_answer_input {
+    font-size: 16px;
+  }
+}
+
+/* =========================================================
+   Small screens
+========================================================= */
+
+@media (max-width: 767.98px) {
+  .options {
+    overflow-x: auto;
+  }
+
+  .match_clues_screen {
+    min-width: 760px;
+  }
+
+  .match_clues_workspace {
+    min-width: 740px;
+  }
+}

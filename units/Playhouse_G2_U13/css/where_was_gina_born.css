@@ -1,0 +1,147 @@
+/* =========================================================
+   Main Page
+========================================================= */
+
+.where_gina_page {
+    width: 100%;
+    height: 100%;
+}
+
+.where_gina_page .options {
+    width: 100%;
+    height: 100%;
+}
+
+.where_gina_page .all_cont {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================================================
+   Content
+========================================================= */
+
+.where_gina_content {
+    width: 90%;
+    max-width: 950px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   Question
+========================================================= */
+
+.where_gina_question {
+    width: fit-content;
+
+    color: #292929;
+
+    font-size: 34px;
+    font-weight: bold;
+    font-style: italic;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   Answer
+========================================================= */
+
+.where_gina_answer_row {
+    position: relative;
+
+    width: 500px;
+
+    margin-top: 10px;
+}
+
+.where_gina_input {
+    width: 100%;
+    height: 58px;
+
+    padding: 5px 15px;
+
+    color: #000;
+    background: transparent;
+
+    border: 0;
+    border-bottom: 3px solid #535353;
+
+    outline: none;
+
+    font-family: Arcon;
+    font-size: 32px;
+
+    text-align: center;
+}
+
+.where_gina_result {
+    position: absolute;
+
+    top: 50%;
+    right: -60px;
+
+    transform: translateY(-50%);
+}
+
+.gina_tick,
+.gina_cross {
+    width: 42px;
+    height: 42px;
+}
+
+.gina_tick img,
+.gina_cross img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   Subtitle icon
+========================================================= */
+
+.where_gina_page .page_sub_title {
+    align-items: center;
+}
+
+.where_gina_page .page_sub_title img {
+    width: 42px;
+    height: 42px;
+
+    margin-left: 8px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media screen and (max-width: 700px) {
+
+    .where_gina_question {
+        font-size: 27px;
+    }
+
+    .where_gina_answer_row {
+        width: 80%;
+    }
+
+    .where_gina_input {
+        font-size: 27px;
+    }
+}.content_wrap.where_gina_page {
+    margin-top: 0 !important;
+}

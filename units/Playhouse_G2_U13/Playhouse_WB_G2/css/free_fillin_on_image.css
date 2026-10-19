@@ -1,0 +1,278 @@
+.all_cont {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen_elements {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* قائمة الكلمات */
+.group_elm {
+  width: 275px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* الصورة نفسها هي مرجع مواقع الحقول */
+.q_image {
+  position: relative;
+  height: 120%;
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+.q_image > img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border: 1px solid #36a0c7;
+  border-radius: 15px;
+}
+
+/* طبقة الحقول فوق الصورة */
+.image_questions_overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* الحقل نفسه يرجع قابل للكبس والكتابة */
+.image_questions_overlay .que {
+  pointer-events: auto;
+}
+
+/* ==================================== */
+
+.q_order {
+  width: 50px;
+}
+
+.ques {
+  width: 400px;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.q_box {
+  width: 45%;
+  margin: 15px 8px;
+  padding: 5px 10px;
+}
+
+.fill_in .que {
+  width: 85%;
+  margin: 1px 0;
+}
+
+.txtBox {
+  font-family: Arcon;
+  font-size: 25px;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 33.333%;
+}
+
+.txt-audioIcon {
+  padding-top: 0;
+  height: 40px;
+}
+
+.icon_wrap {
+  position: absolute;
+}
+
+.tick,
+.cross {
+  width: 35px;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+}
+
+.image_wrap {
+  display: none;
+}
+
+/* ===========================
+   عناصر القائمة
+=========================== */
+
+.que[status="label"] {
+  border: 1px solid rgb(0 185 242 / 29%);
+  border-radius: 10px;
+}
+
+.que[status="label"] .blue_order {
+  width: 43px;
+  height: 43px;
+  border: 1px solid rgb(0, 185, 242);
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: -25px;
+  margin-top: 1px;
+  font-weight: bolder;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   الحقول الموجودة فوق الصورة
+=========================== */
+
+.que[status="fill"] {
+  position: absolute;
+  width: fit-content !important;
+  margin: 0;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+
+.que[status="fill"] .fillin_gr,
+.que[status="fill"] .q_space,
+.que[status="fill"] .fillin_set {
+  width: fit-content;
+}
+
+.que[status="fill"] .text_input_area {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  text-align: center;
+  font-family: Arcon;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #36a0c7;
+  border-radius: 50%;
+  appearance: textfield;
+}
+
+/* إزالة أسهم input number */
+.que[status="fill"] .text_input_area::-webkit-inner-spin-button,
+.que[status="fill"] .text_input_area::-webkit-outer-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+.que[status="fill"] .text_input_area:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(54 160 199 / 20%);
+}
+
+/*
+  المواقع محسوبة بالنسبة للصورة نفسها.
+  transform: translate(-50%, -50%) يجعل النسبة تمثل مركز الحقل.
+*/
+
+.que[data-qno="11"] {
+ top: 46.25%;
+    left: 50.5%;
+}
+
+.que[data-qno="12"] {
+  top: 45.25%;
+  left: 75.33%;
+}
+
+.que[data-qno="13"] {
+  top: 83.75%;
+  left: 43.25%;
+}
+
+.que[data-qno="14"] {
+  top: 35.63%;
+  left: 35.5%;
+}
+
+.que[data-qno="15"] {
+  top: 64.5%;
+  left: 91%;
+}
+
+.que[data-qno="16"] {
+  top: 47.38%;
+  left: 12.83%;
+}
+
+.que[data-qno="17"] {
+  top: 28.25%;
+  left: 57.67%;
+}
+
+.que[data-qno="18"] {
+  top: 36.5%;
+  left: 21.17%;
+}
+
+.que[data-qno="19"] {
+  top: 57.75%;
+  left: 5.75%;
+}
+
+.que[data-qno="20"] {
+  top: 57.5%;
+  left: 24.75%;
+}
+
+@media (max-width: 991.98px) {
+  .group_elm {
+    width: 230px;
+    margin-left: 25px;
+  }
+
+  .que[status="fill"] .text_input_area {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .screen_elements {
+    flex-direction: column;
+  }
+
+  .q_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .q_image > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .group_elm {
+    width: 90%;
+    margin: 20px auto 0;
+  }
+}
+.tick,
+.cross {
+  display: none;
+}

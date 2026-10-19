@@ -1,0 +1,420 @@
+/* =========================================================
+   Main wrappers
+========================================================= */
+
+.all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.screen_elements {
+  width: 94%;
+  height: 100%;
+}
+
+.activityHeading b {
+  color: #000000;
+}
+
+/* =========================================================
+   Activity screen
+========================================================= */
+
+.fill_letters_tick_screen {
+  box-sizing: border-box;
+
+  padding: 5px 0 12px;
+}
+
+.fill_letters_questions {
+  width: 100%;
+  max-width: 1080px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+/* =========================================================
+   Question row
+========================================================= */
+
+.fill_letters_question {
+  position: relative;
+
+  width: 100%;
+  min-height: 118px;
+
+  display: grid;
+
+  grid-template-columns:
+    42px
+    minmax(310px, 1fr)
+    minmax(430px, 1.4fr);
+
+  gap: 30px;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Number
+========================================================= */
+
+.fill_letters_qno {
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 20px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+/* =========================================================
+   Sentence
+========================================================= */
+
+.fill_letters_sentence_wrap {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.fill_letters_sentence {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 20px;
+  line-height: 1.3;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+.sentence_before,
+.sentence_after {
+  display: inline-block;
+}
+
+/* =========================================================
+   Letter inputs
+========================================================= */
+
+.letters_inputs_wrap {
+  display: inline-flex;
+  align-items: center;
+
+  margin: 0 2px;
+
+  gap: 3px;
+}
+
+.missing_letter_input {
+  width: 27px;
+  height: 33px;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  border: none;
+  border-bottom: 2px solid #4d4d4d;
+
+  outline: none;
+
+  background: transparent;
+  color: #000000;
+
+  font-family: Arcon;
+  font-size: 21px;
+  font-weight: bold;
+
+  text-align: center;
+
+  text-transform: lowercase;
+}
+
+.missing_letter_input:focus {
+  border-bottom-color: #25b9ef;
+  border-bottom-width: 3px;
+}
+
+/* =========================================================
+   Word result
+========================================================= */
+
+.word_result_wrap {
+  position: absolute;
+
+  right: 80px;
+  top: 50%;
+
+  width: 27px;
+  height: 27px;
+
+  display: none;
+
+  transform: translateY(-50%);
+}
+
+.word_tick,
+.word_cross {
+  position: absolute;
+
+  inset: 0;
+
+  width: 27px;
+  height: 27px;
+
+  display: none;
+}
+
+.word_tick img,
+.word_cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Pictures
+========================================================= */
+
+.fill_letters_pictures {
+  width: 78%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(190px, 1fr));
+
+  gap: 12px;
+
+  align-items: center;
+}
+
+.tick_picture_card {
+  position: relative;
+
+  width: 95%;
+  height: 159px;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  outline: none;
+}
+
+.tick_picture_box {
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  border: 3px solid #28b9ef;
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.tick_picture_box img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   Selection box
+========================================================= */
+
+.picture_tick_box {
+  position: absolute;
+
+  top: -7px;
+  right: -7px;
+
+  z-index: 4;
+
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 2px solid #28b9ef;
+  border-radius: 7px;
+
+  background: #ffffff;
+}
+
+.picture_tick_mark {
+  display: none;
+
+  color: #159cce;
+
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.tick_picture_card.selected .picture_tick_mark {
+  display: block;
+}
+
+/* =========================================================
+   Picture result
+========================================================= */
+
+.picture_result_wrap {
+  position: absolute;
+
+  bottom: 11px;
+  right: 0px;
+
+  z-index: 5;
+
+  width: 27px;
+  height: 27px;
+
+  display: none;
+}
+
+.picture_result_tick,
+.picture_result_cross {
+  position: absolute;
+
+  inset: 0;
+
+  width: 27px;
+  height: 27px;
+
+  display: none;
+}
+
+.picture_result_tick img,
+.picture_result_cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Correct and wrong
+========================================================= */
+
+
+.fill_letters_question.wrong .missing_letter_input {
+  color: #000000;
+}
+
+/* =========================================================
+   Header
+========================================================= */
+
+.page_sub_title p {
+  margin-bottom: 0;
+}
+
+.mainTitle {
+  max-height: 48px;
+}
+
+.mainTitleIcon {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+/* =========================================================
+   Medium screens
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .screen_elements {
+    width: 99%;
+  }
+
+  .fill_letters_question {
+    grid-template-columns:
+      32px
+      minmax(260px, 1fr)
+      minmax(360px, 1.25fr);
+
+    gap: 15px;
+  }
+
+  .fill_letters_sentence {
+    font-size: 17px;
+  }
+
+  .missing_letter_input {
+    width: 23px;
+    height: 30px;
+
+    font-size: 18px;
+  }
+
+  .fill_letters_pictures {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+
+    gap: 8px;
+  }
+
+  .tick_picture_card {
+    height: 95px;
+  }
+}
+
+/* =========================================================
+   Small screens
+========================================================= */
+
+@media (max-width: 767.98px) {
+  .options {
+    overflow-x: auto;
+  }
+
+  .fill_letters_tick_screen {
+    min-width: 780px;
+  }
+
+  .fill_letters_questions {
+    min-width: 760px;
+  }
+}

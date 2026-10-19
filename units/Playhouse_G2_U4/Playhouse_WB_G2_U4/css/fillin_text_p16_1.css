@@ -1,0 +1,291 @@
+.all_cont {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.screen_elements {
+  width: 90%;
+  height: 100%;
+}
+
+.group_elm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.func_ctrls {
+    display: none !important;
+}
+
+.activityHeading b {
+  color: #000;
+}
+
+/* ========================================================= */
+/* QUESTIONS */
+/* ========================================================= */
+
+.questions_holder {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.que {
+  width: 100%;
+}
+
+.q_num_space {
+  width: 40px;
+  min-width: 40px;
+  font-weight: bold;
+}
+
+.q_order {
+  width: 50px;
+  font-weight: bolder;
+}
+
+.ques {
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.q_box {
+  width: 100%;
+  height: 70px;
+}
+
+.fill_in .que {
+  width: 100%;
+  min-height: 85px;
+}
+
+.fillin_gr {
+  width: 100%;
+}
+
+.fillin_gr .q_space {
+  width: 100%;
+  align-items: center;
+}
+
+.fillin_set {
+  font-family: Arcon;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fillin_set input:focus {
+  outline: none;
+}
+
+.fillin_set input {
+  flex: 2 2 10px;
+  min-width: 120px;
+  height: 35px;
+  color: black;
+  padding-left: 20px;
+  border: none;
+  margin: 0 15px;
+  border-bottom: 2px solid #595a5a;
+}
+
+/* ========================================================= */
+/* QUESTION IMAGE */
+/* ========================================================= */
+
+.image_space {
+  width: 75%;
+  height: 342px;
+  margin: 0 auto;
+}
+
+.image_space img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ========================================================= */
+/* BOTTOM MAIN IMAGE */
+/* ========================================================= */
+
+.image-container {
+  position: static;
+  width: 55%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #36a0c7;
+}
+
+/* ========================================================= */
+/* CORRECT / WRONG ICONS */
+/* ========================================================= */
+
+.icon_wrap_holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tick,
+.cross {
+  width: 35px;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+  height: auto;
+}
+
+/* ========================================================= */
+/* OTHER */
+/* ========================================================= */
+
+.image_wrap {
+  display: none;
+}
+
+.clue_word {
+  padding: 2px 27px;
+  font-size: 22px;
+}
+
+.word_options {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #c3f4ff8c;
+}
+
+.word_opt_sticky {
+  width: 100%;
+  margin: 0 auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border: 2px solid var(--temp);
+  border-radius: 10px;
+}
+
+.words-list li {
+  height: 110px;
+  font-weight: bolder;
+  color: black;
+  border: 1px solid black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.right-content .p-0 {
+  height: 110px;
+  border: 1px solid black;
+}
+
+.tips_content img {
+  height: 30px;
+  width: auto;
+  margin-top: 10px;
+}
+
+/* ========================================================= */
+/* RESPONSIVE */
+/* ========================================================= */
+
+@media (max-width: 991.98px) {
+  .screen_elements {
+    width: 94%;
+  }
+
+  .questions_holder {
+    width: 90%;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .image-container img {
+    width: 100%;
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .screen_elements {
+    width: 96%;
+  }
+
+  .questions_holder {
+    width: 100%;
+  }
+
+  .fill_in .que {
+    width: 100%;
+  }
+
+  .fillin_set input {
+    min-width: 100px;
+    margin: 0 8px;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .image-container img {
+    width: 100%;
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 475.98px) {
+  .q_num_space {
+    width: 30px;
+    min-width: 30px;
+  }
+
+  .fillin_set input {
+    min-width: 90px;
+    padding-left: 10px;
+  }
+
+  .image-container img {
+    max-height: 240px;
+  }
+}

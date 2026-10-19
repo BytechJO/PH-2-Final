@@ -1,0 +1,301 @@
+/* =========================================================
+   Circle mistakes and correct prepositions
+========================================================= */
+
+.circle_mistakes_activity {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circle_mistakes_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.circle_mistakes_wrapper * {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Heading
+========================================================= */
+
+.circle_activity_heading {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.circle_activity_heading .page_sub_title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.circle_activity_heading .page_sub_title p {
+  margin: 0;
+}
+
+.circle_activity_heading .page_sub_title img {
+  max-width: 52px;
+  max-height: 52px;
+  object-fit: contain;
+}
+
+.circle_mistakes_number {
+  color: #d2232a;
+}
+
+/* =========================================================
+   Main image
+========================================================= */
+
+.circle_mistakes_image_holder {
+  width: 100%;
+  max-width: 780px;
+  height: 390px;
+  margin: 8px auto 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle_mistakes_image_holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border: 3px solid #d2232a;
+  border-radius: 18px;
+}
+
+/* =========================================================
+   Story
+========================================================= */
+
+.circle_story_holder {
+  width: 80%;
+  margin: 0 auto;
+  padding: 6px 12px 16px;
+
+  border: none;
+  background: transparent;
+}
+
+.circle_story_text {
+  display: block;
+  width: 100%;
+
+  font-size: 25px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+
+  border: none;
+  background: transparent;
+}
+
+.story_plain_text {
+  display: inline;
+  white-space: normal;
+}
+
+.preposition_item {
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    padding-top: 0;
+    vertical-align: baseline;
+}
+
+/* يضيف مساحة فوق السطر فقط عند ظهور الـ input */
+.preposition_item.selected {
+    padding-top: 48px;
+}
+.preposition_word {
+  position: relative;
+  display: inline;
+
+  min-width: 0;
+  padding: 0 3px;
+
+  /* font-weight: 700; */
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+.preposition_word:hover {
+  transform: scale(1.05);
+}
+
+/* Hand-drawn style circle */
+.preposition_item.selected .preposition_word::after {
+  content: "";
+  position: absolute;
+  inset: -6px -9px;
+  border: 3px solid #d2232a;
+  border-radius: 48% 52% 46% 54%;
+  transform: rotate(-4deg);
+  pointer-events: none;
+}
+
+.preposition_item.selected .preposition_word::before {
+  content: "";
+  position: absolute;
+  inset: -4px -7px;
+  border: 1px solid rgba(210, 35, 42, 0.75);
+  border-radius: 54% 46% 52% 48%;
+  transform: rotate(3deg);
+  pointer-events: none;
+}
+
+/* =========================================================
+   Correction input
+========================================================= */
+
+.correction_box {
+    position: absolute;
+    z-index: 10;
+    width: 145px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(-50%);
+}
+
+.preposition_item.selected .correction_box {
+    display: flex;
+}
+
+.correction_input {
+  width: 100%;
+  height: 35px;
+  padding: 2px 8px;
+  border: 0;
+  border-bottom: 2px solid #777;
+  outline: none;
+  background: #fff;
+  text-align: center;
+  font-size: 21px;
+  color: #000;
+}
+
+.correction_input:focus {
+  border-bottom-color: #d2232a;
+}
+
+/* =========================================================
+   Result icons
+========================================================= */
+
+.preposition_result {
+  position: absolute;
+  top: -18px;
+  right: -24px;
+  z-index: 12;
+  width: 23px;
+  height: 23px;
+  display: none;
+}
+
+.preposition_result img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.preposition_item.correct .result_tick {
+  display: block;
+}
+
+.preposition_item.wrong .result_cross {
+  display: block;
+}
+
+/* Wrong selectable preposition that the learner did not circle */
+.preposition_item.missed .preposition_word {
+  text-decoration: underline;
+  text-decoration-color: #d2232a;
+  text-decoration-thickness: 3px;
+}
+
+/* =========================================================
+   Footer navigation
+========================================================= */
+
+.circle_mistakes_wrapper .subFooterNav {
+  z-index: 25;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 1399.98px) {
+  .circle_mistakes_image_holder {
+    height: 330px;
+    margin-bottom: 12px;
+  }
+
+  .circle_story_text {
+    font-size: 22px;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .circle_mistakes_wrapper {
+    overflow-y: auto;
+  }
+
+  .circle_mistakes_image_holder {
+    height: 285px;
+  }
+
+  .circle_story_holder {
+    width: 100%;
+  }
+
+  .circle_story_text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .circle_mistakes_wrapper {
+    padding: 8px 12px 18px;
+  }
+
+  .circle_activity_heading .page_sub_title {
+    font-size: 20px;
+  }
+
+  .circle_mistakes_image_holder {
+    height: 220px;
+  }
+
+  .circle_story_text {
+    font-size: 18px;
+    line-height: 2.25;
+  }
+
+  .correction_box {
+    width: 115px;
+  }
+
+  .correction_input {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>playhouse</title>
+
+    <!-- ============================= -->
+    <!-- Global CSS -->
+    <!-- ============================= -->
+
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" />
+
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css" />
+
+    <style id="ui_style"></style>
+
+    <link rel="stylesheet" href="../css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/draw.css" />
+
+    <link rel="stylesheet" href="../css/audio.css" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <link rel="stylesheet" href="../css/unit_styles.css" />
+
+    <link rel="stylesheet" href="../css/activities.css" />
+
+    <!-- ============================= -->
+    <!-- Activity CSS -->
+    <!-- ============================= -->
+
+    <link rel="stylesheet" href="../css/look_and_write_body_parts.css" />
+
+    <!-- ============================= -->
+    <!-- Main libraries -->
+    <!-- ============================= -->
+
+    <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+
+    <script
+      src="../js/bootstrap/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="../js/jquery.ui.touch-punch.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script src="../js/all.js" type="text/javascript"></script>
+
+    <!-- ============================= -->
+    <!-- Header and Footer data -->
+    <!-- ============================= -->
+
+    <script src="../js/data/templateData.js" type="text/javascript"></script>
+
+    <!-- ============================= -->
+    <!-- Activities list -->
+    <!-- ============================= -->
+
+    <script src="../js/data/activityList.js" type="text/javascript"></script>
+
+    <script src="../js/build/jsonRender.js" type="text/javascript"></script>
+
+    <!-- ============================= -->
+    <!-- Activity data -->
+    <!-- ============================= -->
+
+    <script
+      src="../js/data/look_and_write_body_parts_data.js"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <!-- ============================= -->
+    <!-- Side masks -->
+    <!-- ============================= -->
+
+    <div class="mask_parent">
+      <div class="mask_left"></div>
+      <div class="mask_right"></div>
+    </div>
+
+    <!-- ============================= -->
+    <!-- Loader -->
+    <!-- ============================= -->
+
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+
+    <!-- ============================= -->
+    <!-- Header -->
+    <!-- ============================= -->
+
+    <header class="fixed-top"></header>
+
+    <!-- ============================= -->
+    <!-- Main content -->
+    <!-- ============================= -->
+
+    <div class="mainContent">
+      <!-- ============================= -->
+      <!-- Feedback popup -->
+      <!-- ============================= -->
+
+      <div id="feedbackPopup" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div>
+              <button
+                type="button"
+                class="close closeFeedback"
+                data-dismiss="modal"
+              >
+                &times;
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <video id="video_1" src="../videos/goodjob.mp4" preload></video>
+
+              <video id="video_2" src="../videos/tryagain.mp4" preload></video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================= -->
+      <!-- Activity container -->
+      <!-- ============================= -->
+
+      <div class="container content_wrap activity_wrap">
+        <!-- Screen numbers -->
+        <div class="fixed-top screen_numbers_wrap" style="z-index: 2"></div>
+
+        <!-- Activity information buttons -->
+        <div
+          class="activity_buts d-none"
+          data-buttons="ccss,link,tips,homework"
+        >
+          <div class="ccss_content" data-height="">L.1.1</div>
+
+          <div class="link_content" data-height=""></div>
+
+          <div class="tips_content" data-height="">
+            <span class="pop_title"> Body Parts </span>
+
+            <br />
+
+            <span>
+              Look at the pictures and write the correct body parts.
+            </span>
+          </div>
+
+          <div class="homework_content" data-height="">
+            Practise naming and writing body parts.
+          </div>
+        </div>
+
+        <!-- ============================= -->
+        <!-- Interactive activity area -->
+        <!-- ============================= -->
+
+        <div
+          class="activity_container activity_area fill_in mx-auto"
+          data-activity="lookandwritebodyparts"
+        ></div>
+      </div>
+    </div>
+
+    <!-- ============================= -->
+    <!-- Activity controls popup -->
+    <!-- ============================= -->
+
+    <div
+      class="modal fade activityCtrlPanel"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="ctrlIcon"></div>
+
+            <h4 class="modal-title"></h4>
+
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================= -->
+    <!-- Sub footer -->
+    <!-- ============================= -->
+
+    <div class="sub_footer">
+      <div class="container sub_footer_buttons_wrap"></div>
+    </div>
+
+    <!-- ============================= -->
+    <!-- Footer -->
+    <!-- ============================= -->
+
+    <footer class="fixed-bottom"></footer>
+
+    <!-- ============================= -->
+    <!-- Page media -->
+    <!-- ============================= -->
+
+    <script>
+      var _mediaList = {
+        image: [
+          "../images/pages/activities/Asset_11.png",
+          "../images/pages/activities/Asset_12.png",
+        ],
+
+        audio: [],
+
+        video: [],
+      };
+    </script>
+
+    <!-- ============================= -->
+    <!-- Global build scripts -->
+    <!-- ============================= -->
+
+    <script src="../js/build/toolbar.js" type="text/javascript"></script>
+
+    <script src="../js/build/template.js" type="text/javascript"></script>
+
+    <script src="../js/audioControls.js" type="text/javascript"></script>
+
+    <script src="../js/build/audio.js" type="text/javascript"></script>
+
+    <script src="../js/build/radio_build.js" type="text/javascript"></script>
+
+    <script src="../js/generalfunctions.js" type="text/javascript"></script>
+
+    <!-- ============================= -->
+    <!-- Activity builder -->
+    <!-- ============================= -->
+
+    <script
+      src="../js/build/look_and_write_body_parts.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- ============================= -->
+    <!-- Custom activity logic -->
+    <!-- ============================= -->
+
+    <script
+      src="../js/activity/look_and_write_body_parts.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- ============================= -->
+    <!-- Activity controller -->
+    <!-- ============================= -->
+
+    <script src="../js/activities.js" type="text/javascript"></script>
+
+    <!-- ============================= -->
+    <!-- Loading and sketchpad -->
+    <!-- ============================= -->
+
+    <script src="../js/loading.js" type="text/javascript"></script>
+
+    <script src="../js/sketchpad.js" type="text/javascript"></script>
+  </body>
+</html>

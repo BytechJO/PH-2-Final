@@ -1,0 +1,409 @@
+:root {
+  --look-match-red: #e62e39;
+  --look-match-text: #2d2d2d;
+  --look-match-blue: #2699d6;
+}
+
+/* =========================================================
+   Main options
+========================================================= */
+
+.look_read_match_options {
+  width: 100%;
+  height: calc(100% - 100px);
+}
+
+.look_read_match_workspace {
+  position: relative;
+
+  width: 76%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    250px;
+
+  column-gap: 110px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   SVG
+========================================================= */
+
+.look_read_match_svg {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+
+  pointer-events: none;
+
+  z-index: 4;
+}
+
+.look_read_match_line {
+  fill: none;
+
+  stroke: var(--look-match-red);
+
+  stroke-width: 4;
+
+  stroke-linecap: round;
+}
+
+.look_read_match_preview_line {
+  display: none;
+
+  fill: none;
+
+  stroke: var(--look-match-blue);
+
+  stroke-width: 4;
+
+  stroke-linecap: round;
+
+  stroke-dasharray: 9 7;
+}
+
+/* =========================================================
+   Questions
+========================================================= */
+
+.look_read_match_questions {
+  position: relative;
+
+  z-index: 2;
+
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+
+.look_read_match_question {
+  position: relative;
+
+  width: 80%;
+  height: 125px;
+
+  display: grid;
+
+  grid-template-columns:
+    118px
+    minmax(0, 1fr)
+    20px;
+
+  column-gap: 18px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   Person image
+========================================================= */
+
+.look_read_match_person_holder {
+  width: 112px;
+  height: 112px;
+
+  border: 2px solid var(--look-match-red);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+.look_read_match_person_image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Sentence
+========================================================= */
+
+.look_read_match_sentence {
+  color: var(--look-match-text);
+
+  font-family: Arcon;
+
+  font-size: 25px;
+
+  line-height: 1.35;
+
+  text-align: left;
+}
+
+.look_read_match_text {
+  display: inline;
+}
+
+.look_read_match_answer_holder {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-left: 8px;
+}
+
+/* =========================================================
+   Input
+========================================================= */
+
+.look_read_match_input {
+  width: 58px;
+  height: 36px;
+
+  padding: 0 4px;
+
+  border: none;
+
+  border-bottom: 2px solid #4d4d4d;
+
+  outline: none;
+
+  background-color: transparent;
+
+  color: var(--look-match-red);
+
+  font-family: Arcon;
+
+  font-size: 25px;
+
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.look_read_match_input:focus {
+  border-bottom-color: var(--look-match-blue);
+}
+
+/* =========================================================
+   Result icons
+========================================================= */
+
+.look_read_match_answer_holder .icon_wrap_holder {
+  width: 32px;
+  height: 32px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.look_read_match_answer_holder .icon_wrap {
+  display: none;
+}
+
+.look_read_match_answer_holder .tick,
+.look_read_match_answer_holder .cross {
+  display: none;
+
+  width: 30px;
+  height: 30px;
+}
+
+.look_read_match_answer_holder .tick img,
+.look_read_match_answer_holder .cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Dots
+========================================================= */
+
+.look_read_match_dot {
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+
+  padding: 0;
+
+  border: 4px solid #ffffff;
+
+  border-radius: 50%;
+
+  outline: none;
+
+  background-color: var(--look-match-red);
+
+  box-shadow: 0 0 0 2px var(--look-match-red);
+
+  cursor: pointer;
+
+  z-index: 8;
+
+  touch-action: none;
+}
+
+.look_read_match_dot.selected {
+  background-color: var(--look-match-blue);
+
+  box-shadow: 0 0 0 3px var(--look-match-blue);
+}
+
+/* =========================================================
+   Right options
+========================================================= */
+
+.look_read_match_images {
+  position: relative;
+
+  z-index: 2;
+
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+
+.look_read_match_option {
+  position: relative;
+
+  width: 100%;
+  height: 125px;
+
+  display: grid;
+
+  grid-template-columns:
+    20px
+    minmax(0, 1fr);
+
+  column-gap: 14px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   Image card
+========================================================= */
+
+.look_read_match_image_card {
+  position: relative;
+
+  width: 100%;
+  height: 112px;
+
+  border: 2px solid var(--look-match-red);
+
+  border-radius: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background-color: #ffffff;
+}
+
+.look_read_match_image_number {
+  position: absolute;
+
+  top: -15px;
+  left: -15px;
+
+  width: 38px;
+  height: 38px;
+
+  border: 3px solid var(--look-match-red);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background-color: #ffffff;
+
+  color: var(--look-match-red);
+
+  font-family: Arial;
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  z-index: 3;
+}
+
+.look_read_match_option_image {
+  width: 88%;
+  height: 88%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .look_read_match_workspace {
+    width: 96%;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      215px;
+
+    column-gap: 55px;
+  }
+
+  .look_read_match_question {
+    grid-template-columns:
+      95px
+      minmax(0, 1fr)
+      18px;
+  }
+
+  .look_read_match_person_holder {
+    width: 90px;
+    height: 90px;
+  }
+
+  .look_read_match_sentence {
+    font-size: 21px;
+  }
+
+  .look_read_match_image_card {
+    height: 100px;
+  }
+}

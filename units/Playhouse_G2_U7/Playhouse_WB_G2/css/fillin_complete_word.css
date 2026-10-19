@@ -1,0 +1,470 @@
+.all_cont {
+  width: 100%;
+  /* height: 100%; */
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen_elements {
+  width: 94%;
+  height: 100% !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group_elm {
+  width: 80%;
+  height: 80%;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(300px, 1fr)
+    minmax(250px, 330px)
+    minmax(300px, 1fr);
+
+  grid-template-areas: "left image right";
+
+  column-gap: 35px;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+}
+
+/* ====================================================== */
+/* أعمدة الأسئلة */
+/* ====================================================== */
+
+.questions_column {
+  width: 100%;
+  height: 82%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_questions {
+  grid-area: left;
+}
+
+.right_questions {
+  grid-area: right;
+}
+
+/* ====================================================== */
+/* الصورة الموجودة بالنص */
+/* ====================================================== */
+
+.img_space {
+  grid-area: image;
+
+  position: relative;
+  left: auto;
+  top: auto;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_space img {
+  display: block;
+
+  width: 100%;
+  max-width: 300px;
+  height: 430px;
+
+  object-fit: contain;
+}
+
+/* ====================================================== */
+/* السؤال */
+/* ====================================================== */
+
+.que_group {
+  width: 100%;
+  min-height: 155px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_fillin_gr {
+  width: 100%;
+
+  position: relative;
+
+  margin: 0;
+  padding: 0 10px;
+
+  font-size: 28px;
+
+  background: transparent;
+
+  box-sizing: border-box;
+}
+
+/* النص الموجود فوق خط الإجابة */
+
+.textFront {
+  width: 100%;
+
+  margin: 0 0 42px;
+  padding: 0;
+
+  display: flex;
+  justify-content: flex-start;
+
+  color: #202020;
+
+  font-size: 28px;
+  font-weight: bolder;
+
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* ====================================================== */
+/* مكان الإجابة */
+/* ====================================================== */
+
+.fillin_gr {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  flex-wrap: wrap;
+  align-content: center;
+
+  text-align: center;
+}
+
+.q_space {
+  position: relative;
+
+  width: 88%;
+
+  margin: 0 auto;
+}
+
+.fillin_set {
+  width: 100%;
+  min-height: 42px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  text-align: center !important;
+
+  border: none;
+  border-radius: 0;
+
+  background-color: transparent;
+
+  box-sizing: border-box;
+}
+
+/* نفس الـinputs بدون تغيير بالمنطق */
+
+.fillin_gr input {
+  width: 48px;
+  height: 35px;
+
+  margin: 2px;
+
+  background-color: transparent;
+
+  border: none;
+  border-bottom: 2px solid black;
+
+  text-align: center;
+
+  font-size: 33px;
+
+  box-sizing: border-box;
+}
+
+.fillin_gr input:focus {
+  outline: none;
+}
+
+/* آخر input هو خط الكتابة الطويل الموجود تحت السؤال */
+
+.fillin_gr input:last-child {
+  width: 100%;
+  height: 42px;
+
+  margin: 0;
+
+  border-bottom: 2px solid #35b7ec;
+
+  text-align: left;
+}
+
+/* ====================================================== */
+/* أيقونات الصح والخطأ */
+/* ====================================================== */
+
+.fillin_gr .icon_wrap_holder {
+  position: absolute;
+
+  top: 2px;
+  right: -38px;
+
+  width: 32px;
+  height: 32px;
+}
+
+.icon_wrap {
+  position: absolute;
+  bottom: 0;
+
+  width: 32px;
+  height: 32px;
+}
+
+.tick,
+.cross {
+  width: 32px;
+  height: 32px;
+}
+
+.tick img,
+.cross img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* ====================================================== */
+/* باقي التنسيقات الأصلية */
+/* ====================================================== */
+
+.audio_icon {
+  height: 39px;
+  padding: 1px;
+}
+
+.image_gap {
+  height: 100%;
+
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: max-content;
+}
+
+/* صور الأسئلة الداخلية إن وجدت */
+
+.image_space {
+  width: 260px;
+  height: 193px;
+}
+
+.image_space img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.clue_word {
+  margin: 6px;
+  color: #000;
+}
+
+.word_options {
+  width: 90%;
+
+  margin-bottom: 20px;
+
+  border: 2px solid var(--temp);
+  border-radius: 20px;
+
+  background-color: white;
+
+  font-size: 20px;
+}
+
+.word_opt_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 0;
+
+  z-index: 5;
+}
+
+/* ====================================================== */
+/* Responsive */
+/* ====================================================== */
+
+@media (max-width: 1199.98px) {
+  .screen_elements {
+    width: 97%;
+    height: 100% !important;
+  }
+
+  .group_elm {
+    grid-template-columns:
+      minmax(260px, 1fr)
+      minmax(210px, 270px)
+      minmax(260px, 1fr);
+
+    column-gap: 20px;
+  }
+
+  .img_space img {
+    max-width: 250px;
+    height: 370px;
+  }
+
+  .questions_column {
+    height: 78%;
+  }
+
+  .textFront {
+    font-size: 24px;
+  }
+
+  .fillin_gr input {
+    font-size: 28px;
+  }
+
+  .word_options {
+    margin-bottom: 1vh;
+  }
+
+  .img_fillin_gr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .group_elm {
+    grid-template-columns:
+      minmax(220px, 1fr)
+      minmax(180px, 230px)
+      minmax(220px, 1fr);
+
+    column-gap: 15px;
+  }
+
+  .textFront {
+    font-size: 21px;
+  }
+
+  .img_space img {
+    max-width: 215px;
+    height: 340px;
+  }
+
+  .q_space {
+    width: 92%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .all_cont {
+    height: auto;
+  }
+
+  .screen_elements {
+    height: auto !important;
+  }
+
+  .group_elm {
+    display: flex !important;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    gap: 30px;
+  }
+
+  .img_space {
+    order: 1;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .left_questions {
+    order: 2;
+  }
+
+  .right_questions {
+    order: 3;
+  }
+
+  .questions_column {
+    width: 100%;
+    height: auto;
+
+    gap: 30px;
+  }
+
+  .img_space img {
+    width: 220px;
+    height: 300px;
+  }
+
+  .que_group {
+    min-height: 130px;
+  }
+
+  .textFront {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .screen_elements {
+    width: 100%;
+  }
+
+  .que_group {
+    width: 95%;
+  }
+
+  .q_space {
+    width: 85%;
+  }
+}
+
+@media (max-width: 475.98px) {
+  .textFront {
+    font-size: 20px;
+  }
+
+  .fillin_gr input {
+    font-size: 25px;
+  }
+}

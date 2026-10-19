@@ -1,0 +1,675 @@
+/* ========================================= */
+/* Main colors */
+/* ========================================= */
+
+:root {
+  --activity-blue: #20b7f3;
+  --activity-text: #222;
+  --activity-border: #20b7f3;
+  --activity-shadow: rgba(32, 183, 243, 0.18);
+}
+
+/* ========================================= */
+/* Main activity */
+/* ========================================= */
+
+.activityHeading {
+  font-family: Arcon;
+}
+
+.options {
+  width: 100%;
+}
+
+.all_cont {
+  width: 100%;
+}
+
+.group_elm {
+  width: 100%;
+  padding: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 19px;
+  box-sizing: border-box;
+}
+
+/* ========================================= */
+/* Story section */
+/* ========================================= */
+
+.ques_part_space {
+  width: 90%;
+  max-width: 1100px;
+
+  min-height: fit-content;
+
+  margin: 0 auto;
+}
+
+.story_question,
+.que {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+.picks_grp {
+  width: 100%;
+}
+
+.story_words {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+
+  line-height: 1.65;
+}
+
+/* ========================================= */
+/* Story words */
+/* ========================================= */
+
+.mcq_1_5_q_group {
+  position: relative;
+
+  margin: 0;
+  /* padding: 3px 5px; */
+
+  border: 2px solid transparent;
+  border-radius: 18px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mcq_1_5_q_group:hover {
+  transform: scale(1.04);
+}
+
+.mcq_1_5_q_group .txt_box {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: left;
+
+  font-family: Arcon;
+  font-size: 27px;
+  line-height: 1.3;
+
+  color: var(--activity-text);
+}
+
+.mcq_1_5_q_group .txt_box span {
+  white-space: nowrap;
+}
+
+/* مسافة بعد الكلمة عند الحاجة */
+
+.right_space {
+  margin-right: 8px;
+}
+
+/* ========================================= */
+/* Selected word */
+/* ========================================= */
+
+.selectedDefault,
+.mcq_1_5_q_group.selected,
+.mcq_1_5_q_group.active,
+.mcq_1_5_q_group.picked,
+.mcq_1_5_q_group.select {
+  border-color: #188c2d !important;
+  border-radius: 20px;
+}
+
+.selectedDefault::after {
+  border: none;
+
+  position: absolute;
+  left: 0;
+  top: 60%;
+
+  width: 100%;
+  height: 3px;
+}
+
+/* ========================================= */
+/* Question number */
+/* ========================================= */
+
+.q_num_space {
+  width: 20px;
+
+  margin-right: 10px;
+
+  flex-shrink: 0;
+}
+
+/* ========================================= */
+/* Main result icon */
+/* ========================================= */
+
+.icon_wrap_holder {
+  position: relative;
+
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+}
+
+.icon_wrap {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+.tick,
+.cross {
+  width: 32px;
+  height: 32px;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* ========================================= */
+/* Bottom section: image + inputs */
+/* ========================================= */
+
+.story_bottom_section {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 24px auto 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 28px;
+
+  box-sizing: border-box;
+}
+
+/* ========================================= */
+/* Story image */
+/* ========================================= */
+
+.story_image_space {
+  width: 46%;
+  max-width: 470px;
+
+  flex-shrink: 0;
+}
+
+.story_image_space img {
+  width: 100%;
+  height: 270px;
+
+  display: block;
+
+  object-fit: cover;
+
+  border: 2px solid var(--activity-border);
+  border-radius: 14px;
+
+  box-sizing: border-box;
+}
+
+/* ========================================= */
+/* Inputs group */
+/* ========================================= */
+
+.contractions_fill_group {
+  width: 46%;
+  max-width: 500px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 8px;
+  row-gap: 7px;
+
+  align-content: center;
+
+  margin: 0;
+}
+
+/* ========================================= */
+/* Input wrapper */
+/* ========================================= */
+
+.contraction_input_wrap {
+  position: relative;
+
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+/* آخر input يكون لحاله على اليسار */
+
+.contraction_input_wrap:nth-child(5) {
+  grid-column: 1 / 2;
+}
+
+/* ========================================= */
+/* Input */
+/* ========================================= */
+
+.contraction_input {
+  width: 100%;
+  height: 43px;
+
+  padding: 5px 43px 5px 15px;
+
+  border: 2px solid var(--activity-border);
+  border-radius: 14px;
+
+  outline: none;
+
+  background-color: #fff;
+  color: #222;
+
+  font-family: Arcon;
+  font-size: 19px;
+  font-weight: normal;
+
+  text-align: left;
+
+  box-sizing: border-box;
+
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contraction_input:hover {
+  transform: scale(1.01);
+}
+
+.contraction_input:focus {
+  box-shadow: 0 0 0 3px var(--activity-shadow);
+}
+
+/* لا نغير لون النص عند الصح أو الخطأ */
+
+.correct_input .contraction_input,
+.wrong_input .contraction_input {
+  color: #222;
+  background-color: #fff;
+}
+
+/* ========================================= */
+/* Input result icon */
+/* ========================================= */
+
+.input_result_icon {
+  position: absolute;
+
+  top: 50%;
+  right: 10px;
+
+  width: 25px;
+  height: 25px;
+
+  transform: translateY(-50%);
+}
+
+.input_result_icon img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* ========================================= */
+/* Old fill-group */
+/* ========================================= */
+
+.fill-group {
+  display: none !important;
+}
+
+.fill-group input {
+  display: none !important;
+}
+
+/* ========================================= */
+/* Other old styles */
+/* ========================================= */
+
+.selectedDefault {
+  border-color: rgb(13, 137, 202) !important;
+}
+
+.selX {
+  height: 30vh;
+}
+
+.cont_group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  padding: 4px;
+
+  flex-wrap: wrap;
+
+  border-radius: 19px;
+
+  box-shadow: 2px 3px 11px #c9c9c9;
+}
+
+.cont_group .audioIcon {
+  position: absolute;
+  bottom: 80px;
+}
+
+.popup_img img {
+  width: 33%;
+  margin-top: -37px;
+}
+
+/* ========================================= */
+/* Responsive */
+/* ========================================= */
+
+@media (max-width: 1199.98px) {
+  .ques_part_space,
+  .story_bottom_section {
+    width: 94%;
+  }
+
+  .mcq_1_5_q_group .txt_box {
+    font-size: 24px;
+  }
+
+  .story_image_space img {
+    height: 245px;
+  }
+
+  .contraction_input {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .story_bottom_section {
+    gap: 20px;
+  }
+
+  .story_image_space {
+    width: 47%;
+  }
+
+  .contractions_fill_group {
+    width: 47%;
+  }
+
+  .story_image_space img {
+    height: 225px;
+  }
+
+  .mcq_1_5_q_group .txt_box {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .group_elm {
+    width: 100%;
+  }
+
+  .ques_part_space {
+    width: 94%;
+  }
+
+  .story_bottom_section {
+    width: 92%;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 18px;
+  }
+
+  .story_image_space,
+  .contractions_fill_group {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .story_image_space img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contractions_fill_group {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .popup_img img {
+    width: 50%;
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .group_elm {
+    width: 100%;
+    padding: 3px;
+  }
+
+  .story_words {
+    line-height: 1.5;
+  }
+
+  .mcq_1_5_q_group {
+    padding: 2px 4px;
+  }
+
+  .mcq_1_5_q_group .txt_box {
+    font-size: 19px;
+  }
+
+  .q_num_space {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .story_bottom_section {
+    width: 95%;
+  }
+
+  .contractions_fill_group {
+    grid-template-columns: 1fr;
+  }
+
+  .contraction_input_wrap:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .contraction_input {
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .cont_group {
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 475.98px) {
+  .ques_part_space {
+    width: 98%;
+  }
+
+  .story_bottom_section {
+    width: 98%;
+  }
+
+  .mcq_1_5_q_group .txt_box {
+    font-size: 17px;
+  }
+
+  .contraction_input {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 320px) {
+  .mcq_1_5_q_group .txt_box {
+    font-size: 15px;
+  }
+
+  .contraction_input {
+    height: 40px;
+    font-size: 15px;
+  }
+}
+.story_words {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 4px;
+}
+
+.story_words .mcq_1_5_q_group {
+  margin: 0;
+  padding: 3px 2px;
+}
+.contractions_answer_area {
+  position: relative;
+
+  width: 52%;
+  max-width: 560px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.contractions_fill_group {
+  width: calc(100% - 45px);
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 8px;
+  row-gap: 7px;
+}
+
+.inputs_group_result {
+  position: relative;
+
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+}
+
+.inputs_group_tick,
+.inputs_group_cross {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 36px;
+  height: 36px;
+}
+
+.inputs_group_tick img,
+.inputs_group_cross img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: contain;
+}
+
+.contraction_input_wrap {
+  position: relative;
+  width: 100%;
+}
+
+.contraction_input_wrap:nth-child(5) {
+  grid-column: 1 / 2;
+}
+
+.contraction_input {
+  width: 100%;
+  height: 43px;
+
+  padding: 5px 15px;
+
+  border: 2px solid #20b7f3;
+  border-radius: 14px;
+
+  outline: none;
+
+  background-color: #fff;
+  color: #222;
+
+  font-family: Arcon;
+  font-size: 19px;
+
+  box-sizing: border-box;
+}
+
+.contraction_input:focus {
+  box-shadow: 0 0 0 3px rgba(32, 183, 243, 0.18);
+}
+
+@media (max-width: 768.98px) {
+  .contractions_answer_area {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contractions_fill_group {
+    grid-template-columns: 1fr;
+  }
+
+  .contraction_input_wrap:nth-child(5) {
+    grid-column: auto;
+  }
+}

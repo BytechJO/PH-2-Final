@@ -1,0 +1,515 @@
+/* =========================================================
+   Grid with background image
+========================================================= */
+
+.full_grid_with_background_image .col_grid_container {
+  position: relative;
+  width: 95%;
+}
+
+.full_grid_with_background_image .snap_group_all {
+  position: absolute;
+  top: 46px;
+  left: 48px;
+
+  width: 96%;
+
+  line-height: 45px;
+  text-align: left;
+}
+
+.reading_slide .background_img {
+  height: 608px !important;
+}
+
+/* =========================================================
+   Grid without background image
+========================================================= */
+
+.grid_without_background_image .col_grid_container {
+  padding: 50px;
+  background-color: #ffe8d1;
+}
+
+/* =========================================================
+   Main reading layout
+========================================================= */
+
+.full_grid_without_background_image {
+  width: 80%;
+  line-height: 55px;
+}
+
+.full_grid_without_background_image .col_grid_container {
+  position: relative;
+  width: 100%;
+}
+
+.full_grid_without_background_image .snap_group_all {
+  position: relative;
+  width: 100%;
+}
+
+.full_grid_without_background_image .ss_text {
+  font-size: 30px;
+}
+
+.full_grid_without_background_image .ss_text img {
+  height: 209px;
+}
+
+/* =========================================================
+   Conversation rows
+========================================================= */
+
+.full_grid_without_background_image .snap_group_1,
+.full_grid_without_background_image .snap_group_2,
+.full_grid_without_background_image .snap_group_3,
+.full_grid_without_background_image .snap_group_4,
+.full_grid_without_background_image .snap_group_5,
+.full_grid_without_background_image .snap_group_6 {
+  width: 62%;
+}
+
+/* =========================================================
+   Seventh row that contains the drawing area
+========================================================= */
+
+.full_grid_without_background_image .snap_group_7 {
+  position: relative;
+
+  width: 100%;
+  height: 0;
+
+  margin: 0;
+  padding: 0;
+}
+
+.full_grid_without_background_image .snap_group_7 .col_card {
+  height: 0;
+}
+
+.full_grid_without_background_image .snap_group_7 .col_card:nth-child(1) {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.full_grid_without_background_image .snap_group_7 .col_card:nth-child(2) {
+  position: relative;
+
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+
+  height: 0;
+
+  margin: 0;
+  padding: 0;
+}
+
+.full_grid_without_background_image .snap_group_7 .snap_card {
+  position: static;
+
+  width: 0;
+  height: 0;
+
+  margin: 0 !important;
+  padding: 0;
+}
+
+/* =========================================================
+   Bee drawing activity
+========================================================= */
+
+.bee_drawing_activity {
+  position: absolute;
+
+  top: -410px;
+  right: -40px;
+
+  z-index: 15;
+
+  width: 600px !important;
+  height: 445px !important;
+
+  margin: 0 !important;
+
+  line-height: normal;
+}
+
+/* =========================================================
+   Drawing toolbar
+========================================================= */
+
+.bee_drawing_toolbar {
+  position: absolute;
+
+  top: -48px;
+  right: 0;
+
+  z-index: 30;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+
+  margin: 0;
+
+  line-height: normal;
+}
+
+.bee_draw_tool,
+.bee_clear_drawing {
+  min-width: 74px;
+
+  padding: 6px 14px;
+
+  border: 2px solid #d2232a;
+  border-radius: 11px;
+
+  background-color: #fff;
+  color: #111;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.bee_draw_tool:hover,
+.bee_clear_drawing:hover {
+  transform: scale(1.05);
+}
+
+.bee_draw_tool.active {
+  color: #fff;
+  background-color: #d2232a;
+}
+
+/* =========================================================
+   Drawing stage
+========================================================= */
+
+.bee_drawing_stage {
+  position: relative;
+
+  width: 600px !important;
+  height: 445px !important;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  line-height: 0;
+}
+
+/* =========================================================
+   Background image
+========================================================= */
+
+.bee_drawing_image {
+  display: block;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: contain;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+/* =========================================================
+   Canvas above image
+========================================================= */
+
+.bee_drawing_canvas {
+  position: absolute;
+  inset: 0;
+
+  z-index: 5;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  cursor: crosshair;
+
+  touch-action: none;
+}
+
+.bee_drawing_canvas.eraser_active {
+  cursor: cell;
+}
+
+/* يمنع line-height الخاص بالمحادثة من التأثير على الرسم */
+.bee_drawing_activity,
+.bee_drawing_activity * {
+  line-height: normal;
+}
+
+/* =========================================================
+   Pulse animation
+========================================================= */
+
+.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* =========================================================
+   Responsive — large screens
+========================================================= */
+
+@media (max-width: 1399.98px) {
+  .full_grid_without_background_image {
+    width: 90%;
+  }
+
+  .full_grid_without_background_image .ss_text {
+    font-size: 28px;
+  }
+
+  .bee_drawing_activity {
+    top: -390px;
+    right: -25px;
+
+    width: 540px !important;
+    height: 410px !important;
+  }
+
+  .bee_drawing_stage {
+    width: 540px !important;
+    height: 410px !important;
+  }
+}
+
+/* =========================================================
+   Responsive — medium screens
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .full_grid_without_background_image {
+    width: 94%;
+  }
+
+  .full_grid_without_background_image .snap_group_1,
+  .full_grid_without_background_image .snap_group_2,
+  .full_grid_without_background_image .snap_group_3,
+  .full_grid_without_background_image .snap_group_4,
+  .full_grid_without_background_image .snap_group_5,
+  .full_grid_without_background_image .snap_group_6 {
+    width: 60%;
+  }
+
+  .full_grid_without_background_image .ss_text {
+    font-size: 26px;
+  }
+
+  .bee_drawing_activity {
+    top: -365px;
+    right: -10px;
+
+    width: 480px !important;
+    height: 370px !important;
+  }
+
+  .bee_drawing_stage {
+    width: 480px !important;
+    height: 370px !important;
+  }
+}
+
+/* =========================================================
+   Responsive — tablets
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .full_grid_without_background_image {
+    width: 98%;
+    line-height: 48px;
+  }
+
+  .full_grid_without_background_image .snap_group_1,
+  .full_grid_without_background_image .snap_group_2,
+  .full_grid_without_background_image .snap_group_3,
+  .full_grid_without_background_image .snap_group_4,
+  .full_grid_without_background_image .snap_group_5,
+  .full_grid_without_background_image .snap_group_6 {
+    width: 56%;
+  }
+
+  .full_grid_without_background_image .ss_text {
+    font-size: 23px;
+  }
+
+  .bee_drawing_activity {
+    top: -340px;
+    right: 0;
+
+    width: 420px !important;
+    height: 330px !important;
+  }
+
+  .bee_drawing_stage {
+    width: 420px !important;
+    height: 330px !important;
+  }
+
+  .bee_draw_tool,
+  .bee_clear_drawing {
+    min-width: 65px;
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+}
+
+/* =========================================================
+   Responsive — small screens
+========================================================= */
+
+@media (max-width: 767.98px) {
+  .full_grid_without_background_image {
+    width: 100%;
+    line-height: 42px;
+  }
+
+  .full_grid_without_background_image .snap_group_1,
+  .full_grid_without_background_image .snap_group_2,
+  .full_grid_without_background_image .snap_group_3,
+  .full_grid_without_background_image .snap_group_4,
+  .full_grid_without_background_image .snap_group_5,
+  .full_grid_without_background_image .snap_group_6 {
+    width: 100%;
+  }
+
+  .full_grid_without_background_image .snap_group_7 {
+    height: auto;
+  }
+
+  .full_grid_without_background_image .snap_group_7 .col_card:nth-child(2) {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    height: auto;
+  }
+
+  .bee_drawing_activity {
+    position: relative;
+
+    top: auto;
+    right: auto;
+
+    width: 100% !important;
+    max-width: 500px;
+    height: 360px !important;
+
+    margin: 65px auto 25px !important;
+  }
+
+  .bee_drawing_stage {
+    width: 100% !important;
+    height: 360px !important;
+  }
+
+  .bee_drawing_toolbar {
+    top: -48px;
+    right: 50%;
+
+    transform: translateX(50%);
+  }
+}
+
+/* =========================================================
+   Responsive — phones
+========================================================= */
+
+@media (max-width: 575.98px) {
+  .full_grid_without_background_image .ss_text {
+    font-size: 20px;
+  }
+
+  .bee_drawing_activity {
+    height: 285px !important;
+  }
+
+  .bee_drawing_stage {
+    height: 285px !important;
+  }
+
+  .bee_draw_tool,
+  .bee_clear_drawing {
+    min-width: 58px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+/* إلغاء أي hover أو animation عام على صورة الرسم */
+.bee_drawing_activity,
+.bee_drawing_activity:hover,
+.bee_drawing_stage,
+.bee_drawing_stage:hover,
+.bee_drawing_image,
+.bee_drawing_image:hover,
+.bee_drawing_canvas,
+.bee_drawing_canvas:hover {
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+/* يمنع أي scale من كلاس pulse لو وصل للصورة */
+.bee_drawing_activity .pulse,
+.bee_drawing_activity img.pulse {
+  animation: none !important;
+  transform: none !important;
+}
+
+/* تثبيت الصورة بمكانها */
+.bee_drawing_image {
+  position: absolute;
+  inset: 0;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: contain;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+/* تثبيت الكانفس فوق الصورة */
+.bee_drawing_canvas {
+  position: absolute;
+  inset: 0;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+
+  touch-action: none;
+  cursor: crosshair;
+}

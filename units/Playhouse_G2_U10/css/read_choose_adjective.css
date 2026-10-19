@@ -1,0 +1,234 @@
+:root {
+  --choose-red: #d92f38;
+  --choose-text: #3b3b3b;
+  --choose-selected: #f5d44f;
+  --choose-correct: #38a94b;
+  --choose-white: #ffffff;
+}
+
+/* =========================================================
+   Activity
+========================================================= */
+
+.activity_area {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.read_choose_activity {
+  width: 100%;
+
+  padding: 5px 25px 20px;
+
+  overflow-y: auto;
+}
+
+.read_choose_all_cont {
+  width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.read_choose_wrapper {
+  width: min(96%, 1150px);
+
+  margin: 10px auto 0;
+}
+
+
+/* =========================================================
+   Instruction
+========================================================= */
+
+.read_choose_instruction {
+  width: 100%;
+
+  margin-bottom: 5px;
+
+  color: var(--choose-red);
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+
+  line-height: 1.25;
+
+}
+
+/* =========================================================
+   Paragraph
+========================================================= */
+
+.read_choose_paragraph {
+  width: 100%;
+
+  color: var(--choose-text);
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+
+  line-height: 1.48;
+
+  text-align: left;
+}
+
+.paragraph_text {
+  display: inline;
+}
+
+/* =========================================================
+   Inline question
+========================================================= */
+
+.inline_question {
+  display: inline;
+
+  white-space: nowrap;
+}
+
+.inline_choice_group {
+  display: inline-flex;
+  align-items: baseline;
+
+  white-space: nowrap;
+}
+
+.inline_choice {
+  margin: 0;
+  padding: 0 2px;
+
+  color: var(--choose-text);
+  background: transparent;
+
+  border: 0;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+
+  line-height: inherit;
+
+  cursor: pointer;
+  outline: none;
+
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.inline_choice:hover {
+  color: var(--choose-red);
+}
+
+.inline_choice:focus {
+  outline: none;
+}
+
+.inline_choice.selected {
+  color: var(--choose-red);
+  background-color: var(--choose-selected);
+}
+
+.choice_separator {
+  margin: 0 2px;
+
+  color: var(--choose-text);
+  font-weight: normal;
+}
+
+/* =========================================================
+   Feedback
+========================================================= */
+
+.icon_wrap_holder {
+  display: inline-flex;
+
+  width: 25px;
+  height: 25px;
+
+  margin-left: 4px;
+
+  align-items: center;
+  justify-content: center;
+
+  vertical-align: middle;
+}
+
+.icon_wrap {
+  display: none;
+
+  width: 24px;
+  height: 24px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.iconcontainer {
+  display: none;
+
+  width: 23px;
+  height: 23px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.iconcontainer img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media screen and (max-width: 1100px) {
+  .read_choose_wrapper {
+    width: 96%;
+  }
+
+  .read_choose_instruction {
+    font-size: 24px;
+  }
+
+  .read_choose_paragraph {
+    font-size: 23px;
+  }
+
+  .page_sub_title p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .read_choose_activity {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .read_choose_instruction {
+    font-size: 21px;
+  }
+
+  .read_choose_paragraph {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+
+  .page_sub_title p {
+    font-size: 22px;
+  }
+
+  .subtitle_icon {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,847 @@
+/* ====================================================== */
+/* Read, Look and Colour the Right Answer                  */
+/* ====================================================== */
+
+
+
+/* ====================================================== */
+/* Main Activity Wrapper                                  */
+/* ====================================================== */
+
+.options {
+    width: 100%;
+}
+
+.all_cont {
+    width: 100%;
+}
+
+.read_look_all_cont {
+    width: 100%;
+    padding: 5px 0 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+}
+
+.read_look_questions_wrapper {
+    width: 96%;
+    max-width: 1250px;
+    height: auto !important;
+
+    display: flex;
+    flex-wrap: nowrap !important;
+
+    justify-content: center;
+    align-items: flex-start !important;
+
+    gap: 34px;
+
+    box-sizing: border-box;
+}
+
+
+/* ====================================================== */
+/* Question Groups                                        */
+/* ====================================================== */
+
+.question_group {
+    width: 48%;
+    height: auto;
+
+    margin: 0 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 14px;
+
+    box-sizing: border-box;
+}
+
+.question_group.read_look_question_group {
+    height: auto;
+}
+
+
+/* ====================================================== */
+/* Question Item                                          */
+/* ====================================================== */
+
+.que_item {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    border-radius: 10px;
+
+    background: transparent;
+
+    font-size: 20px;
+
+    box-sizing: border-box;
+}
+
+.que.read_look_que {
+    width: 100%;
+    padding: 0;
+}
+
+.ques_line {
+    position: relative;
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.read_look_ques_line {
+    align-items: stretch;
+}
+
+.q_grp {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+
+    align-items: flex-start;
+
+    box-sizing: border-box;
+}
+
+.read_look_q_grp {
+    width: 100%;
+}
+
+
+/* ====================================================== */
+/* Question Title                                         */
+/* ====================================================== */
+
+.read_look_question_title {
+    width: 100%;
+    min-height: 30px;
+
+    margin-bottom: 5px;
+
+    display: flex;
+    align-items: flex-start;
+
+    color: #222222;
+
+    font-family: Arcon, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+
+    line-height: 1.25;
+
+    box-sizing: border-box;
+}
+
+.q_num_space {
+    width: 27px;
+    min-width: 27px;
+
+    margin: 0 5px 0 0;
+    padding: 0;
+
+    color: #222222;
+
+    font-family: Arcon, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+
+    line-height: 1.25;
+}
+
+.question_text {
+    width: calc(100% - 32px);
+
+    margin: 0;
+    padding: 0;
+
+    color: #222222;
+
+    font-family: Arcon, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+
+    line-height: 1.25;
+}
+
+
+/* Prevent audio classes from affecting question text */
+
+.question_text.audioIcon {
+    width: calc(100% - 32px);
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+
+    opacity: 1 !important;
+    pointer-events: all;
+}
+
+
+/* ====================================================== */
+/* Question Blue Box                                      */
+/* ====================================================== */
+
+.q_part {
+    width: 100%;
+
+    height: intrinsic;
+    height: -moz-max-content;
+    height: -webkit-max-content;
+    height: max-content;
+
+    margin-right: 0;
+
+    letter-spacing: 1px;
+
+    box-sizing: border-box;
+}
+
+.read_look_question_box {
+    position: relative;
+
+    width: 100%;
+    height: 205px;
+    min-height: 205px;
+
+    margin: 0;
+    padding: 0;
+
+    display: block !important;
+
+    border: 3px solid #25b9ed;
+    border-radius: 17px;
+
+    background-color: #ffffff;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.q_part.read_look_question_box {
+    display: block !important;
+    flex-wrap: nowrap !important;
+    align-items: initial !important;
+}
+
+
+/* ====================================================== */
+/* Choices Wrapper                                        */
+/* ====================================================== */
+
+.read_look_choices {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+
+    padding: 7px 7px 0;
+
+    box-sizing: border-box;
+}
+
+.pick_set {
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 8px;
+
+    align-items: stretch;
+    justify-content: stretch;
+
+    box-sizing: border-box;
+}
+
+.read_look_pick_set {
+    width: 100%;
+}
+
+
+/* ====================================================== */
+/* Choices                                                */
+/* ====================================================== */
+
+.pick {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 57px;
+
+    margin: 0 !important;
+    padding: 7px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: left;
+
+    border: 2px solid #24b8ed;
+    border-radius: 15px 15px 15px 5px;
+
+    background-color: #ffffff;
+    color: #222222;
+
+    font-family: Arcon, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+
+    line-height: 1.15;
+
+    cursor: pointer;
+    user-select: none;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.15s ease,
+        transform 0.1s ease;
+}
+
+.read_look_pick {
+    width: 100%;
+}
+
+
+/* Speech bubble arrow */
+
+.pick::after {
+    content: "";
+
+    position: absolute;
+
+    left: 13px;
+    bottom: -8px;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: inherit;
+
+    border-left: 2px solid #24b8ed;
+    border-bottom: 2px solid #24b8ed;
+
+    transform: rotate(-45deg);
+
+    box-sizing: border-box;
+}
+
+
+/*
+   لا يوجد لون hover ولا selected هنا.
+   لون الاختيار يأتي فقط من mcq_choose_g5.js
+   حسب bgcolor الموجود في ملف الداتا.
+*/
+
+.pick:hover {
+    border-color: #00aeef;
+}
+
+.pick:active {
+    transform: scale(0.985);
+}
+
+
+/* Keep text black in all activity states */
+
+.pick,
+.pick.selected,
+.pick.active,
+.pick.pick_selected,
+.pick.optionSelected,
+.pick.ui-selected,
+.pick.correct,
+.pick.wrong,
+.pick.right,
+.pick.incorrect {
+    color: #222222 !important;
+}
+
+
+/* Keep the speech bubble arrow the same selected background */
+
+.pick.selected::after,
+.pick.active::after,
+.pick.pick_selected::after,
+.pick.optionSelected::after,
+.pick.ui-selected::after {
+    background-color: inherit;
+}
+
+
+/* Remove inherited separators */
+
+.pick + .pick::before {
+    content: none !important;
+}
+
+
+/* ====================================================== */
+/* Hidden Input                                           */
+/* ====================================================== */
+
+.text_input_area {
+    display: none !important;
+
+    width: 329px;
+
+    margin-bottom: 5px;
+
+    text-align: center;
+
+    color: #000000 !important;
+    background-color: transparent;
+
+    border: none;
+    border-bottom: 2px solid #000000;
+    border-radius: 0;
+}
+
+
+/* ====================================================== */
+/* Animal Image                                           */
+/* ====================================================== */
+
+.img_space {
+    position: absolute;
+
+    left: 8px;
+    right: 8px;
+    bottom: 5px;
+    top: auto;
+
+    width: auto;
+    height: 137px;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.img_space.read_look_image_space {
+    width: auto;
+    height: 137px;
+}
+
+.img_space img {
+    display: block;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain;
+    object-position: center bottom;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/* ====================================================== */
+/* Tick and Cross                                         */
+/* ====================================================== */
+
+.no_que .icon_wrap {
+    display: none;
+}
+
+.icon_wrap {
+    position: absolute;
+
+    top: 52%;
+    right: -33px;
+
+    width: 28px;
+    height: 28px;
+
+    padding: 0 !important;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+}
+
+.tick,
+.cross {
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+}
+
+.tick img,
+.cross img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ====================================================== */
+/* General MCQ Classes                                    */
+/* ====================================================== */
+
+.text_container {
+    width: 83%;
+}
+
+.text_part,
+.q_part,
+.q_grp {
+    width: 100%;
+}
+
+.text_part {
+    display: flex;
+    align-items: center;
+}
+
+.all_picks {
+    width: 100%;
+}
+
+.picks_grp {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* ====================================================== */
+/* Audio                                                  */
+/* ====================================================== */
+
+.audioIcon.off.d-flex.align-items-center {
+    margin: 5px;
+    margin-top: -5px;
+}
+
+.not-disapled {
+    opacity: 1 !important;
+    pointer-events: all;
+}
+
+
+/* ====================================================== */
+/* Utility Classes                                        */
+/* ====================================================== */
+
+.border-none {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+
+/* ====================================================== */
+/* Footer Controls                                        */
+/* ====================================================== */
+
+.sub_footer_buttons_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ====================================================== */
+/* Media Queries                                          */
+/* ====================================================== */
+
+@media (max-width: 1799.98px) {
+}
+
+
+@media (max-width: 1399.98px) {
+
+    .que {
+        margin-bottom: 2px;
+        padding-right: 35px;
+    }
+
+    .read_look_questions_wrapper {
+        width: 95%;
+        gap: 28px;
+    }
+
+    .read_look_question_box {
+        height: 195px;
+        min-height: 195px;
+    }
+
+    .img_space,
+    .img_space.read_look_image_space {
+        height: 127px;
+    }
+
+    .pick {
+        min-height: 54px;
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+
+    .read_look_questions_wrapper {
+        width: 94%;
+        gap: 24px;
+    }
+
+    .read_look_question_title,
+    .q_num_space,
+    .question_text {
+        font-size: 15px;
+    }
+
+    .read_look_question_box {
+        height: 185px;
+        min-height: 185px;
+    }
+
+    .img_space,
+    .img_space.read_look_image_space {
+        height: 118px;
+    }
+
+    .pick {
+        min-height: 50px;
+        padding: 6px 7px;
+
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+
+    .q_part {
+        letter-spacing: 1px;
+        margin-right: -2px;
+    }
+
+    .read_look_questions_wrapper {
+        gap: 18px;
+    }
+
+    .question_group {
+        width: 48%;
+        margin: 0 4px;
+    }
+
+    .read_look_question_title,
+    .q_num_space,
+    .question_text {
+        font-size: 14px;
+    }
+
+    .pick_set {
+        gap: 5px;
+    }
+
+    .pick {
+        min-height: 48px;
+        padding: 5px 6px;
+
+        font-size: 11px;
+    }
+
+    .read_look_question_box {
+        height: 175px;
+        min-height: 175px;
+    }
+
+    .img_space,
+    .img_space.read_look_image_space {
+        height: 110px;
+    }
+
+    .icon_wrap {
+        right: -28px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+
+    .read_look_questions_wrapper {
+        width: 91%;
+
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+
+        gap: 18px;
+    }
+
+    .question_group {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        gap: 18px;
+    }
+
+    .que_item {
+        width: 100%;
+    }
+
+    .read_look_question_title,
+    .q_num_space,
+    .question_text {
+        font-size: 16px;
+    }
+
+    .read_look_question_box {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .img_space,
+    .img_space.read_look_image_space {
+        height: 150px;
+    }
+
+    .pick {
+        min-height: 57px;
+        padding: 7px 9px;
+
+        font-size: 14px;
+    }
+
+    .icon_wrap {
+        right: -31px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+
+    .page_sub_title p {
+        font-size: 17px;
+    }
+
+    .read_look_questions_wrapper {
+        width: 89%;
+    }
+
+    .read_look_question_box {
+        height: 205px;
+        min-height: 205px;
+    }
+
+    .img_space,
+    .img_space.read_look_image_space {
+        height: 136px;
+    }
+
+    .pick {
+        min-height: 53px;
+        padding: 6px;
+
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 475.98px) {
+
+    .mainTitle {
+        height: 43px;
+    }
+
+    .mainTitleIcon {
+        height: 56px;
+    }
+
+    .page_sub_title p {
+        font-size: 15px;
+    }
+
+    .read_look_questions_wrapper {
+        width: 86%;
+    }
+
+    .read_look_question_title,
+    .q_num_space,
+    .question_text {
+        font-size: 14px;
+    }
+
+    .read_look_question_box {
+        height: 195px;
+        min-height: 195px;
+    }
+
+    .read_look_choices {
+        padding: 5px 5px 0;
+    }
+
+    .pick_set {
+        gap: 4px;
+    }
+
+    .pick {
+        min-height: 50px;
+        padding: 5px;
+
+        font-size: 11px;
+    }
+
+    .img_space,
+    .img_space.read_look_image_space {
+        height: 128px;
+    }
+
+    .icon_wrap {
+        right: -27px;
+
+        width: 24px;
+        height: 24px;
+    }
+
+    .tick,
+    .cross {
+        width: 22px;
+        height: 22px;
+    }
+}

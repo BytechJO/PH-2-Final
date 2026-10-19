@@ -1,0 +1,531 @@
+:root {
+  --chart-red: #ed5a61;
+  --chart-light-pink: #f9e7df;
+
+  --left-bubble: #e5f3d4;
+  --left-bubble-border: #90b56e;
+
+  --right-bubble: #fff0f6;
+  --right-bubble-border: #f18ab5;
+
+  --text-color: #333333;
+}
+
+/* ========================================= */
+/* Main page */
+/* ========================================= */
+
+.activity_area {
+  width: 100%;
+  height: 100%;
+}
+
+.all_cont {
+  width: 100%;
+}
+
+.screen_elements {
+  width: 78%;
+  margin: 0 auto;
+}
+
+.group_elm {
+  width: 100%;
+}
+
+/* ========================================= */
+/* Header */
+/* ========================================= */
+
+
+
+/* ========================================= */
+/* Content */
+/* ========================================= */
+
+.conversation_content_wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+}
+
+.conversation_content_wrapper .options,
+.conversation_content_wrapper .all_cont {
+  width: 100%;
+}
+
+/* ========================================= */
+/* Chart */
+/* ========================================= */
+
+.frequency_chart {
+  width: 82%;
+  margin: 2px auto 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.chart_header_row,
+.chart_data_row {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 24% repeat(3, minmax(0, 1fr));
+
+  gap: 4px;
+}
+
+.chart_corner {
+  min-height: 35px;
+}
+
+.chart_column_header {
+  min-height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3px 5px;
+
+  border-radius: 12px;
+
+  background-color: var(--chart-light-pink);
+
+
+  font-family: Arcon;
+  font-size: 17px;
+  font-weight: bold;
+
+  box-shadow: 0 3px 0 rgba(160, 120, 110, 0.35);
+}
+
+.chart_person_cell {
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 3px 8px;
+
+  border-radius: 12px;
+
+  background-color: var(--chart-light-pink);
+}
+
+.chart_person_name {
+
+  font-family: Arcon;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.chart_person_image_wrap {
+  width: 62px;
+  height: 62px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chart_person_image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.chart_value_cell {
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3px 5px;
+
+  border: 2px solid var(--chart-red);
+  border-radius: 9px;
+
+  background-color: #ffffff;
+  color: var(--text-color);
+
+  font-family: Arcon;
+  font-size: 17px;
+  font-weight: bold;
+
+  box-shadow: 0 2px 0 rgba(120, 120, 120, 0.25);
+}
+
+/* ========================================= */
+/* Conversations */
+/* ========================================= */
+
+.conversations_list {
+  width: 100%;
+  margin: 5px auto 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.conversation_row {
+  width: 100%;
+  min-height: 78px;
+
+  position: relative;
+
+  display: grid;
+  grid-template-columns:
+    28px
+    72px
+    minmax(0, 1fr)
+    minmax(0, 1fr)
+    72px;
+
+  gap: 8px;
+
+  align-items: center;
+
+  margin: 0;
+}
+
+/* ========================================= */
+/* Number */
+/* ========================================= */
+
+.conversation_number {
+  color: #333333;
+
+  font-family: Arcon;
+  font-size: 20px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+/* ========================================= */
+/* People */
+/* ========================================= */
+
+.conversation_person {
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.conversation_person img {
+  max-width: 100%;
+  max-height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* ========================================= */
+/* Speech bubbles */
+/* ========================================= */
+
+.speech_bubble {
+  width: 100%;
+  min-height: 64px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  gap: 4px;
+
+  padding: 8px 10px;
+
+  border: 2px solid;
+  border-radius: 8px;
+
+  box-sizing: border-box;
+}
+
+.speech_bubble_left {
+  border-color: var(--left-bubble-border);
+
+  background-color: var(--left-bubble);
+}
+
+.speech_bubble_right {
+  border-color: var(--right-bubble-border);
+
+  background-color: var(--right-bubble);
+}
+
+/* Left arrow */
+
+.speech_bubble_left::before {
+  content: "";
+
+  position: absolute;
+  left: -13px;
+  top: 14px;
+
+  border-top: 9px solid transparent;
+
+  border-bottom: 9px solid transparent;
+
+  border-right: 13px solid var(--left-bubble-border);
+}
+
+.speech_bubble_left::after {
+  content: "";
+
+  position: absolute;
+  left: -9px;
+  top: 16px;
+
+  border-top: 7px solid transparent;
+
+  border-bottom: 7px solid transparent;
+
+  border-right: 10px solid var(--left-bubble);
+}
+
+/* Right arrow */
+
+.speech_bubble_right::before {
+  content: "";
+
+  position: absolute;
+  right: -13px;
+  top: 14px;
+
+  border-top: 9px solid transparent;
+
+  border-bottom: 9px solid transparent;
+
+  border-left: 13px solid var(--right-bubble-border);
+}
+
+.speech_bubble_right::after {
+  content: "";
+
+  position: absolute;
+  right: -9px;
+  top: 16px;
+
+  border-top: 7px solid transparent;
+
+  border-bottom: 7px solid transparent;
+
+  border-left: 10px solid var(--right-bubble);
+}
+
+.bubble_text {
+  color: var(--text-color);
+
+  font-family: Arcon;
+  font-size: 20px;
+  font-weight: bold;
+
+  line-height: 1.25;
+  text-align: center;
+}
+
+.bubble_before,
+.bubble_after {
+  flex-shrink: 0;
+}
+
+/* ========================================= */
+/* Inputs */
+/* ========================================= */
+
+.conversation_input {
+  flex: 1;
+
+  min-width: 80px;
+  height: 28px;
+
+  padding: 1px 4px;
+
+  border: 0;
+  border-bottom: 2px solid #777777;
+  outline: none;
+
+  background-color: transparent;
+  color: #000000 !important;
+
+  font-family: Arcon;
+  font-size: 20px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.conversation_input:focus {
+  border-bottom-color: #333333;
+  outline: none;
+}
+
+/* Full empty bubble */
+
+.speech_bubble .conversation_input:only-child {
+  width: 100%;
+  min-width: 100%;
+  flex-basis: 100%;
+}
+
+.conversation_input.correct_answer,
+.conversation_input.wrong_answer {
+  color: #000000 !important;
+}
+
+/* ========================================= */
+/* Tick / Cross */
+/* ========================================= */
+
+.conversation_row .icon_wrap {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 2px;
+  right: 77px;
+
+  z-index: 10;
+
+  display: none;
+}
+
+.conversation_row .tick,
+.conversation_row .cross {
+  width: 28px;
+  height: 28px;
+
+  display: none;
+}
+
+.conversation_row .tick img,
+.conversation_row .cross img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* ========================================= */
+/* Navigation */
+/* ========================================= */
+
+.sub_footer_icon_left {
+  position: absolute;
+  left: 10px;
+}
+
+.sub_footer_icon_right {
+  position: absolute;
+  right: 10px;
+}
+
+/* ========================================= */
+/* Tablet */
+/* ========================================= */
+
+@media (max-width: 1050px) {
+  .screen_elements {
+    width: 88%;
+  }
+
+  .frequency_chart {
+    width: 90%;
+  }
+
+  .chart_column_header,
+  .chart_person_name,
+  .chart_value_cell {
+    font-size: 20px;
+  }
+
+  .conversation_row {
+    grid-template-columns:
+      25px
+      60px
+      minmax(0, 1fr)
+      minmax(0, 1fr)
+      60px;
+
+    gap: 6px;
+  }
+
+  .conversation_person {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bubble_text,
+  .conversation_input {
+    font-size: 20px;
+  }
+}
+
+/* ========================================= */
+/* Mobile */
+/* ========================================= */
+
+@media (max-width: 767.98px) {
+  .screen_elements {
+    width: 95%;
+  }
+
+  .frequency_chart {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .chart_header_row,
+  .chart_data_row {
+    min-width: 620px;
+  }
+
+  .conversation_row {
+    grid-template-columns:
+      25px
+      55px
+      minmax(150px, 1fr);
+
+    gap: 6px;
+  }
+
+  .conversation_person {
+    width: 55px;
+    height: 55px;
+  }
+
+  .conversation_person_right {
+    grid-column: 2;
+  }
+
+  .speech_bubble_right {
+    grid-column: 3;
+  }
+
+  .conversation_row .icon_wrap {
+    right: 3px;
+  }
+}

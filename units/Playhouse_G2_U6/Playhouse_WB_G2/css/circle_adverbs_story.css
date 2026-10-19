@@ -1,0 +1,392 @@
+:root {
+  --story-blue: #00a9e8;
+  --story-text: #2f2f2f;
+  --story-border: #35a9df;
+}
+
+/* ========================================= */
+/* Main */
+/* ========================================= */
+
+.activity_area {
+  width: 100%;
+}
+
+/* ========================================= */
+/* Content */
+/* ========================================= */
+
+.options {
+  width: 100%;
+}
+
+.all_cont {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========================================= */
+/* Main layout */
+/* ========================================= */
+
+.story_activity_layout {
+  width: 86%;
+  margin: 25px auto 0;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.7fr)
+    minmax(260px, 0.8fr);
+
+  gap: 35px;
+
+  align-items: center;
+}
+
+/* ========================================= */
+/* Story text side */
+/* ========================================= */
+
+.story_text_side {
+  width: 80%;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.tick_group {
+  width: 100%;
+}
+
+.story_question {
+  width: 100%;
+
+  position: relative;
+
+  margin: 0;
+}
+
+/* إخفاء السؤال الداخلي لأن العنوان موجود فوق */
+
+.story_question .q_part {
+  display: none;
+}
+
+/* ========================================= */
+/* Words group */
+/* ========================================= */
+
+.story_words_group {
+  width: 100%;
+
+  display: block !important;
+
+  color: var(--story-text);
+
+  font-family: Arcon;
+  font-size: 25px;
+  font-weight: normal;
+
+  line-height: 1.65;
+  text-align: left;
+}
+
+/* ========================================= */
+/* Every word */
+/* ========================================= */
+
+.story_word {
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+
+  position: relative;
+
+  display: inline-block !important;
+
+  margin: 0 2px 4px 0 !important;
+  padding: 0 4px !important;
+
+  border: 2px solid transparent !important;
+  border-radius: 50% !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+
+  color: var(--story-text) !important;
+
+  line-height: 1.25;
+
+  cursor: pointer;
+  user-select: none;
+
+  vertical-align: middle;
+
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.story_word:hover {
+  transform: scale(1.04);
+}
+
+/* النص داخل الكلمة */
+
+.story_word .txt {
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: var(--story-text) !important;
+
+  font-family: Arcon;
+  font-size: 25px;
+  font-weight: normal;
+
+  line-height: 1.25;
+
+  white-space: nowrap;
+}
+
+/* ========================================= */
+/* Selected word */
+/* ========================================= */
+
+.story_word.selected,
+.story_word.active,
+.story_word.pickselected,
+.story_word.selected_answer {
+  border-color: #000000 !important;
+
+  background: transparent !important;
+
+  color: var(--story-text) !important;
+}
+
+/* ========================================= */
+/* Prevent green/red styling */
+/* ========================================= */
+
+.story_word.correct,
+.story_word.wrong,
+.story_word.right,
+.story_word.wrongAns,
+.story_word.correct_answer,
+.story_word.wrong_answer {
+  background: transparent !important;
+
+  color: var(--story-text) !important;
+}
+
+.story_word.correct .txt,
+.story_word.wrong .txt,
+.story_word.right .txt,
+.story_word.wrongAns .txt,
+.story_word.correct_answer .txt,
+.story_word.wrong_answer .txt {
+  color: var(--story-text) !important;
+}
+
+/* المختار يظل داخل دائرة سوداء حتى بعد الفحص */
+
+.story_word.selected.correct,
+.story_word.selected.wrong,
+.story_word.selected.right,
+.story_word.selected.wrongAns,
+.story_word.selected.correct_answer,
+.story_word.selected.wrong_answer,
+.story_word.active.correct,
+.story_word.active.wrong,
+.story_word.pickselected.correct,
+.story_word.pickselected.wrong {
+  border-color: #000000 !important;
+
+  background: transparent !important;
+}
+
+/* الكلمات غير المختارة لا يظهر عليها إطار */
+
+.story_word.correct:not(.selected),
+.story_word.wrong:not(.selected),
+.story_word.right:not(.selected),
+.story_word.wrongAns:not(.selected),
+.story_word.correct_answer:not(.selected),
+.story_word.wrong_answer:not(.selected) {
+  border-color: transparent !important;
+}
+
+/* ========================================= */
+/* Image side */
+/* ========================================= */
+
+.story_image_side {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story_main_image {
+  width: 100%;
+  max-width: 320px;
+  max-height: 335px;
+
+  display: block;
+
+  object-fit: contain;
+
+  border: 2px solid var(--story-border);
+  border-radius: 17px;
+
+  background-color: #eeeeee;
+}
+
+/* ========================================= */
+/* Result icon */
+/* ========================================= */
+
+.story_icon_wrap {
+  width: 45px;
+  height: 45px;
+
+  position: absolute;
+  top: -48px;
+  right: 0;
+
+  z-index: 20;
+}
+
+.story_icon_wrap .tick,
+.story_icon_wrap .cross {
+  width: 45px;
+  height: 45px;
+
+  display: none;
+}
+
+.story_icon_wrap .tick img,
+.story_icon_wrap .cross img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* ========================================= */
+/* Navigation */
+/* ========================================= */
+
+.sub_footer_icon_left {
+  position: absolute;
+  left: 10px;
+}
+
+.sub_footer_icon_right {
+  position: absolute;
+  right: 10px;
+}
+
+/* ========================================= */
+/* Tablet */
+/* ========================================= */
+
+@media (max-width: 1000px) {
+  .story_activity_layout {
+    width: 92%;
+
+    grid-template-columns:
+      minmax(0, 1.6fr)
+      minmax(220px, 0.8fr);
+
+    gap: 20px;
+  }
+
+  .story_text_side {
+    width: 85%;
+  }
+
+  .story_words_group,
+  .story_word .txt {
+    font-size: 21px;
+  }
+
+  .story_main_image {
+    max-width: 260px;
+  }
+
+  .page_sub_title p {
+    font-size: 22px;
+  }
+}
+
+/* ========================================= */
+/* Mobile */
+/* ========================================= */
+
+@media (max-width: 767.98px) {
+  .story_activity_layout {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .story_text_side {
+    width: 90%;
+  }
+
+  .story_words_group,
+  .story_word .txt {
+    font-size: 20px;
+  }
+
+  .story_image_side {
+    order: -1;
+  }
+
+  .story_main_image {
+    max-width: 260px;
+  }
+
+  .page_sub_title p {
+    font-size: 21px;
+  }
+}
+
+/* ========================================= */
+/* Small mobile */
+/* ========================================= */
+
+@media (max-width: 575.98px) {
+  .story_activity_layout {
+    width: 94%;
+  }
+
+  .story_text_side {
+    width: 94%;
+  }
+
+  .story_words_group,
+  .story_word .txt {
+    font-size: 18px;
+  }
+
+  .story_main_image {
+    max-width: 220px;
+  }
+
+  .page_sub_title p {
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,381 @@
+.all_cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.group_elm {
+  width: 82%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.tick_group {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================================================
+   Tools
+========================================================= */
+
+.mark_tools {
+  width: fit-content;
+  margin: 8px auto 18px;
+  padding: 8px 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  background-color: #fff4e8;
+  border: 2px solid #f0b77c;
+  border-radius: 16px;
+}
+
+.mark_tool {
+  min-width: 155px;
+  min-height: 58px;
+  padding: 6px 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  background-color: #ffffff;
+  border: 2px solid #b7b7b7;
+  border-radius: 12px;
+
+  font-size: 23px;
+  font-weight: 600;
+  color: #222;
+
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.mark_tool:hover {
+  transform: translateY(-2px);
+}
+
+.mark_tool.active {
+  border-color: #e32636;
+  box-shadow: 0 0 0 3px rgba(227, 38, 54, 0.14);
+}
+
+.tool_title {
+  font-size: 19px;
+}
+
+.underline_example {
+  display: inline-block;
+  padding: 2px 5px;
+  line-height: 1.15;
+  border-bottom: 3px solid #222;
+}
+
+.circle_example {
+  min-width: 58px;
+  min-height: 38px;
+  padding: 2px 9px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid #222;
+  border-radius: 50%;
+}
+
+/* =========================================================
+   Questions
+========================================================= */
+
+.que {
+  width: 952px !important;
+  min-height: 155px;
+  margin: 5px auto;
+  padding: 4px 38px 4px 4px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 10px;
+  font-size: 28px;
+}
+
+.q_num_space {
+  width: 42px;
+  min-width: 42px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.picks_grp {
+  flex: 1;
+  min-height: 67px;
+  padding: 4px 8px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  border-bottom: 2px solid #7e7e7e;
+}
+
+/* =========================================================
+   Words
+========================================================= */
+
+.pick {
+  width: fit-content;
+  min-width: fit-content;
+  min-height: 58px;
+  margin: 2px;
+  padding: 5px 9px;
+
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  font-family: inherit;
+  font-size: 28px;
+  color: #222;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    transform 0.12s ease,
+    background-color 0.12s ease;
+}
+
+.pick:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  transform: translateY(-1px);
+}
+
+.pick .txt {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* خط تحت الاسم */
+
+.pick.mark_underline .txt {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
+}
+
+/* دائرة حول الفعل */
+
+.pick.mark_circle {
+  border: 3px solid #222;
+  border-radius: 50%;
+  padding: 5px 12px;
+}
+
+/* =========================================================
+   Question Image
+========================================================= */
+
+.img_space {
+  width: 210px;
+  min-width: 210px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+.img_space img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* =========================================================
+   Check / Cross
+========================================================= */
+
+.icon_wrap {
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tick,
+.cross {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* نتيجة السؤال */
+
+
+
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 1399.98px) {
+  .group_elm {
+    width: 88%;
+  }
+
+  .que {
+    width: 100% !important;
+  }
+
+  .pick {
+    font-size: 25px;
+  }
+
+  .img_space {
+    width: 185px;
+    min-width: 185px;
+    height: 135px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .group_elm {
+    width: 95%;
+  }
+
+  .mark_tools {
+    gap: 10px;
+  }
+
+  .mark_tool {
+    min-width: 130px;
+  }
+
+  .que {
+    padding-right: 32px;
+  }
+
+  .img_space {
+    width: 155px;
+    min-width: 155px;
+    height: 120px;
+    margin-left: 8px;
+  }
+
+  .pick {
+    min-height: 50px;
+    padding: 4px 7px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mark_tools {
+    width: 95%;
+  }
+
+  .mark_tool {
+    flex: 1;
+    min-width: 0;
+    padding: 5px 8px;
+  }
+
+  .tool_title {
+    display: none;
+  }
+
+  .que {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .q_num_space {
+    align-self: flex-start;
+  }
+
+  .picks_grp {
+    flex: 1;
+  }
+
+  .img_space {
+    width: 100%;
+    height: 120px;
+    margin: 8px 0 0;
+  }
+}
+/* إزالة بوردر الضغط الافتراضي عن الكلمات */
+.pick,
+.pick:hover,
+.pick:focus,
+.pick:active,
+.pick:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* الكلمات العادية بدون بوردر */
+.pick:not(.mark_circle),
+.pick:not(.mark_circle):hover,
+.pick:not(.mark_circle):focus,
+.pick:not(.mark_circle):active {
+    border: 2px solid transparent !important;
+}
+
+/* الخط تحت الاسم فقط */
+.pick.mark_underline,
+.pick.mark_underline:hover,
+.pick.mark_underline:focus,
+.pick.mark_underline:active {
+    border: 2px solid transparent !important;
+}
+
+.pick.mark_underline .txt {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+}
+
+/* البوردر يبقى فقط عند اختيار Circle */
+.pick.mark_circle,
+.pick.mark_circle:hover,
+.pick.mark_circle:focus,
+.pick.mark_circle:active {
+    border: 3px solid #222 !important;
+    border-radius: 50% !important;
+    outline: none !important;
+    box-shadow: none !important;
+}

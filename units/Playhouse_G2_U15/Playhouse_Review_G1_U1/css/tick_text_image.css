@@ -1,0 +1,564 @@
+:root {
+  --activity-blue: #00aeef;
+  --activity-background: #def3fb;
+  --activity-text: #292929;
+}
+
+/* =========================================================
+   General
+   ========================================================= */
+
+.all_cont {
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont_ht_sf.activity_area {
+  width: 100%;
+}
+
+.page_sub_title {
+  align-items: center;
+}
+
+.page_sub_title p {
+  margin: 0;
+}
+
+.page_sub_title b {
+  color: #000;
+}
+
+.red_text {
+  color: #d3222a;
+}
+
+/* =========================================================
+   Main activity box
+   ========================================================= */
+
+.question_type_activity {
+  width: 750px;
+  max-width: 92%;
+
+  margin: 15px auto 0;
+  padding: 25px 35px 30px;
+
+  background-color: var(--activity-background);
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Header
+   ========================================================= */
+
+.question_type_header {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 1fr)
+    135px
+    135px
+    45px;
+
+  align-items: end;
+
+  margin-bottom: 5px;
+}
+
+.question_type_heading {
+  color: var(--activity-text);
+
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.05;
+
+  text-align: center;
+}
+
+.question_header_empty,
+.result_header_empty {
+  min-height: 1px;
+}
+
+/* =========================================================
+   Questions container
+   ========================================================= */
+
+.tick_group {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+}
+
+/* =========================================================
+   Single question row
+   ========================================================= */
+
+.que.question_type_row {
+  position: relative;
+
+  width: 100%;
+  min-height: 78px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 1fr)
+    270px
+    45px;
+
+  align-items: center;
+
+  padding: 5px 0;
+
+  border-radius: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Question text
+   ========================================================= */
+
+.question_text {
+  padding-right: 20px;
+
+  color: var(--activity-text);
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.35;
+
+  text-align: left;
+}
+
+/* =========================================================
+   Options holder
+   ========================================================= */
+
+.question_options {
+  width: 270px;
+
+  display: grid;
+  grid-template-columns: 135px 135px;
+
+  align-items: center;
+  justify-items: center;
+}
+
+/* =========================================================
+   Option
+   ========================================================= */
+
+.tick_field.pick {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent !important;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+/* =========================================================
+   Tick box
+   ========================================================= */
+
+.tickBox {
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--activity-blue) !important;
+  border-radius: 11px;
+
+  background-color: #fff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Selected check mark
+   مهم: بدون display حتى يتحكم فيه JavaScript
+   ========================================================= */
+
+.selectTick {
+  width: 100%;
+  height: 100%;
+
+  color: var(--activity-blue);
+
+  font-size: 31px;
+  line-height: 46px;
+
+  text-align: center;
+}
+
+.selectTick i {
+  display: inline-block;
+  color: var(--activity-blue);
+}
+
+/* =========================================================
+   Hover
+   ========================================================= */
+
+.tick_field.pick:hover .tickBox {
+  background-color: rgba(255, 255, 255, 0.75);
+
+  box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.12);
+}
+
+/* =========================================================
+   Selected option
+   ========================================================= */
+
+.tick_field.pick.selected .tickBox {
+  background-color: #fff;
+}
+
+/* =========================================================
+   Result icon holder
+   ========================================================= */
+
+.icon_wrap_holder {
+  position: relative;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  right: auto;
+
+  z-index: 2;
+}
+
+/* مخفي بالبداية، والـActivity يظهره بعد Check */
+
+.icon_wrap {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  display: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================================
+   Correct / Wrong icons
+   ========================================================= */
+
+.icon_wrap .tick,
+.icon_wrap .cross {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  width: 38px;
+  height: 38px;
+}
+
+.icon_wrap .tick img,
+.icon_wrap .cross img {
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Remove old layout styles
+   ========================================================= */
+
+.image_wrap {
+  display: none;
+}
+
+.que_group,
+.tick_fields,
+.ans_grup,
+.tickContent,
+.heading,
+.q_num_space {
+  width: auto;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* منع أي CSS عام من تغيير شكل الخيارات */
+
+.pick {
+  border: none;
+  box-shadow: none;
+}
+
+.pick.selected,
+.pick.selectedDefault,
+.pick.isCorrect,
+.pick.isNotCorrect {
+  background-color: transparent !important;
+}
+
+/* =========================================================
+   Footer navigation
+   ========================================================= */
+
+.sub_footer_icon_left {
+  left: 15px;
+}
+
+.sub_footer_icon_right {
+  right: 15px;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 1199.98px) {
+  .question_type_activity {
+    width: 700px;
+  }
+
+  .question_type_header {
+    grid-template-columns:
+      minmax(270px, 1fr)
+      125px
+      125px
+      40px;
+  }
+
+  .que.question_type_row {
+    grid-template-columns:
+      minmax(270px, 1fr)
+      250px
+      40px;
+  }
+
+  .question_options {
+    width: 250px;
+
+    grid-template-columns:
+      125px
+      125px;
+  }
+
+  .question_text {
+    font-size: 22px;
+  }
+
+  .question_type_heading {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .question_type_activity {
+    max-width: 96%;
+
+    padding: 20px 25px 25px;
+  }
+
+  .question_type_header {
+    grid-template-columns:
+      minmax(230px, 1fr)
+      110px
+      110px
+      36px;
+  }
+
+  .que.question_type_row {
+    grid-template-columns:
+      minmax(230px, 1fr)
+      220px
+      36px;
+  }
+
+  .question_options {
+    width: 220px;
+
+    grid-template-columns:
+      110px
+      110px;
+  }
+
+  .question_text {
+    font-size: 20px;
+  }
+
+  .question_type_heading {
+    font-size: 19px;
+  }
+
+  .tickBox {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+  }
+
+  .selectTick {
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .question_type_activity {
+    max-width: 98%;
+
+    padding: 16px 12px 20px;
+  }
+
+  .question_type_header {
+    grid-template-columns:
+      minmax(155px, 1fr)
+      82px
+      82px
+      30px;
+  }
+
+  .que.question_type_row {
+    min-height: 70px;
+
+    grid-template-columns:
+      minmax(155px, 1fr)
+      164px
+      30px;
+  }
+
+  .question_options {
+    width: 164px;
+
+    grid-template-columns:
+      82px
+      82px;
+  }
+
+  .question_text {
+    padding-right: 8px;
+
+    font-size: 17px;
+  }
+
+  .question_type_heading {
+    font-size: 16px;
+  }
+
+  .tickBox {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+
+    border-radius: 9px;
+  }
+
+  .selectTick {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .icon_wrap_holder,
+  .icon_wrap,
+  .icon_wrap .tick,
+  .icon_wrap .cross {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 475.98px) {
+  .question_type_activity {
+    padding: 12px 7px 15px;
+  }
+
+  .question_type_header {
+    grid-template-columns:
+      minmax(130px, 1fr)
+      65px
+      65px
+      25px;
+  }
+
+  .que.question_type_row {
+    grid-template-columns:
+      minmax(130px, 1fr)
+      130px
+      25px;
+  }
+
+  .question_options {
+    width: 130px;
+
+    grid-template-columns:
+      65px
+      65px;
+  }
+
+  .question_text {
+    font-size: 14px;
+  }
+
+  .question_type_heading {
+    font-size: 13px;
+  }
+
+  .tickBox {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+  }
+
+  .selectTick {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .icon_wrap_holder,
+  .icon_wrap,
+  .icon_wrap .tick,
+  .icon_wrap .cross {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,45 @@
+
+.conversation_card {
+  width: 100%;
+  max-width: 950px;
+
+  margin: 20px 0;
+  padding: 22px 28px;
+
+  background-color: #f8d9ce;
+  border-radius: 14px;
+
+  font-size: 27px;
+  line-height: 1.45;
+
+  text-align: left;
+}
+.conversation_row {
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 6px;
+}
+
+.conversation_row:last-child {
+  margin-bottom: 0;
+}
+
+.speaker {
+  width: 45px;
+  flex-shrink: 0;
+
+  color: #ed3237;
+
+  font-weight: normal;
+}
+
+.conversation_text {
+  flex: 1;
+
+  color: #333;
+}
+
+.conversation_text b {
+  font-weight: bold;
+}

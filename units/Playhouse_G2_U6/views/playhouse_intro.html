@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Playhouse
+    </title>
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../css/all.min.css">
+
+    <style id='ui_style'>
+    </style>
+        <!-- Font Awesome -->
+    <!-- <script src="../js/build/fontawesome.js"></script> -->
+    <link rel="stylesheet" href="../css/draw.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/unit_styles.css">
+    <link rel="stylesheet" href="../css/intro_2.css">
+    <!-- for sub footer -->
+
+    <link rel="stylesheet" href="../css/snapshot_ui.css">
+    <link rel="stylesheet" href="../css/snapshot.css">
+    <link rel="stylesheet" href="../css/intro_2.css">
+    <!-- <link rel="stylesheet" href="../css/welcome.css"> -->
+    <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.ui.touch-punch.min.js" text="text/javascript"></script>
+    <!-- [ Data for Header and Footer ] -->
+    <script src="../js/data/templateData.js" type="text/javascript"></script>
+    <!-- [ / Data for Header and Footer ] -->
+    <script src="../js/data/activityList.js" type="text/javascript"></script>
+    <script src="../js/data/snapshotData.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="mask_parent">
+        <div class="mask_left"></div>
+        <div class="mask_right"></div>
+    </div>
+    <div class='loading'>
+        <div class="loader"></div>
+    </div>
+    <header class='fixed-top'></header>
+    <!-- What I want to Know starts here  -->
+    <div class="modal fade to_know_Panel" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div>What I Want to Know:</div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-question">
+                    <!-- Modal Content -->
+                </div>
+                <div class="modal-squirrel">
+                    <!-- Modal Content -->
+                </div>
+                <div class="modal-vocabulary">
+                    <!-- Modal Content -->
+                </div>
+                <div class="modal-listen">
+                    <!-- Modal Content -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // What I want to Know ends here  -->
+    <div class='mainContent'>
+        <div class='slides'>
+            <div class='slide slide_1'>
+                <div class="container content_wrap content_bg snapshot_container snapShotLoader">
+                   
+                </div>
+                <!-- ///////////////////////////////////////////////// -->
+                
+                <!-- // read with highlights panel ends here  -->
+                <!-- read with highlights panel starts here  -->
+                <div class="modal fade readHilightsPanel_1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // read with highlights panel ends here  -->
+                <!-- read with highlights panel starts here  -->
+                <div class="modal fade readHilightsPanel2_1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                           
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // read with highlights panel ends here  -->
+
+                <div class="container content_wrap">
+                    
+                </div>
+
+                <div class="read_highlights_wrap fixed-bottom" style='margin-top:5px; top: 145px;'>
+                    <!-- <div class="read_highlights_line"></div> -->
+                       <div class="container d-flex justify-content-between popups-container">
+                        <div class="readHighlightsBtn pop_launcher modal-dialog-bottom" data-toggle="modal"
+                            data-target=".readHilightsPanel_1">
+                            <img class='w-100' src="../images/pages/page-1/popup-icon-1.png">
+                        </div>
+                        <div class="readHighlightsBtn pop_launcher modal-dialog-bottom" data-toggle="modal"
+                            data-target=".readHilightsPanel2_1">
+                            <img class='w-100' src="../images/pages/page-1/popup-icon-2.png">
+                        </div>
+                    </div>
+                    </br>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////////////////////////////////////// -->
+    </div>
+   
+    <footer class='fixed-bottom'></footer>
+    <script>
+        var _mediaList = {
+            "image": [],
+            "audio": [],
+            "video": []
+        };
+    </script>
+    <script src="../js/build/template.js" type="text/javascript"></script>
+    <script src="../js/build/snapshotTemplate.js" type="text/javascript"></script>
+    <script src="../js/snapshot.js" type="text/javascript"></script>
+    <script src='../js/generalfunctions.js' type='text/javascript'></script>
+    <script src='../js/loading.js' type='text/javascript'></script>
+    <script src='../js/sketchpad.js' type='text/javascript'></script>
+    <script src='../js/build/toolbar.js' type='text/javascript'></script>
+</body>
+
+</html>

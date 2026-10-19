@@ -1,0 +1,192 @@
+/* ================= General ================= */
+
+.all_cont {
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.activity-content {
+  flex-direction: column;
+}
+
+.options {
+  width: 100%;
+}
+
+/* ================= Activity Layout ================= */
+
+.nounverb_all_cont {
+  width: 100%;
+  height: 100%;
+  padding-top: 18px;
+}
+
+.nounverb_question {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  min-height: 260px;
+}
+
+.nounverb_img {
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nounverb_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nounverb_lines {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.nounverb_line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  white-space: nowrap;
+}
+
+.nounverb_word {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding: 3px 8px;
+}
+
+.nounverb_text {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #111;
+  font-weight: 500;
+}
+
+/* noun = circle */
+.nounverb_word.noun_selected .nounverb_text {
+  border: 3px solid #20bdf2;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+/* verb = underline */
+.nounverb_word.verb_selected .nounverb_text {
+  border-bottom: 4px solid #20bdf2;
+  padding-bottom: 3px;
+}
+
+/* ================= Tick / Cross فوق كل كلمة ================= */
+
+.word_icon_wrap {
+  display: none;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.word_icon_wrap .tick,
+.word_icon_wrap .cross {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.word_icon_wrap .tick img,
+.word_icon_wrap .cross img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ================= Footer Nav ================= */
+
+.sub_footer_icon_left {
+  left: 15px;
+}
+
+.sub_footer_icon_right {
+  right: 15px;
+}
+
+.audio_icon {
+  height: 39px;
+  padding: 1px;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 1199.98px) {
+  .nounverb_question {
+    gap: 35px;
+  }
+
+  .nounverb_lines {
+    width: 400px;
+  }
+
+  .nounverb_line {
+    gap: 24px;
+  }
+
+  .nounverb_text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nounverb_question {
+    gap: 20px;
+  }
+
+  .nounverb_img {
+    width: 150px;
+    height: 155px;
+  }
+
+  .nounverb_lines {
+    width: 360px;
+  }
+
+  .nounverb_text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nounverb_question {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nounverb_lines {
+    width: 100%;
+  }
+
+  .nounverb_line {
+    gap: 18px;
+  }
+}
+.nounverb_img img {
+  border: 2px solid #20bdf2;
+  border-radius: 15px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,275 @@
+/* =========================================================
+   Main layout
+========================================================= */
+
+.all_cont {
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hard_s_page_content {
+  width: 1050px;
+  min-height: 390px;
+  margin: 0 auto;
+  padding: 20px 30px;
+
+  display: flex;
+  flex-direction: row-reverse; /* الصورة تصير يمين */
+  justify-content: center;
+  align-items: center;
+
+  gap: 35px;
+
+  border-radius: 20px;
+  box-shadow: 4px 5px 7px #ccc;
+  background-color: #fff;
+}
+
+/* =========================================================
+   Subtitle
+========================================================= */
+
+.page_sub_title b {
+  color: red;
+}
+
+/* =========================================================
+   Image
+========================================================= */
+
+.hard_s_image_holder {
+  flex-shrink: 0;
+
+  width: 260px;
+  height: 310px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hard_s_image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Poem container
+========================================================= */
+
+.hard_s_poem {
+  flex: 1;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+/* =========================================================
+   Each poem line
+========================================================= */
+
+.hard_s_line {
+  position: relative;
+
+  width: 100%;
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  padding-right: 45px;
+}
+
+.hard_s_options {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 4px;
+}
+
+/* =========================================================
+   Words
+========================================================= */
+
+.hard_s_option {
+  width: fit-content;
+  height: 40px;
+
+  margin: 2px;
+  padding: 2px 8px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #222;
+  background: transparent;
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  font-family: Arcon;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1;
+
+  cursor: pointer;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hard_s_option:hover {
+  transform: scale(1.04);
+}
+
+.hard_s_option:focus {
+  outline: none;
+}
+
+/* =========================================================
+   Selected word circle
+========================================================= */
+
+.hard_s_option.selected {
+  border: 3px solid #222;
+  border-radius: 50%;
+
+  background: transparent;
+}
+
+/* الكلمات الطويلة تحتاج round rectangle بدل دائرة كاملة */
+
+.hard_s_option.selected:has(span),
+.hard_s_option.selected {
+  border-radius: 18px;
+}
+
+/* =========================================================
+   Red letters
+========================================================= */
+
+.hard_s_option .red_text {
+  color: #d2232a;
+}
+
+/* =========================================================
+   Line feedback
+========================================================= */
+
+.hard_s_line_feedback {
+  position: absolute;
+
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+}
+
+.hard_s_tick,
+.hard_s_cross {
+  display: none;
+
+  width: 30px;
+  height: 30px;
+}
+
+.hard_s_tick img,
+.hard_s_cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Empty-answer line
+========================================================= */
+
+.no_correct_answer {
+  min-height: 45px;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 1199.98px) {
+  .hard_s_page_content {
+    width: 95%;
+    gap: 20px;
+  }
+
+  .hard_s_image_holder {
+    width: 220px;
+    height: 280px;
+  }
+
+  .hard_s_option {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hard_s_page_content {
+    flex-direction: column;
+
+    padding: 15px;
+  }
+
+  .hard_s_image_holder {
+    width: 190px;
+    height: 210px;
+  }
+
+  .hard_s_poem {
+    width: 100%;
+  }
+
+  .hard_s_option {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hard_s_page_content {
+    width: 98%;
+
+    padding: 10px;
+  }
+
+  .hard_s_option {
+    height: 36px;
+
+    padding: 2px 6px;
+
+    font-size: 18px;
+  }
+
+  .hard_s_line {
+    padding-right: 35px;
+  }
+
+  .hard_s_tick,
+  .hard_s_cross {
+    width: 25px;
+    height: 25px;
+  }
+}

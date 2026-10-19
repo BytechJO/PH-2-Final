@@ -1,0 +1,289 @@
+/* ==============================================
+   Write About Yourself - Interactive Clock
+================================================= */
+
+.all_cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.options {
+    width: 80%;
+}
+
+.write_clock_questions {
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.write_clock_que {
+    width: 100%;
+    min-height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.write_clock_sentence {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.write_clock_number {
+    width: 40px;
+    flex: 0 0 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+.write_clock_text {
+    min-width: 305px;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 24px;
+    color: #4a4a4a;
+}
+
+.write_clock_input {
+    width: 360px;
+    height: 58px;
+    padding: 7px 18px;
+    border: 2px solid #ed3b43;
+    border-radius: 22px;
+    outline: none;
+    background: #fff;
+    color: #000;
+    font-size: 23px;
+    font-family: inherit;
+}
+
+.write_clock_input:focus {
+    border-color: #cf2028;
+    box-shadow: 0 0 0 4px rgba(237, 59, 67, 0.14);
+}
+
+.write_clock_period {
+    margin-left: -7px;
+    font-size: 26px;
+    color: #333;
+}
+
+
+/* Clock face */
+
+.student_clock {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    flex: 0 0 120px;
+    margin-right: 12px;
+    border: 5px solid #174f75;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow:
+        inset 0 0 0 2px #fff,
+        0 2px 4px rgba(0, 0, 0, 0.18);
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.student_clock:hover {
+    transform: scale(1.035);
+    box-shadow:
+        inset 0 0 0 2px #fff,
+        0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.student_clock:focus {
+    outline: 3px solid rgba(237, 59, 67, 0.3);
+    outline-offset: 4px;
+}
+
+.student_clock.is_dragging {
+    cursor: grabbing;
+    transform: scale(1.05);
+}
+
+.clock_inner_ring {
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #99bfd4;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.clock_mark {
+    width: 1px;
+    height: 3px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: calc(50% - 0.5px);
+    background: #edc55d;
+    transform-origin: 0.5px 50px;
+    pointer-events: none;
+}
+
+.clock_mark_big {
+    width: 2px;
+    height: 6px;
+    left: calc(50% - 1px);
+    background: #ee9e3e;
+    transform-origin: 1px 50px;
+}
+
+.clock_number {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    color: #eca93b;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: bold;
+    pointer-events: none;
+    transition:
+        color 0.15s ease,
+        background-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.clock_number_12,
+.clock_number_3,
+.clock_number_6,
+.clock_number_9 {
+    color: #1c668f;
+}
+
+.clock_number.selected_hour {
+    color: #fff;
+    background: #ed3942;
+    transform: translate(-50%, -50%) scale(1.12);
+}
+
+.clock_hand {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 20px;
+    transform-origin: 50% 100%;
+    pointer-events: none;
+}
+
+/* Fixed minute hand at 12 */
+.minute_hand {
+    width: 3px;
+    height: 42px;
+    background: #45a8ce;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+/* Movable short hour hand */
+.hour_hand {
+    width: 6px;
+    height: 31px;
+    background: #174d72;
+    transform: translateX(-50%) rotate(0deg);
+    transition: transform 0.14s ease-out;
+}
+
+.student_clock.is_dragging .hour_hand {
+    transition: none;
+}
+
+.clock_center_dot {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    z-index: 8;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #174d72;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.clock_changed .clock_center_dot {
+    background: #ed3942;
+}
+
+.clock_resetting .hour_hand {
+    transition: transform 0.35s ease;
+}
+
+
+/* No Check Answer for this page */
+
+.checkBtn {
+    display: none !important;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1000px) {
+    .write_clock_questions {
+        width: 97%;
+    }
+
+    .write_clock_que {
+        gap: 14px;
+    }
+
+    .write_clock_text {
+        min-width: 250px;
+        font-size: 21px;
+    }
+
+    .write_clock_input {
+        width: 290px;
+        height: 53px;
+        font-size: 20px;
+    }
+
+    .student_clock {
+        width: 105px;
+        height: 105px;
+        flex-basis: 105px;
+    }
+
+    .clock_mark {
+        transform-origin: 0.5px 42.5px;
+    }
+
+    .clock_mark_big {
+        transform-origin: 1px 42.5px;
+    }
+
+    .minute_hand {
+        height: 35px;
+    }
+
+    .hour_hand {
+        height: 26px;
+    }
+}

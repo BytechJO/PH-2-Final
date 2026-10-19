@@ -1,0 +1,450 @@
+/* =========================================================
+   Underline and Circle
+   ========================================================= */
+
+.all_cont {
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.screen_elements {
+  width: 90%;
+  height: 100% !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================================================
+   Header
+   ========================================================= */
+
+.underline_circle_header {
+  width: 80%;
+}
+
+.underline_circle_header .q-type-img-container {
+  position: relative;
+}
+
+.underline_circle_header .mainTitle {
+  max-width: 100%;
+  height: auto;
+}
+
+.underline_circle_header .mainTitleIcon {
+  position: absolute;
+  top: 50%;
+
+  width: auto;
+  height: 55px;
+
+  transform: translateY(-50%);
+}
+
+/* =========================================================
+   Title
+   ========================================================= */
+
+
+
+.underline_circle_title .question_number {
+  display: inline-block;
+
+  margin-right: 10px;
+
+  font-weight: 900;
+}
+
+.underline_circle_title .second_instruction {
+  display: inline-block;
+
+  margin-left: 36px;
+}
+
+/* =========================================================
+   Main box
+   ========================================================= */
+
+.underline_circle_activity {
+  position: relative;
+
+  width: 850px;
+  margin-top: 50px;
+  padding: 25px 45px 35px;
+
+  box-sizing: border-box;
+
+  background-color: #dff3fb;
+  border-radius: 20px;
+}
+
+/* =========================================================
+   Tool buttons
+   ========================================================= */
+
+.underline_circle_tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+
+  margin-bottom: 28px;
+}
+
+.mark_tool {
+  min-width: 155px;
+  height: 52px;
+
+  padding: 7px 18px;
+
+  border: 3px solid #d2232a;
+  border-radius: 14px;
+
+  background-color: #fff;
+  color: #252525;
+
+  font-size: 21px;
+  font-weight: 700;
+
+  cursor: pointer;
+  outline: none;
+
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.mark_tool:hover {
+  transform: scale(1.03);
+}
+
+.mark_tool:focus {
+  outline: none;
+}
+
+.mark_tool.active {
+  background-color: #fff3a5;
+
+  box-shadow: 0 0 0 4px rgba(210, 35, 42, 0.15);
+}
+
+.underline_tool_sample {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+.circle_tool_sample {
+  display: inline-block;
+
+  padding: 2px 10px;
+
+  border: 3px solid #d2232a;
+  border-radius: 50%;
+}
+
+/* =========================================================
+   Sentences
+   ========================================================= */
+
+.underline_circle_sentences {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 23px;
+}
+
+.underline_circle_sentence {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 16px;
+
+  color: #242424;
+
+  font-size: 27px;
+  line-height: 1.4;
+
+  text-align: left;
+}
+
+.underline_circle_number {
+  width: 27px;
+  flex: 0 0 27px;
+
+  font-weight: 900;
+  text-align: center;
+}
+
+.underline_circle_words {
+  flex: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  gap: 7px;
+}
+
+/* =========================================================
+   Words
+   ========================================================= */
+
+.underline_circle_word {
+  position: relative;
+  display: inline-block;
+
+  padding: 2px 3px;
+
+  color: #242424;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    transform 0.15s ease,
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.underline_circle_word:hover {
+  transform: scale(1.04);
+
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+/* =========================================================
+   Underline
+   ========================================================= */
+
+.underline_circle_word.selected_underline {
+  text-decoration-line: underline;
+  text-decoration-color: #d2232a;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 5px;
+}
+
+/* =========================================================
+   Circle
+   ========================================================= */
+
+.underline_circle_word.selected_circle::after {
+  content: "";
+
+  position: absolute;
+
+  left: -6px;
+  right: -6px;
+  top: -3px;
+  bottom: -3px;
+
+  border: 3px solid #d2232a;
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   Correct
+   ========================================================= */
+
+.underline_circle_word.answer_correct {
+  color: #168c46;
+}
+
+.underline_circle_word.answer_correct.selected_underline {
+  text-decoration-color: #168c46;
+}
+
+.underline_circle_word.answer_correct.selected_circle::after {
+  border-color: #168c46;
+}
+
+/* =========================================================
+   Wrong
+   ========================================================= */
+
+.underline_circle_word.answer_wrong {
+  color: #d2232a;
+
+  animation: underlineCircleShake 0.3s ease;
+}
+
+.underline_circle_word.answer_wrong.selected_underline {
+  text-decoration-color: #d2232a;
+}
+
+.underline_circle_word.answer_wrong.selected_circle::after {
+  border-color: #d2232a;
+}
+
+@keyframes underlineCircleShake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+/* =========================================================
+   Tick / Cross
+   ========================================================= */
+
+.underline_circle_sentence .theIcons {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+
+  margin-left: 8px;
+}
+
+.underline_circle_sentence .icon_wrap {
+  position: relative;
+
+  display: none;
+
+  width: 38px;
+  height: 38px;
+}
+
+.underline_circle_sentence .tick,
+.underline_circle_sentence .cross {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  width: 36px;
+  height: 36px;
+}
+
+.underline_circle_sentence .tick img,
+.underline_circle_sentence .cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 1199.98px) {
+  .underline_circle_activity {
+    width: 820px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .underline_circle_activity {
+    width: 92%;
+    min-height: auto;
+
+    padding: 22px 30px 30px;
+  }
+
+  .underline_circle_title {
+    font-size: 27px;
+  }
+
+  .underline_circle_sentence {
+    font-size: 24px;
+  }
+
+  .mark_tool {
+    min-width: 140px;
+
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .screen_elements {
+    width: 96%;
+  }
+
+  .underline_circle_activity {
+    width: 96%;
+
+    padding: 20px;
+  }
+
+  .underline_circle_title {
+    font-size: 24px;
+  }
+
+  .underline_circle_tools {
+    gap: 12px;
+
+    margin-bottom: 22px;
+  }
+
+  .mark_tool {
+    min-width: 125px;
+    height: 48px;
+
+    padding: 7px 12px;
+
+    font-size: 18px;
+  }
+
+  .underline_circle_sentences {
+    gap: 18px;
+  }
+
+  .underline_circle_sentence {
+    gap: 10px;
+
+    font-size: 21px;
+  }
+
+  .underline_circle_number {
+    width: 23px;
+    flex-basis: 23px;
+  }
+
+  .underline_circle_sentence .theIcons {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
+  .underline_circle_sentence .icon_wrap,
+  .underline_circle_sentence .tick,
+  .underline_circle_sentence .cross {
+    width: 32px;
+    height: 32px;
+  }
+}

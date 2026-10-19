@@ -1,0 +1,257 @@
+:root {
+  --dinosaurs-red: #ef3340;
+  --dinosaurs-text: #373737;
+  --dinosaurs-selected: #f7d34b;
+  --dinosaurs-white: #ffffff;
+}
+
+/* =========================================================
+   Main activity
+========================================================= */
+
+.activity_area {
+  width: 100%;
+  height: 100%;
+}
+
+.dinosaurs_colour_activity {
+  width: 100%;
+  height: calc(100% - 120px);
+
+  margin: 0 auto;
+  padding: 5px 20px 15px;
+}
+
+/* =========================================================
+   Questions container
+========================================================= */
+
+.dinosaurs_questions {
+  width: min(100%, 1120px);
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  gap: 8px;
+}
+
+/* =========================================================
+   Question row
+========================================================= */
+
+.dinosaur_question {
+  position: relative;
+
+  width: 100%;
+  min-height: 100px;
+
+  display: grid;
+  grid-template-columns:
+    130px
+    minmax(0, 1fr)
+    45px;
+
+  align-items: center;
+  gap: 35px;
+}
+
+/* =========================================================
+   Dinosaur image
+========================================================= */
+
+.dinosaur_image_holder {
+  width: 115px;
+  height: 78px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  border: 2px solid var(--dinosaurs-red);
+  border-radius: 11px;
+
+  background: var(--dinosaurs-white);
+}
+
+.dinosaur_image {
+  width: 100%;
+  height: 100%;
+
+  padding: 3px;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Options
+========================================================= */
+
+.dinosaur_options {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(110px, 1fr));
+
+  align-items: center;
+  gap: clamp(20px, 5vw, 75px);
+}
+
+.dinosaur_option {
+  min-width: 110px;
+  min-height: 48px;
+
+  padding: 5px 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--dinosaurs-text);
+  background: var(--dinosaurs-white);
+
+  border: 2px solid var(--dinosaurs-red);
+  border-radius: 10px;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  outline: none;
+
+  transition:
+    background-color 0.18s ease,
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.dinosaur_option:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.dinosaur_option:focus {
+  outline: none;
+}
+
+.dinosaur_option.selected {
+  background-color: var(--dinosaurs-selected);
+}
+
+.dinosaur_option .option_text {
+  pointer-events: none;
+}
+
+/* =========================================================
+   Feedback
+========================================================= */
+
+.icon_wrap_holder {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_wrap {
+  width: 38px;
+  height: 38px;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconcontainer {
+  width: 36px;
+  height: 36px;
+
+  display: none;
+}
+
+.iconcontainer img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media screen and (max-width: 1100px) {
+  .dinosaur_question {
+    grid-template-columns:
+      115px
+      minmax(0, 1fr)
+      40px;
+
+    gap: 18px;
+  }
+
+  .dinosaur_options {
+    gap: 20px;
+  }
+
+  .dinosaur_option {
+    min-width: 90px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .dinosaurs_colour_activity {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .dinosaurs_questions {
+    justify-content: flex-start;
+  }
+
+  .dinosaur_question {
+    grid-template-columns:
+      100px
+      minmax(0, 1fr)
+      35px;
+
+    margin-bottom: 10px;
+  }
+
+  .dinosaur_image_holder {
+    width: 95px;
+    height: 70px;
+  }
+
+  .dinosaur_options {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+
+    gap: 10px;
+  }
+
+  .dinosaur_option {
+    min-height: 42px;
+    font-size: 20px;
+  }
+
+  .page_sub_title p {
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,647 @@
+.all_cont {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.screen_elements {
+  width: 90%;
+  height: 100% !important;
+}
+
+.group_elm {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+}
+
+.audio_icon {
+  height: 39px;
+  padding: 1px;
+}
+
+.image_gap {
+  height: 100%;
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: max-content;
+}
+
+.img_fillin_gr {
+  width: 270px;
+  position: relative;
+  margin: 0px;
+  font-size: 28px;
+}
+
+.image_space {
+  width: 260px;
+  height: 193px;
+}
+
+.image_space img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.textFront {
+  margin: 2px auto;
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+.fillin_gr {
+  position: relative;
+  /* height: 65px; */
+  text-align: center;
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.fillin_set {
+  width: 211px;
+  margin-top: 10px;
+  font-size: 30px;
+  margin: 0px auto;
+  text-align: center !important;
+  border-radius: 12px;
+  background-color: #fff;
+  /* border: 2px solid #555555; */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.q_space {
+  margin: 0px auto;
+}
+
+.fillin_gr input {
+  width: 48px;
+  /* flex: 1; */
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font-size: 33px;
+  height: 35px;
+  margin: 2px;
+}
+
+.fillin_gr input:focus {
+  outline: none;
+}
+
+.fillin_gr input:last-child {
+  width: 195px;
+}
+
+.fillin_gr .icon_wrap_holder {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+.icon_wrap {
+  position: absolute;
+  bottom: 0;
+}
+
+.tick,
+.cross {
+  width: 32px;
+  height: 32px;
+}
+
+.clue_word {
+  margin: 6px;
+  color: #000;
+}
+
+.word_options {
+  width: 90%;
+  border: 2px solid var(--temp);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  font-size: 20px;
+}
+
+.word_opt_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+/**** popup window ***/
+
+/* ====================================================== */
+/*              Media Queries Start                       */
+/* ====================================================== */
+/* ------------------------------------------------ */
+/*              M Q max-width: 1799.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1800px) */
+@media (max-width: 1799.98px) {
+}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 1399.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 1199.98px */
+/* ------------------------------------------------*/
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .word_options {
+    margin-bottom: 1vh;
+  }
+
+  .img_fillin_gr {
+    width: 268px;
+  }
+
+  .screen_elements {
+    height: 100% !important;
+  }
+}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 991.98px */
+/* ------------------------------------------------*/
+/* // Medium devices (tablets, less than 992px) 768 to 991.98 */
+@media (max-width: 991.98px) {
+}
+
+/* ------------------------------------------------ */
+/* M Q max-width: 767.98px */
+/* ------------------------------------------------*/
+/* // Small devices (landscape phones, less than 768px) 576 to 767.98*/
+@media (max-width: 767.98px) {
+}
+
+/* ------------------------------------------------ */
+/* M Q max-width: 575.98px */
+/* ------------------------------------------------*/
+/* // Extra small devices (portrait phones, less than 576px) 476 to 575*/
+@media (max-width: 575.98px) {
+}
+
+/* ------------------------------------------------ */
+/*              M Q max-width: 475.98px             */
+/* ------------------------------------------------*/
+/* body working fine 320 to 475 */
+@media (max-width: 475.98px) {
+}
+
+.SentenceBuilding_container {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.SentenceBuilding_container .cont_items {
+  width: 1128px;
+  height: 250px;
+  position: relative;
+  margin: 0 auto;
+
+  /* صورة البوكس الجاهزة */
+  background-image: url("../images/pages/page-6/sent-build-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.SentenceBuilding_container .cont_items .item {
+  position: absolute;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+/* ================= Title ================= */
+
+.SentenceBuilding_container .main_title_container {
+  position: absolute;
+  top: 9px;
+  left: 39px;
+  width: 355px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SentenceBuilding_container .main_title_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 39px;
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.SentenceBuilding_container .main_title_img {
+  height: 53px;
+  border-radius: 30px;
+}
+
+/* ================= Layout فوق صورة البوكس ================= */
+
+/* منطقة الضغط فوق الضفدع اليسار */
+.SentenceBuilding_container .item-0 {
+  left: 10px;
+  top: 62px;
+  width: 170px;
+  height: 170px;
+  cursor: pointer;
+  z-index: 30;
+}
+
+/* الفقاعة اليسار */
+.SentenceBuilding_container .item-1 {
+  left: 135px;
+  top: 117px;
+  z-index: 7;
+}
+
+/* النص بالنص */
+.SentenceBuilding_container .item-2 {
+  left: 50%;
+  top: 52px;
+  transform: translateX(-50%);
+  width: 430px;
+  text-align: center;
+  z-index: 9;
+}
+
+/* صورة الأولاد */
+.SentenceBuilding_container .item-3 {
+  left: 50%;
+  top: 118px;
+  transform: translateX(-50%);
+  z-index: 8;
+}
+
+/* الفقاعة اليمين */
+.SentenceBuilding_container .item-4 {
+  right: 135px;
+  top: 117px;
+  z-index: 7;
+}
+
+/* منطقة الضغط فوق الضفدع اليمين */
+.SentenceBuilding_container .item-5 {
+  right: 10px;
+  top: 62px;
+  width: 170px;
+  height: 170px;
+  cursor: pointer;
+  z-index: 30;
+}
+
+/* ================= Images ================= */
+
+.SentenceBuilding_container img {
+  transform: none;
+  max-width: none;
+}
+
+/* نخفي صور الضفادع المركبة فوق البوكس */
+.SentenceBuilding_container .item-0 img,
+.SentenceBuilding_container .item-5 img {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* الضفادع بدون انيميشن */
+.SentenceBuilding_container .readHighlightsBtn,
+.SentenceBuilding_container .readHighlightsBtn.gelatine {
+  width: 95px;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  animation: none !important;
+  -webkit-animation: none !important;
+}
+
+/* الفقاعات */
+.SentenceBuilding_container .bubble_img {
+  width: 240px;
+  height: auto;
+}
+
+/* تظل مخفية بالبداية وتظهر لما تكبس حسب كودك */
+.SentenceBuilding_container .showImg1,
+.SentenceBuilding_container .showImg2 {
+  display: none;
+}
+
+/* صورة الأولاد */
+.SentenceBuilding_container .inner_img {
+  position: static;
+  width: auto;
+  height: 100px;
+}
+
+/* ================= Text ================= */
+
+.SentenceBuilding_container .middle_sentence {
+  display: inline-block;
+  position: relative;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  color: #111;
+}
+
+.SentenceBuilding_container .middle_sentence .label {
+  display: inline-block;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #d2232a;
+  margin: 0 25px 2px 25px;
+}
+
+.SentenceBuilding_container .middle_sentence b {
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.blue_text {
+  color: #008ed4;
+}
+
+.red_text,
+.red {
+  color: #d2232a;
+  font-weight: 900;
+}
+
+/* ================= Title letter colors ================= */
+
+.SentenceBuilding_container .main_title_text .letter-0 {
+  color: #ffc20e;
+}
+
+.SentenceBuilding_container .main_title_text .letter-1 {
+  color: #f06da8;
+}
+
+.SentenceBuilding_container .main_title_text .letter-2 {
+  color: #97cb59;
+}
+
+.SentenceBuilding_container .main_title_text .letter-3 {
+  color: #008ed4;
+}
+
+.SentenceBuilding_container .main_title_text .letter-4 {
+  color: #ec008c;
+}
+
+.SentenceBuilding_container .main_title_text .letter-5 {
+  color: #ffc20e;
+}
+
+.SentenceBuilding_container .main_title_text .letter-6 {
+  color: #f06da8;
+}
+
+.SentenceBuilding_container .main_title_text .letter-7 {
+  color: #97cb59;
+}
+
+.SentenceBuilding_container .main_title_text .letter-9 {
+  color: #ffc20e;
+}
+
+.SentenceBuilding_container .main_title_text .letter-10 {
+  color: #f06da8;
+}
+
+.SentenceBuilding_container .main_title_text .letter-11 {
+  color: #008ed4;
+}
+
+.SentenceBuilding_container .main_title_text .letter-12 {
+  color: #ec008c;
+}
+
+.SentenceBuilding_container .main_title_text .letter-13 {
+  color: #97cb59;
+}
+
+.SentenceBuilding_container .main_title_text .letter-14 {
+  color: #ffc20e;
+}
+
+.SentenceBuilding_container .main_title_text .letter-15 {
+  color: #f06da8;
+}
+
+.SentenceBuilding_container .main_title_text .letter-16 {
+  color: #008ed4;
+}
+
+/* ================= Animations ================= */
+/* ملاحظة: الضفادع ملغى عنها الانيميشن فوق */
+
+/* حروف العنوان فقط */
+.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* موجودة لباقي العناصر لو في شي ثاني بستعملها، لكن الضفادع ملغية عنها */
+.gelatine {
+  animation: gelatine 0.5s infinite;
+}
+
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(209, 35, 41, 50%);
+  }
+
+  50% {
+    box-shadow: 0 0 30px 0 rgba(209, 35, 41, 50%);
+  }
+}
+
+/* ================= Media Queries ================= */
+
+@media (max-width: 1799.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+  .word_options {
+    margin-bottom: 1vh;
+  }
+
+  .img_fillin_gr {
+    width: 268px;
+  }
+
+  .screen_elements {
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 475.98px) {
+}
+.SentenceBuilding_container .item-0,
+.SentenceBuilding_container .item-5 {
+  width: 220px;
+  height: 190px;
+  cursor: pointer;
+  z-index: 30;
+}
+/* مساحة الكليك فوق الضفدع اليسار */
+.SentenceBuilding_container .item-0 {
+  left: 10px;
+  top: 100px;
+}
+
+/* مساحة الكليك فوق الضفدع اليمين */
+.SentenceBuilding_container .item-5 {
+  right: 10px;
+  top: 100px;
+}
+.SentenceBuilding_container .main_title_container {
+  cursor: pointer;
+}
+.sentence_audio_box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.sentence_audio_box {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.sentence_audio_box:hover {
+  transform: scale(1.1);
+}
+
+.sentence_examples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.example_audio_sentence {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.example_audio_sentence:hover {
+  transform: scale(1.1);
+}

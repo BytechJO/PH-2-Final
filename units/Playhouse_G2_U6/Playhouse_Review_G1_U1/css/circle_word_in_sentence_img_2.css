@@ -1,0 +1,465 @@
+.question_group {
+    width: 100%;
+    max-width: 1050px;
+    height: auto;
+
+    margin: 0 auto;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 40px;
+    row-gap: 25px;
+
+    align-items: stretch;
+    justify-content: center;
+}
+
+/* ====================================================== */
+/*                     Question                           */
+/* ====================================================== */
+
+.que {
+    width: 100%;
+    min-width: 0;
+    min-height: 220px;
+
+    box-sizing: border-box;
+    position: relative;
+
+    padding: 15px 20px 15px 45px;
+
+    border-radius: 10px;
+    font-size: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* اختياري */
+    /* border: 1px solid #d3cdcd68 !important; */
+}
+
+/* ====================================================== */
+/*                  Question Line                         */
+/* ====================================================== */
+
+.ques_line {
+    width: 100%;
+}
+
+.q_grp {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ====================================================== */
+/*                   Top Sentence                         */
+/* ====================================================== */
+
+.top-sentence {
+    width: 100%;
+    min-height: 80px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.top-sentence p {
+    width: 100%;
+    margin: 0;
+
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+/* ====================================================== */
+/*                    Question Part                       */
+/* ====================================================== */
+
+.q_part {
+    width: 100%;
+    height: max-content;
+
+    margin-right: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    letter-spacing: 1px;
+}
+
+.q_num_space {
+    width: 27px;
+    min-width: 27px;
+
+    margin-right: 5px;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ====================================================== */
+/*                 Image + Text Layout                    */
+/* ====================================================== */
+
+.text_part,
+.text_container,
+.q_part,
+.q_grp {
+    width: 100%;
+}
+
+.text_part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.text_container {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_space {
+    width: 50%;
+    min-width: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_space img {
+    width: 200px !important;
+    max-width: 100%;
+    height: 140px;
+
+    object-fit: contain;
+}
+
+/* ====================================================== */
+/*                       Options                          */
+/* ====================================================== */
+
+.pick_set {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_picks {
+    width: 100%;
+}
+
+.picks_grp {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pick {
+    min-height: 34px;
+
+    box-sizing: border-box;
+
+    border: 2px solid transparent;
+    padding: 2px 7px;
+
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.roundedCorners {
+    border-radius: 10px;
+}
+
+/* ====================================================== */
+/*                    Tick / Cross                        */
+/* ====================================================== */
+
+.icon_wrap {
+    position: absolute;
+
+    top: 50%;
+    left: 5px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 !important;
+}
+
+.tick,
+.cross {
+    width: 25px;
+    height: 25px;
+}
+
+.tick img,
+.cross img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+/* ====================================================== */
+/*                       Audio                            */
+/* ====================================================== */
+
+.text_part .audioIcon {
+    width: auto;
+    text-align: center;
+}
+
+.audioIcon.off.d-flex.align-items-center {
+    margin: 5px;
+    margin-top: -5px;
+}
+
+/* ====================================================== */
+/*                       Input                            */
+/* ====================================================== */
+
+.text_input_area {
+    width: 329px;
+    max-width: 100%;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: transparent;
+
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+
+    margin-bottom: 5px;
+
+    color: black !important;
+}
+
+/* ====================================================== */
+/*                    Main Wrapper                        */
+/* ====================================================== */
+
+.options {
+    width: 100%;
+}
+
+.all_cont {
+    width: 100%;
+
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.all_cont > .h-100 {
+    width: 100%;
+    max-width: 1100px;
+    height: auto !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ====================================================== */
+/*                    Helper Classes                      */
+/* ====================================================== */
+
+.border-none {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.not-disapled {
+    opacity: 1 !important;
+    pointer-events: all;
+}
+
+/* ====================================================== */
+/*                    Media Queries                       */
+/* ====================================================== */
+
+@media (max-width: 1399.98px) {
+    .question_group {
+        max-width: 1000px;
+        column-gap: 25px;
+        row-gap: 18px;
+    }
+
+    .que {
+        min-height: 200px;
+        margin-bottom: 0;
+
+        padding: 12px 15px 12px 40px;
+    }
+
+    .top-sentence {
+        min-height: 70px;
+    }
+
+    .img_space img {
+        width: 180px !important;
+        height: 125px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .question_group {
+        width: 95%;
+        column-gap: 20px;
+    }
+
+    .que {
+        font-size: 23px;
+    }
+
+    .top-sentence p {
+        font-size: 23px;
+    }
+
+    .img_space img {
+        width: 160px !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .question_group {
+        width: 96%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+
+    .que {
+        min-height: 185px;
+
+        padding: 10px 12px 10px 35px;
+
+        font-size: 21px;
+    }
+
+    .top-sentence {
+        min-height: 60px;
+    }
+
+    .top-sentence p {
+        font-size: 21px;
+    }
+
+    .q_part {
+        letter-spacing: 0;
+        margin-right: 0;
+    }
+
+    .img_space img {
+        width: 140px !important;
+        height: 110px;
+    }
+
+    .text_input_area {
+        width: 250px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .question_group {
+        width: 94%;
+        grid-template-columns: 1fr;
+
+        row-gap: 18px;
+    }
+
+    .que {
+        width: 100%;
+        min-height: 180px;
+    }
+
+    .img_space {
+        width: 45%;
+    }
+
+    .text_container {
+        width: 55%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .que {
+        padding: 10px 10px 10px 35px;
+
+        font-size: 19px;
+    }
+
+    .top-sentence p {
+        font-size: 19px;
+    }
+
+    .q_part {
+        flex-direction: column;
+    }
+
+    .img_space,
+    .text_container {
+        width: 100%;
+    }
+
+    .img_space img {
+        width: 150px !important;
+        height: 105px;
+    }
+
+    .icon_wrap {
+        top: 10px;
+        left: 5px;
+
+        transform: none;
+    }
+}
+
+@media (max-width: 475.98px) {
+    .question_group {
+        width: 96%;
+    }
+
+    .que {
+        font-size: 18px;
+    }
+
+    .top-sentence p {
+        font-size: 18px;
+    }
+}

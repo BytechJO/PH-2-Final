@@ -1,0 +1,340 @@
+:root {
+  --comma-red: #e4313c;
+  --comma-text: #2e2e2e;
+  --comma-blue: #35a5d6;
+}
+
+/* =========================================================
+   Main activity
+========================================================= */
+
+.click_commas_write_options {
+  width: 100%;
+  height: 100%;
+}
+
+.click_commas_write_all_cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.click_commas_write_wrapper {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-evenly;
+
+  padding: 5px 0 15px;
+}
+
+/* =========================================================
+   Question
+========================================================= */
+
+.click_commas_write_question {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  padding: 4px 0;
+}
+
+.click_commas_top_row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    140px
+    minmax(0, 1fr);
+
+  column-gap: 18px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   Image
+========================================================= */
+
+.click_commas_image_holder {
+  width: 137px;
+  height: 89px;
+  border: 2px solid var(--comma-red);
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+.click_commas_image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* =========================================================
+   Clickable sentence
+========================================================= */
+
+.click_commas_sentence {
+  width: 100%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  color: var(--comma-text);
+
+  font-family: Arcon;
+
+  font-size: 24px;
+
+  line-height: 1.6;
+
+  text-align: left;
+}
+
+.click_commas_word {
+  display: inline-flex;
+
+  align-items: center;
+}
+
+/* =========================================================
+   Click space between words
+========================================================= */
+
+.comma_click_space {
+  position: relative;
+
+  width: 14px;
+  height: 34px;
+
+  margin: 0 2px;
+
+  padding: 0;
+
+  border: none;
+
+  outline: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+.comma_click_space::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 4px;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background-color: transparent;
+
+  transform: translateX(-50%);
+}
+
+.comma_click_space:hover::after {
+  background-color: #d7d7d7;
+}
+
+.comma_symbol {
+  position: absolute;
+
+  left: 50%;
+  bottom: -1px;
+
+  display: none;
+
+  color: var(--comma-red);
+
+  font-family: Arcon;
+
+  font-size: 30px;
+
+  font-weight: bold;
+
+  line-height: 1;
+
+  transform: translateX(-50%);
+}
+
+.comma_click_space.selected {
+  width: 18px;
+}
+
+.comma_click_space.selected .comma_symbol {
+  display: block;
+}
+
+.comma_click_space.selected::after {
+  display: none;
+}
+
+/* =========================================================
+   Writing row
+========================================================= */
+
+.click_commas_write_row {
+  width: calc(100% - 158px);
+
+  margin-left: 158px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.click_commas_textarea {
+  width: 100%;
+  height: 40px;
+  min-height: 40px;
+
+  padding: 0 12px 2px;
+
+  border: none;
+  border-bottom: 2px solid black;
+
+  outline: none;
+  resize: none;
+  overflow: hidden;
+
+  background-color: transparent;
+
+  color: #000;
+  font-family: Arcon;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.click_commas_textarea:focus {
+  border-bottom-color: var(--comma-blue);
+}
+
+.click_commas_textarea::placeholder {
+  color: #9c9c9c;
+
+  font-size: 18px;
+}
+
+/* =========================================================
+   Result icons
+========================================================= */
+
+.click_commas_write_row .icon_wrap_holder {
+  width: 38px;
+  min-width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.click_commas_write_row .icon_wrap {
+  display: none;
+
+  width: 34px;
+  height: 34px;
+}
+
+.click_commas_write_row .tick,
+.click_commas_write_row .cross {
+  display: none;
+
+  width: 34px;
+  height: 34px;
+}
+
+.click_commas_write_row .tick img,
+.click_commas_write_row .cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Subtitle
+========================================================= */
+
+.click_commas_write .page_sub_title {
+  align-items: center;
+}
+
+.click_commas_write .page_sub_title img {
+  width: auto;
+  height: 58px;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .click_commas_write_wrapper {
+    width: 97%;
+  }
+
+  .click_commas_top_row {
+    grid-template-columns:
+      115px
+      minmax(0, 1fr);
+
+    column-gap: 12px;
+  }
+
+  .click_commas_image_holder {
+    width: 108px;
+    height: 65px;
+  }
+
+  .click_commas_sentence {
+    font-size: 20px;
+  }
+
+  .click_commas_write_row {
+    width: calc(100% - 127px);
+
+    margin-left: 127px;
+  }
+
+  .click_commas_textarea {
+    font-size: 19px;
+  }
+}

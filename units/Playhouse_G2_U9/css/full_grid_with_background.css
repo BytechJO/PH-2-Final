@@ -1,0 +1,37 @@
+.full_grid_with_background_image .col_grid_container {
+    width: 95%;
+    position: relative;
+}
+
+.full_grid_with_background_image .snap_group_all {
+    width: 96%;
+    position: absolute;
+    top: 46px;
+    left: 48px;
+    text-align: left;
+    line-height: 45px;
+}
+.reading_slide .background_img{
+    height: 608px !important;
+}
+
+/* =========================== */
+.grid_without_background_image .col_grid_container{
+    background-color: #ffe8d1;
+    padding: 50px;
+}
+/* =========================== */
+.full_grid_without_background_image {
+    width: 80%;
+    line-height: 55px;
+}
+
+.full_grid_without_background_image .ss_text {
+    text-align: center;
+    font-size: 30px;
+}
+
+.full_grid_without_background_image .ss_text img{
+    height: 209px;
+    
+}

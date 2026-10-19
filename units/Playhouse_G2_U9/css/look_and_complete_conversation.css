@@ -1,0 +1,328 @@
+/* ================================================= */
+/* Main activity */
+/* ================================================= */
+
+.activity_area {
+  width: 100%;
+  height: 100%;
+}
+
+.conversation_activity_cont {
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.screen_elements {
+  width: 81%;
+  height: 100%;
+}
+
+
+/* ================================================= */
+/* Questions grid */
+/* ================================================= */
+
+.conversation_fillin_grid {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  column-gap: 65px;
+  row-gap: 32px;
+
+  align-content: start;
+
+  padding: 10px 25px 40px;
+}
+
+
+/* ================================================= */
+/* Question card */
+/* ================================================= */
+
+.conversation_card {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 0 !important;
+  background: transparent !important;
+}
+
+
+/* ================================================= */
+/* Question row */
+/* ================================================= */
+
+.conversation_question_row {
+  width: 100%;
+  min-height: 46px;
+
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 7px;
+}
+
+.conversation_number {
+  width: 34px;
+  min-width: 34px;
+
+  margin-right: 6px;
+
+  color: #333;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+
+  line-height: 38px;
+}
+
+
+/* ================================================= */
+/* Sentences */
+/* ================================================= */
+
+.conversation_sentence {
+  flex: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 5px;
+
+  color: #333;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 23px;
+  font-weight: normal;
+
+  line-height: 1.4;
+}
+
+.conversation_text_part {
+  display: inline-flex;
+  align-items: center;
+
+  min-width: max-content;
+}
+
+
+/* ================================================= */
+/* Inputs */
+/* ================================================= */
+
+.conversation_input {
+  height: 34px;
+
+  padding: 2px 6px;
+
+  color: #333;
+
+  font-family: Arcon, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+
+  text-align: center;
+
+  border: 0;
+  border-bottom: 2px solid #777;
+  border-radius: 0;
+
+  outline: none;
+  background: transparent;
+}
+
+.question_input {
+  width: 210px;
+}
+
+.answer_input {
+  width: 190px;
+}
+
+.conversation_input:focus {
+  border-bottom-color: #2389c9;
+}
+
+
+/* ================================================= */
+/* Image */
+/* ================================================= */
+
+.conversation_image_space {
+  width: 82%;
+  height: 250px;
+
+  margin: 5px auto 8px;
+
+  overflow: hidden;
+
+  border: 3px solid #df363d;
+  border-radius: 14px;
+
+  background: #fff;
+}
+
+.conversation_image_space img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* ================================================= */
+/* Answer row */
+/* ================================================= */
+
+.conversation_answer_row {
+  width: 82%;
+  min-height: 47px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.answer_sentence {
+  width: calc(100% - 55px);
+  flex: 1;
+}
+
+
+/* ================================================= */
+/* Feedback icons */
+/* ================================================= */
+
+.conversation_answer_row .icon_wrap_holder {
+  width: 48px;
+  min-width: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conversation_answer_row .icon_wrap {
+  width: 42px;
+  height: 42px;
+
+  position: relative;
+}
+
+.conversation_answer_row .tick,
+.conversation_answer_row .cross {
+  width: 38px;
+  height: 38px;
+
+  display: none;
+}
+
+.conversation_answer_row .tick img,
+.conversation_answer_row .cross img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* ================================================= */
+/* Keep text black after checking */
+/* ================================================= */
+
+.conversation_input.correct,
+.conversation_input.incorrect,
+.conversation_input.right,
+.conversation_input.wrong {
+  color: #333 !important;
+}
+
+.conversation_card.correct,
+.conversation_card.incorrect,
+.conversation_card.right,
+.conversation_card.wrong {
+  color: #333 !important;
+}
+
+
+/* ================================================= */
+/* Subtitle */
+/* ================================================= */
+
+.page_sub_title {
+  align-items: center;
+}
+
+.page_sub_title p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.red_text {
+  color: #d2232a;
+}
+
+
+/* ================================================= */
+/* Medium screens */
+/* ================================================= */
+
+@media screen and (max-width: 1200px) {
+  .conversation_fillin_grid {
+    column-gap: 30px;
+    row-gap: 25px;
+  }
+
+  .conversation_sentence {
+    font-size: 20px;
+  }
+
+  .conversation_image_space {
+    height: 175px;
+  }
+
+  .question_input {
+    width: 175px;
+  }
+
+  .answer_input {
+    width: 160px;
+  }
+}
+
+
+/* ================================================= */
+/* Small screens */
+/* ================================================= */
+
+@media screen and (max-width: 850px) {
+  .conversation_fillin_grid {
+    grid-template-columns: 1fr;
+
+    padding: 10px 15px 35px;
+  }
+
+  .conversation_image_space,
+  .conversation_answer_row {
+    width: 90%;
+  }
+}

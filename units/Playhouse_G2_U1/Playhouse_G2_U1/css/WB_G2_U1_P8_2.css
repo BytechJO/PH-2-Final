@@ -1,0 +1,217 @@
+/* ================= General ================= */
+
+.all_cont {
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.activity-content {
+  flex-direction: column;
+}
+
+.options {
+  width: 100%;
+}
+
+/* ================= Draw + Write Layout ================= */
+
+.draw_write_all_cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 14px;
+  padding-top: 10px;
+}
+
+.draw_box_wrap {
+  width: 470px;
+  height: 425px;
+  border: 2.5px solid #20bdf2;
+  border-radius: 11px;
+  background: #fff;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.backpack_canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+/* ================= Writing Area ================= */
+
+.writing_box_wrap {
+  width: 315px;
+  min-height: 425px;
+  padding-top: 5px;
+}
+
+.writing_first_line {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 37px;
+  gap: 6px;
+  font-size: 22px;
+  color: #111;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.writing_first_line span {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.name_input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  border-bottom: 2px solid #555;
+  background: transparent;
+  outline: none;
+  height: 29px;
+  font-size: 21px;
+  padding: 0 4px;
+}
+
+.writing_lines {
+  width: 100%;
+}
+
+.writing_line_input {
+  display: block;
+  width: 100%;
+  height: 37px;
+  border: none;
+  border-bottom: 2px solid #555;
+  background: transparent;
+  outline: none;
+  font-size: 21px;
+  padding: 0 4px;
+}
+
+/* ================= Footer Nav ================= */
+
+.sub_footer_icon_left {
+  left: 15px;
+}
+
+.sub_footer_icon_right {
+  right: 15px;
+}
+
+.audio_icon {
+  height: 39px;
+  padding: 1px;
+}
+.checkBtn {
+  display: none !important;
+}
+/* ================= Responsive ================= */
+
+@media (max-width: 1199.98px) {
+  .draw_box_wrap {
+    width: 430px;
+    height: 390px;
+  }
+
+  .writing_box_wrap {
+    width: 300px;
+  }
+
+  .page_sub_title {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .draw_write_all_cont {
+    gap: 10px;
+  }
+
+  .draw_box_wrap {
+    width: 390px;
+    height: 360px;
+  }
+
+  .writing_box_wrap {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .draw_write_all_cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .draw_box_wrap {
+    width: 90%;
+    height: 320px;
+  }
+
+  .writing_box_wrap {
+    width: 90%;
+  }
+}
+.draw_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.draw_tools {
+  width: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.draw_color {
+  width: 42px;
+  height: 34px;
+  border: 2px solid #20bdf2;
+  border-radius: 8px;
+  background: #fff;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.draw_size {
+  width: 120px;
+  cursor: pointer;
+}
+
+.draw_tool_btn {
+  border: 2px solid #20bdf2;
+  background: #fff;
+  color: #20bdf2;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.draw_tool_btn.active {
+  background: #20bdf2;
+  color: #fff;
+}
+
+.draw_tool_btn:hover {
+  background: #d9f3ff;
+}
+
+.draw_tool_btn.active:hover {
+  background: #20bdf2;
+}

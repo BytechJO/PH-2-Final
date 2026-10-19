@@ -1,0 +1,184 @@
+.all_cont {
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen_elements {
+  width: 80%;
+  height: 100%;
+}
+
+.group_elm {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ques {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px 45px;
+}
+
+/* كل بطاقة */
+
+.fill_in .que {
+  position: relative;
+
+  width: 100%;
+  min-height: 170px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* المحتوى */
+
+.fillin_gr,
+.q_space,
+.fillin_set {
+  width: 100%;
+}
+
+.fillin_set {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* الكلام داخل الفقاعة */
+
+.txt-audioIcon {
+    position: relative;
+
+    width: 90%;
+    min-height: 72px;
+
+    padding: 10px 14px;
+
+    background: #fff;
+
+    border: 5px solid #f1cfc2;
+    border-radius: 18px;
+
+    box-shadow:
+        inset 6px 0 0 #b8b8b8,
+        inset 0 6px 0 #b8b8b8,
+        6px 7px 0 #aaa;
+}
+
+/* ذيل الفقاعة */
+
+.txt-audioIcon::after {
+  content: "";
+
+  position: absolute;
+
+  left: 20px;
+  bottom: -28px;
+
+  width: 0;
+  height: 0;
+
+  border-top: 28px solid #f1cfc2;
+  border-right: 18px solid transparent;
+}
+
+.txt-audioIcon::before {
+  content: "";
+
+  position: absolute;
+
+  left: 25px;
+  bottom: -17px;
+
+  z-index: 2;
+
+  width: 0;
+  height: 0;
+
+  border-top: 20px solid #fff;
+  border-right: 13px solid transparent;
+}
+
+/* دائرة الرقم */
+
+.fillin_set input {
+  width: 56px;
+  height: 56px;
+
+  margin-top: 38px;
+
+  padding: 0;
+
+  color: #222;
+  background: #fff;
+
+  border: 2px solid #ed3747;
+  border-radius: 50%;
+
+  outline: none;
+
+  font-size: 28px;
+  text-align: center;
+}
+
+/* رقم المجموعة 1 و 2 */
+
+.conversation_group_number {
+  position: absolute;
+
+  left: -30px;
+  top: 0;
+
+  color: #222;
+
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* علامة الصح والخطأ */
+
+.icon_wrap_holder {
+  position: absolute;
+
+  right: -5px;
+  bottom: 0;
+}
+
+.tick,
+.cross {
+  width: 35px;
+}
+
+.tick img,
+.cross img {
+  width: 100%;
+}
+
+/* موبايل */
+
+@media (max-width: 900px) {
+  .ques {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ques {
+    grid-template-columns: 1fr;
+  }
+}

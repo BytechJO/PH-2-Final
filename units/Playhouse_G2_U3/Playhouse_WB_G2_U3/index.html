@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Playhouse
+    </title>
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+    <style id='ui_style'>
+    </style>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/unit_styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/welcome.css">
+    <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="./js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.ui.touch-punch.min.js" text="text/javascript"></script>
+    <!-- [ Data for Header and Footer ] -->
+    <script src="./js/data/templateData.js" type="text/javascript"></script>
+    <script src="./js/data/welcomeData.js" type="text/javascript"></script>
+    <!-- [ / Data for Header and Footer ] -->
+</head>
+
+<body>
+    <div class="mask_parent">
+        <div class="mask_left"></div>
+        <div class="mask_right"></div>
+    </div>
+    <div class='loading'>
+        <div class="loader"></div>
+    </div>
+    <header class='fixed-top'></header>
+    <div class='mainContent'>
+        <div class="bgimg_wrap">
+            <div class="welcomeImg m-auto">
+            </div>
+        </div>
+
+        <!-- read with highlights panel starts here  -->
+        <div class="modal fade readHilightsPanel" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Read with Highlights&nbsp;&nbsp;</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // read with highlights panel ends here  -->
+        <!-- read with highlights panel starts here  -->
+        <div class="modal fade ccssPanel" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content ">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <div class="ccssBtn">
+                            <img class='w-100' src="./images/icons/ccss_btn.png">
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body ccss-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // read with highlights panel ends here  -->
+        <div class="container content_wrap">
+            <div class="wel_but_grup d-flex flex-row flex-md-column justify-content-center">
+                <div class="highlightsIcon">
+                    <img class='w-100' src="./images/icons/highlights_icon.png">
+                </div>
+                <div class="apkBtn pop_launcher" data-toggle="modal" data-target=".ccssPanel">
+                    <img class='w-100' src="./images/icons/ccss_btn.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="read_highlights_wrap fixed-bottom" style='margin-top:5px;'>
+            <div class="read_highlights_line"></div>
+            <div class="container">
+                <div class="readHighlightsBtn pop_launcher modal-dialog-bottom" data-toggle="modal"
+                    data-target=".readHilightsPanel">
+                    <img class='w-100' src="./images/icons/read_with_highlights_oval.png">
+                </div>
+            </div>
+            </br>
+        </div> -->
+    </div>
+    <!-- <div class="sub_footer"></div>  
+    <div class="welcome-content">
+        <div class="container">
+            <!- - <div class="wel-scr-text">Tex and Indi's family plants a garden.</div> - ->
+        </div>
+    </div>-->
+
+    <footer class='fixed-bottom'></footer>
+    <script>
+        var _mediaList = {
+            "image": ["./images/pages/welcome/ARC_K_1_SB_U4_P44.jpg", './images/icons/activePriorKnow_bg.png', './images/icons/read_with_highlights_oval.png', "./images/icons/highlights_icon.png"],
+            "audio": [],
+            "video": []
+        };
+    </script>
+    <script src="./js/build/template.js" type="text/javascript"></script>
+    <script src="./js/build/welcomeBuild.js" type="text/javascript"></script>
+    <script src='./js/generalfunctions.js' type='text/javascript'></script>
+    <script src='./js/loading.js' type='text/javascript'></script>
+    <script src='../js/sketchpad.js' type='text/javascript'></script>
+</body>
+
+</html>
