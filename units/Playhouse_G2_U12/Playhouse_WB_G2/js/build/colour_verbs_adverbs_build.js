@@ -233,7 +233,7 @@ function buildColourVerbsQuestion(question, questionIndex) {
 
   /* Question number */
 
-  htmlStmt += '<div class="colour_verbs_qno">' + question.qno + "</div>";
+  // The supplied book artwork already includes the question number.
 
   /* Image */
 

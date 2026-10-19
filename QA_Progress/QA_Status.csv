@@ -1,4 +1,4 @@
-﻿ID,Issue,Status,Notes
+ID,Issue,Status,Notes
 G2-01,Correct poem answers c=bump and e=lump receive red crosses. The Student Book poem uses these words in exactly those positions.,Implemented; targeted verification complete,Previously fixed and browser tested.
 G2-02,The correct sentence “He is running.” is rejected when it includes a full stop.,Implemented; targeted verification complete,Browser: correct with/without final period accepted; incorrect grammar rejected.
 G2-03,Instruction asks for “u magic e” words although the poem teaches ai. The key requires selecting the misspelled word “complnin”.,Implemented; targeted verification complete,Text/data syntax checked; full classroom walkthrough still pending.
@@ -21,5 +21,5 @@ G2-19,"Instruction says to add -ed to the displayed verbs, including walks and f
 G2-20,Instruction says “Circle the hard -old letters” while presenting selectable words.,Implemented; targeted verification complete,Text/data syntax checked; full classroom walkthrough still pending.
 G2-21,The shared grammar board spells the heading GRAMMER. The same spelling appears across all 15 units.,Implemented; targeted verification complete,Text/data syntax checked; full classroom walkthrough still pending.
 G2-22,"Dialogue says the ball hit Max in the back, followed by “Now … head hurts”.",Editorial decision required,"SB40 also says ball hits back, then head hurts. Source artwork/content not changed."
-G2-23,"Read-and-colour poem repeats Unit 9 Review’s bee/flea/tree poem, despite Unit 12’s safari and or phonics focus.",Artwork and implementation required,SB97 expects A sailor went to sea. Current bee/flea poem is wrong; referenced 4.png is absent. Need approved colouring artwork.
+G2-23,"Read-and-colour poem repeats Unit 9 Review’s bee/flea/tree poem, despite Unit 12’s safari and or phonics focus.",Implemented and browser verified,User supplied SB97 sailor artwork installed unchanged; poem corrected to printed SB97; colouring and Reset tested in browser.
 G2-24,14 linked activities are absent from the captured page menus: 7 Student Book and 7 Workbook activities.,Implemented and browser verified,All15 registered custom activities now appear in SB/WB menus. All expected menu links verified on15 pages. Source QA said14; registry contains15.

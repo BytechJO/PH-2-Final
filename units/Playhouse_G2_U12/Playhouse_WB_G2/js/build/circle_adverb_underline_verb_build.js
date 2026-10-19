@@ -238,7 +238,7 @@ function buildCircleAdverbQuestion(question, questionIndex) {
 
   /* Number */
 
-  htmlStmt += '<div class="circle_adverb_qno">' + question.qno + "</div>";
+  // The supplied book artwork already includes the question number.
 
   /* Image */
 

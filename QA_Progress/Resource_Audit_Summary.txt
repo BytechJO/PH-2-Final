@@ -27,3 +27,11 @@ Remaining:
 - The35 image/badge rows in the original tracker remain a content-comparison queue. No claim that only broken-file images cover all missing content. Do not request every queued item without checking the PDF and existing assets.
 
 No supplied artwork or video was modified. Original Grade2 repository untouched.
+
+2026-10-19 supplied artwork update:
+Installed seven unchanged PNG files covering SB97, SB119, WB60 and WB63 (five activities).
+Corrected SB97 sailor poem and WB60 gazelle/lion order; removed duplicate UI question numbers because artwork includes them.
+Browser checked all five pages: images render; verb/adverb selection works; red/blue word selection works; colouring marks appear; Reset responds; sentence field accepts writing.
+Confirmed_Missing_Images_Current.csv supersedes the locked older CSV. No unresolved activity image files remain from that confirmed list. Decorative line.png references are excluded from requested artwork.
+The 35-row source artwork review queue has NOT been fully re-audited; this does not close all project QA/audio work.
+Supplied WB60 txt01-04.svg remain source references: live sentence words retained for interactive marking/colouring.

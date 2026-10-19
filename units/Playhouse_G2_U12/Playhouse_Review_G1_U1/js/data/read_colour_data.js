@@ -34,14 +34,9 @@ var read_colour_data = {
   ],
 
   poem: [
-  "I see a bee.",
-  "Now I see three.",
-  "Up comes a flea,",
-  "And lands in the tea!",
-  "",
-  "So long, bee!",
-  "So long, flea!",
-  "Fly away,",
-  "high in the tree!"
+    "A sailor went to sea, sea, sea,",
+    "to see what he could see, see, see.",
+    "But all that he could see, see, see,",
+    "was the bottom of the deep blue sea, sea, sea."
 ],
 };

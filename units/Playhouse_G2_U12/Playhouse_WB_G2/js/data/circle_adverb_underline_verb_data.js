@@ -99,30 +99,6 @@ var circle_adverb_underline_verb_data = {
     {
       qno: 2,
 
-      image: "../images/pages/page_58/lion.png",
-
-      words: [
-        {
-          text: "The",
-          answer: "none",
-        },
-        {
-          text: "lion",
-          answer: "none",
-        },
-        {
-          text: "roars",
-          answer: "underline",
-        },
-        {
-          text: "loudly.",
-          answer: "circle",
-        },
-      ],
-    },
- {
-      qno: 3,
-
       image: "../images/pages/page_58/gazelle.png",
 
       words: [
@@ -140,6 +116,30 @@ var circle_adverb_underline_verb_data = {
         },
         {
           text: "quietly.",
+          answer: "circle",
+        },
+      ],
+    },
+ {
+      qno: 3,
+
+      image: "../images/pages/page_58/lion.png",
+
+      words: [
+        {
+          text: "The",
+          answer: "none",
+        },
+        {
+          text: "lion",
+          answer: "none",
+        },
+        {
+          text: "roars",
+          answer: "underline",
+        },
+        {
+          text: "loudly.",
           answer: "circle",
         },
       ],

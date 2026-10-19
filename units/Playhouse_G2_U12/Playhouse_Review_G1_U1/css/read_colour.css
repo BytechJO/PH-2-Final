@@ -460,3 +460,12 @@
     justify-content: center;
   }
 }
+/* Allow the book poem lines to wrap inside their panel. */
+.read_colour_poem_line { white-space: normal; }
+
+@media (min-width: 768px) {
+ .read_colour_activity { width: 1000px; }
+ .read_colour_canvas_side { width: 44%; }
+ .read_colour_text_side { width: 56%; min-width: 0; }
+ .read_colour_poem { font-size: 23px; }
+}
