@@ -11,3 +11,5 @@ G2-02 through G2-21 implemented (20 QA items). G2-24 sidebar cause fixed; full c
 103 supplied recordings copied unchanged; 125 subtitle mappings plus Listen and say in 15 unit snapshot files. Hashes and HTTP200 verified. No claim of full semantic listening verification.
 G2-22 source-book editorial inconsistency pending; G2-23 needs correct SB97 artwork and poem.
 See QA_Progress for mapping, QA status and unverified artwork queue. Source Missing Parts rows are not all closed. No artwork or video changed.
+
+Second audit batch: 411 browser pages inspected; 6 additional supplied recordings, 34 reused instruction links, U8 icon paths, unit-aware Home links, Grade2 title, and remaining Workbook menu filters corrected. All15 custom menus verified. See QA_Progress/Resource_Audit_Summary.txt for limitations and confirmed remaining items.

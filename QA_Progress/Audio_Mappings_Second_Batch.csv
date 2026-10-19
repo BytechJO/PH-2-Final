@@ -1,0 +1,41 @@
+﻿Data file,Target recording,Reason
+units\Playhouse_G2_U6\js\data\slideData_images.js,units\Playhouse_G2_U6\audios\supplied\listen-and-read-then-act-it-out.mp3,Provided recording matched to printed instruction / visible phrase; audio not modified.
+units\Playhouse_G2_U8\js\data\slideData_7.js,units\Playhouse_G2_U8\audios\supplied\read-and-say.mp3,Provided recording matched to printed instruction / visible phrase; audio not modified.
+units\Playhouse_G2_U9\js\data\look_and_complete_conversation_data.js,units\Playhouse_G2_U9\audios\supplied\how-many-cats-have-you-got.mp3,Provided recording matched to printed instruction / visible phrase; audio not modified.
+units\Playhouse_G2_U9\js\data\look_and_complete_conversation_data.js,units\Playhouse_G2_U9\audios\supplied\i-have-got.mp3,Provided recording matched to printed instruction / visible phrase; audio not modified.
+units\Playhouse_G2_U9\js\data\look_and_complete_conversation_data.js,units\Playhouse_G2_U9\audios\supplied\are-in-the-field.mp3,Provided recording matched to printed instruction / visible phrase; audio not modified.
+units\Playhouse_G2_U9\js\data\look_and_complete_conversation_data.js,units\Playhouse_G2_U9\audios\supplied\there-are.mp3,Provided recording matched to printed instruction / visible phrase; audio not modified.
+units\Playhouse_G2_U1\Playhouse_Review_G1_U1\js\data\match_text_vertical_data.js,units\Playhouse_G2_U4\audios\supplied\match.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U1\js\data\SB_G2_U1_P13_2_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U10\Playhouse_Review_G1_U1\js\data\circle_word_in_sentence_img_2_data.js,units\Playhouse_G2_U1\audios\supplied\read-and-tick.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U10\js\data\true_false_2_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U11\js\data\multiple_choice_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U12\js\qa\data\DRAGNDROP_DATA_1.js,units\Playhouse_G2_U2\audios\supplied\write.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U12\js\data\tick_table_data.js,units\Playhouse_G2_U1\audios\supplied\read-and-tick.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U13\Playhouse_Review_G1_U1\js\data\circle_word_in_sentence_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U13\js\data\fillin_text_p24_2_data.js,units\Playhouse_G2_U2\audios\supplied\write.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U13\js\data\multiple_choice_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U14\js\data\circle_word_in_sentence_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U14\js\data\CONNECT_LINE_IMAGE_TEXT_DATA.js,units\Playhouse_G2_U4\audios\supplied\match.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U14\js\data\match_text_vertical_data.js,units\Playhouse_G2_U4\audios\supplied\match.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U15\Playhouse_WB_G2\js\data\fill_number_or_letter_data.js,units\Playhouse_G2_U2\audios\supplied\look-read-and-number.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U15\js\data\true_false_2_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U2\Playhouse_Review_G1_U1\js\data\fillin_columns_data_2.js,units\Playhouse_G2_U2\audios\supplied\unscramble-and-write.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U2\Playhouse_Review_G1_U1\js\data\tick_image_data.js,units\Playhouse_G2_U1\audios\supplied\read-and-tick.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U3\Playhouse_Review_G1_U1\js\data\circle_word_in_sentence_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U3\Playhouse_WB_G2_U3\js\data\fillin_text_p15_2_data.js,units\Playhouse_G2_U3\audios\supplied\write-the-questions.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U3\js\data\CONNECT_LINE_IMAGE_TEXT_DATA.js,units\Playhouse_G2_U4\audios\supplied\match.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U3\js\data\match_text_vertical_data.js,units\Playhouse_G2_U4\audios\supplied\match.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U4\Playhouse_WB_G2_U4\js\data\tick_text_image_data.js,units\Playhouse_G2_U1\audios\supplied\read-and-tick.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U4\Playhouse_WB_G2_U4\js\data\tick_text_image_2_data.js,units\Playhouse_G2_U1\audios\supplied\read-and-tick.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U4\js\data\true_false_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U5\js\data\fillin_text_p39_data.js,units\Playhouse_G2_U3\audios\supplied\you-do-it.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U5\js\data\multiple_choice_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U6\Playhouse_Review_G1_U1\js\data\circle_word_in_sentence_img_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U6\js\data\true_false_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U7\js\data\multiple_choice_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U7\js\data\multiple_choice_2_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U8\js\data\fillin_text_2_data.js,units\Playhouse_G2_U3\audios\supplied\you-do-it.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U8\js\data\tick_table_data.js,units\Playhouse_G2_U1\audios\supplied\read-and-tick.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U9\js\data\slideData_10.js,units\Playhouse_G2_U3\audios\supplied\you-do-it.mp3,Reuse of existing identical instruction text.
+units\Playhouse_G2_U9\js\data\true_false_data.js,units\Playhouse_G2_U2\audios\supplied\read-and-choose.mp3,Reuse of existing identical instruction text.

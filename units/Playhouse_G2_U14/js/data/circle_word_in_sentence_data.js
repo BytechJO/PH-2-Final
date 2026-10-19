@@ -28,7 +28,7 @@ var mcq_data = {
     "subTitleTextLeft"      : "<span class='red_text'>2</span> Read and choose.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3", 
+    "subTitleAudio"         : "../../Playhouse_G2_U2/audios/supplied/read-and-choose.mp3",
     "rightImage"            : "../images/pages/activities/adv_2_right-background.png",
     "rightText"             : ["<span class='right_title'>Find in the story:</span>","<span class='red_text'>✓</span> What is it?","<span class='red_text'>✓</span> Sounds good!","<span class='red_text'>✓</span> Are you kidding?"],
     "rightTextAudio"        : ["../audios/under.mp3","../audios/under.mp3","../audios/under.mp3"], 

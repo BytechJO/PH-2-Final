@@ -25,7 +25,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='red_text'>3</span> You do it.",
     "subTitleTextRight": "Ask and answer.",
     "subTitleIcons": ["../images/pages/sb-icons/conv_3_icon.png"],
-    "subTitleAudio": "../audios/under.mp3",
+    "subTitleAudio": "../../Playhouse_G2_U3/audios/supplied/you-do-it.mp3",
     "slides": [
         {
 

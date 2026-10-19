@@ -28,7 +28,7 @@ var fillin_data = {
     "subTitleTextLeft"      : '<span class="red_text">3</span> You do it!',
     "subTitleTextRight"     : "Look at the picture. Write a positive sentence. Then write a negative sentence.",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../../Playhouse_G2_U3/audios/supplied/you-do-it.mp3",
     "image"                 : "../images/pages/activities/3-img-1.png",
     "imageposition"         : "front",// "front" (or) "back"
     "defaultAnswer"         : 1,

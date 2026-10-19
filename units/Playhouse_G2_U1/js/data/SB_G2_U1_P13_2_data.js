@@ -8,7 +8,7 @@ var mcq_tick_data = {
     "subTitleTextLeft"      : "<span class='red_text'>2</span> Read and choose.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : ["../images/pages/sb-icons/phonics_3_icon.png"],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../../Playhouse_G2_U2/audios/supplied/read-and-choose.mp3",
     "activityheading"       : "✓",
     "activityheading_audio" : "../audios/under.mp3",
     "activitysubheading"    : "",

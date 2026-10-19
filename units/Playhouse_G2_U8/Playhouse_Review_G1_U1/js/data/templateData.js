@@ -1,9 +1,10 @@
 var _data = {
     "title":{
         "grade": "Playhouse 2nd Edition",
-        "unit" : "Grade 1"
+        "unit" : "Grade 2"
     },
     "header": {
+        "unitno": "8",
         // "bgimage": "./images/AGW_1_SB_U15_header.png",
         "bgcolor": "linear-gradient(180deg, rgba(0,190,255,1) 0%, rgba(255,255,255,0) 100%)",
         "icon": "./images/pages/activities/title_background.png",

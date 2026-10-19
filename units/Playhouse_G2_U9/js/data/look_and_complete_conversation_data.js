@@ -73,8 +73,8 @@ var fillin_data = {
       image: "../images/pages/activities/6.jpg",
 
       textaudios: [
-        "../audios/page_69/How_many_cats_have_you_got.mp3",
-        "../audios/page_69/I_have_got_three_cats.mp3",
+        "../audios/supplied/how-many-cats-have-you-got.mp3",
+        "../audios/supplied/i-have-got.mp3",
       ],
 
       audio: "",
@@ -104,8 +104,8 @@ var fillin_data = {
       image: "../images/pages/activities/4.jpg",
 
       textaudios: [
-        "../audios/page_69/How_many_cows_are_in_the_field.mp3",
-        "../audios/page_69/There_are_three_cows.mp3",
+        "../audios/supplied/are-in-the-field.mp3",
+        "../audios/supplied/there-are.mp3",
       ],
 
       audio: "",

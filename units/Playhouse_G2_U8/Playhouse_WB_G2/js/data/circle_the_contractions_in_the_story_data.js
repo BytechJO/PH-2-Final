@@ -23,7 +23,7 @@ var stereo_data = {
 var contractions_story_data = {
   mainTitle: "../images/pages/sb-icons/phonics-sent-build.png",
 
-  mainTitleIcon: "../images/pages/sb-icons/gram_2_icon.png",
+  mainTitleIcon: "../../images/pages/sb-icons/gram_2_icon.png",
 
   mainTitleIconPos: {
     right: "-18px",

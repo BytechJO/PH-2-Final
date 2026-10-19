@@ -23,10 +23,10 @@ var reading_data = {
     "mainTitleIcon": "../images/pages/sb-icons/conv_main_title_icon.png",
     "mainTitleIconPos": {"right": "100px"},
     "mainTitleAudio": "../audios/page_45/CONVERSATION.mp3",
-    "subTitleTextLeft": "<span class='orange_text'>1</span> Listen and read the story. Then act it out.",
+    "subTitleTextLeft": "<span class='orange_text'>1</span> Listen and read. Then act it out.",
     "subTitleTextRight": "",
     "subTitleIcons": ["../images/pages/sb-icons/conv_1_icon.png"],
-    "subTitleAudio" : "../audios/page_45/1_Listen_and_read._Then_act_it_out.mp3",
+    "subTitleAudio" : "../audios/supplied/listen-and-read-then-act-it-out.mp3",
     "haveAudio": true,
     "video" : "../videos/p45.mp4",
     "slides": [

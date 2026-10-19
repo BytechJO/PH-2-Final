@@ -29,7 +29,7 @@ var mcq_tick_data = {
     "subTitleTextLeft"      : "<span class='blue_text'>1</span> Read and tick ✓ .",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : ["../images/pages/sb-icons/readwrite_main_title_icon.png"],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../../../Playhouse_G2_U1/audios/supplied/read-and-tick.mp3",
     "select"                : "single", // single (or) multiple
     "shape"                 : "tickbox", // circle (or) roundrect (or) rectangle (or) svg (or) cross (or) tickbox
     "bgcolor"               : "none",

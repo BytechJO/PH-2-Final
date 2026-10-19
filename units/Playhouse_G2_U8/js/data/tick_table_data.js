@@ -27,7 +27,7 @@ var mcq_tick_data = {
     "subTitleTextLeft"      : "<span class='red_text'>2</span> Read and tick.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../../Playhouse_G2_U1/audios/supplied/read-and-tick.mp3",
     "select"                : "multiple", // single (or) multiple
     "shape"                 : "tickbox", // circle (or) roundrect (or) rectangle (or) svg (or) cross (or) tickbox
     "rightImage"            : "../images/pages/activities/adv_2_right-background.png",

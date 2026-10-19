@@ -29,7 +29,7 @@ var fillin_data = {
   subTitleTextRight:
     "<span class='red_text'>What’s wrong with Lilly? Write a sentence about her.</span>",
   subTitleIcons: ["../images/pages/sb-icons/conv_3_icon.png"],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../../Playhouse_G2_U3/audios/supplied/you-do-it.mp3",
   defaultAnswer: -1,
   leftList: "",
   image: "",

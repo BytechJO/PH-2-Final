@@ -29,7 +29,7 @@ var _activity_json = {
   subTitleTextRight:
     "Complete the sentences below. Then listen to the rest of the story and check your answers.",
   subTitleIcons: [],
-  subTitleAudio: "../audios/under.mp3",
+  subTitleAudio: "../../Playhouse_G2_U2/audios/supplied/write.mp3",
   image: "new_drag_drop.png",
   type: "drag_drop",
   images: [],

@@ -23,10 +23,10 @@ var reading_data = {
     "mainTitleIcon": "../images/pages/sb-icons/gram_main_title_icon.png",
     "mainTitleAudio": "../audios/page_62/GRAMMAR.mp3",
     "mainTitleIconPos"      : {"right": "-18px"},
-    "subTitleTextLeft": "<span class='red_text'>1</span> Look and say.",
+    "subTitleTextLeft": "<span class='red_text'>1</span> Read and say.",
     "subTitleTextRight": "",
     "subTitleIcons": [],
-    "subTitleAudio": "../audios/page_62/1_Read_and_say.mp3",
+    "subTitleAudio": "../audios/supplied/read-and-say.mp3",
     "slides": [
     {
         

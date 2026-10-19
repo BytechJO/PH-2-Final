@@ -28,8 +28,8 @@ var mcq_data = {
     "subTitleTextLeft"      : "<span class='red_text'>2</span> Read and choose.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : ["../images/pages/sb-icons/gram_2_icon.png"],
-    "subTitleAudio"         : "../audios/under.mp3",
-    "subTitleAudio"         : "../audios/under.mp3", 
+    "subTitleAudio"         : "../../Playhouse_G2_U2/audios/supplied/read-and-choose.mp3",
+
     "select"                : "single", // single (or) multiple
     "shape"                 : "roundrect", // circle (or) roundrect (or) rectangle (or) svg (or) cross (or) checkbox
     "bgcolor"               : "none",

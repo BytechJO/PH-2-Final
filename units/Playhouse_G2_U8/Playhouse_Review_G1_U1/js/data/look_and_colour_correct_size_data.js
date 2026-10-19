@@ -7,8 +7,8 @@ var stereo_data = {
 };
 
 var look_and_colour_size_data = {
-  mainTitle: "../images/icons/grammar_main_title.png",
-  mainTitleIcon: "../images/pages/sb-icons/gram_2_icon.png",
+  mainTitle: "../../images/icons/gram_main_title.png",
+  mainTitleIcon: "../../images/pages/sb-icons/gram_2_icon.png",
 
   mainTitleIconPos: {
     right: "-18px",

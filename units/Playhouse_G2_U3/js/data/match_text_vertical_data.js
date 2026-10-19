@@ -27,7 +27,7 @@ var linedraw_data = {
     "subTitleTextLeft"      : "<span class='red_text'>1</span> Match.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../../Playhouse_G2_U4/audios/supplied/match.mp3",
     "image"                 : "../images/pages/sb-icons/gram_main_title_icon.png",
     "connect"               : "single", // single (or) multiple
     "linecolor"             : "red",

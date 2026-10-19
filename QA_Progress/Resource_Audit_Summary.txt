@@ -1,0 +1,29 @@
+GRADE 2 RESOURCE AND NAVIGATION AUDIT - 2026-10-19
+
+Scope: all 411 registered Student Book, Workbook and Review pages opened in a browser and inspected after the loading overlay disappeared. Initial visible images, data-audio controls and hyperlinks inspected. This is not a complete semantic listening test or an exhaustive test of every answer, popup, video or interactive state.
+
+Implemented this batch:
+- Six additional supplied recordings linked (109 total supplied files now in the repository).
+- Thirty-four missing instruction links reused recordings with matching instruction text.
+- U6 SB45 and U8 SB62 instructions corrected against the supplied PDFs.
+- Three broken heading/icon references in U8 repaired using existing artwork unchanged.
+- Header home links now carry the correct unit number; browser title now says Grade2.
+- Workbook sidebar filters repaired, completing the Student Book fix. All15 custom activities tested in the browser: all expected menu entries present.
+- Updated script versions to avoid stale browser caches.
+
+Validation:
+- 411/411 registered pages loaded; zero missing registered HTML files.
+- No missing-file targets among visible navigation links in the observed initial states. Hidden legacy links are not counted as active navigation failures.
+- 39 content/audio pages rechecked after the updates, plus all15 custom activities for menu visibility.
+- All109 supplied MP3 paths return HTTP200; new copies match source SHA256.
+- Playback button for U9 cat question entered the playing state. Full audio-content listening review is still required.
+
+Remaining:
+- Seven distinct activity-artwork files absent: four animals used in WB60 exercises1-2; WB63 lion colouring picture; SB Review97 sailor picture; SB Review119 evening/park picture. These are11 broken rendered image instances across5 activity pages.
+- Thirty decorative line.png references are missing, separate from the activity artwork.
+- 1365 missing audio-reference instances remain on292 pages: 1024 placeholder references,169 unset values and172 named missing references. Repeated controls and copied legacy data are included. THESE ARE NOT1365 requested recordings. See Audio_Control_Review.csv for page/control evidence before preparing recordings.
+- Seven unlinked source files classified separately in Unmapped_Recordings.txt; five have equivalent instruction text already linked, two need content confirmation.
+- G2-22 source-book back/head inconsistency remains editorial; G2-23 Review97 requires the correct poem and approved artwork.
+- The35 image/badge rows in the original tracker remain a content-comparison queue. No claim that only broken-file images cover all missing content. Do not request every queued item without checking the PDF and existing assets.
+
+No supplied artwork or video was modified. Original Grade2 repository untouched.

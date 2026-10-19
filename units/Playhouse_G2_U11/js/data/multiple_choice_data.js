@@ -28,7 +28,7 @@ var mcq_data = {
     "subTitleTextLeft"      : "<span class='red_text'>2</span> Read and choose.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         :  ["../images/pages/sb-icons/gram_2_icon.png"],
-    "subTitleAudio"         : "../audios/under.mp3",
+    "subTitleAudio"         : "../../Playhouse_G2_U2/audios/supplied/read-and-choose.mp3",
     "rightImage"            : "../images/pages/activities/adv_2_right-background.png",
     "rightText"             : ["<span class='right_title'>Find in the story:</span>","<span class='red_text'>✓</span> I don’t think so.","<span class='red_text'>✓</span> Come on in!","<span class='red_text'>✓</span> Isn’t it great?"],
     "rightTextAudio"        : ["../audios/under.mp3","../audios/under.mp3","../audios/under.mp3"],   
