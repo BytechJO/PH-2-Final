@@ -35,3 +35,11 @@ Browser checked all five pages: images render; verb/adverb selection works; red/
 Confirmed_Missing_Images_Current.csv supersedes the locked older CSV. No unresolved activity image files remain from that confirmed list. Decorative line.png references are excluded from requested artwork.
 The 35-row source artwork review queue has NOT been fully re-audited; this does not close all project QA/audio work.
 Supplied WB60 txt01-04.svg remain source references: live sentence words retained for interactive marking/colouring.
+
+2026-10-19 audio follow-up:
+User cancelled the SB40 editorial change; retain original book wording (G2-22 closed by decision).
+Linked supplied Use the words below.mp3 to U2 SB17 instruction control, replacing under.mp3.
+Linked supplied The cows on the farm go moo.mp3 to U9 farm-song controls, replacing missing farm_song.mp3.
+Both copies match source hashes and return HTTP200. Both page controls entered the on/playing UI state when clicked. Changed JS syntax checks passed.
+111 supplied files are now linked. Full spoken-content/complete-lyrics verification is still pending: audio input/transcription is unavailable in this session. These are filename/context mappings, not a claimed listening review.
+The previous seven-unlinked-file list is superseded: five alternative instruction recordings remain unlinked; the two recordings named above are now linked with listening verification pending.

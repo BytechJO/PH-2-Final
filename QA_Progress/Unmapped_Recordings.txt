@@ -11,3 +11,11 @@ D:\Playhouse\Missing Parts\GRADE 2 - Missing Parts\UNIT 9\SB\The cows on the far
 Five have instruction-text equivalents already linked: Write; Unscramble and write; Match; Match_2; Point, ask and answer. Retained as alternatives pending listening comparison.
 Use the words below: confirm whether recording contains full SB17 instruction or only a prefix.
 The cows on the farm go moo: confirm complete song/verse content before linking it as the full song.
+
+2026-10-19 audio follow-up:
+User cancelled the SB40 editorial change; retain original book wording (G2-22 closed by decision).
+Linked supplied Use the words below.mp3 to U2 SB17 instruction control, replacing under.mp3.
+Linked supplied The cows on the farm go moo.mp3 to U9 farm-song controls, replacing missing farm_song.mp3.
+Both copies match source hashes and return HTTP200. Both page controls entered the on/playing UI state when clicked. Changed JS syntax checks passed.
+111 supplied files are now linked. Full spoken-content/complete-lyrics verification is still pending: audio input/transcription is unavailable in this session. These are filename/context mappings, not a claimed listening review.
+The previous seven-unlinked-file list is superseded: five alternative instruction recordings remain unlinked; the two recordings named above are now linked with listening verification pending.

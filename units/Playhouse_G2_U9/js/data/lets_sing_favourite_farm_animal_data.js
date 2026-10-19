@@ -6,7 +6,7 @@ var stereo_data = {
 
   playListData: [
     {
-      audiourl: "../audios/page_67/farm_song.mp3",
+      audiourl: "../audios/supplied/farm-song.mp3",
     },
     {
       url: "",
@@ -37,7 +37,7 @@ var mcq_data = {
 
   subTitleIcons: [],
 
-  subTitleAudio: "../audios/page_67/farm_song.mp3",
+  subTitleAudio: "../audios/supplied/farm-song.mp3",
 
   // اختيار واحد فقط
   select: "single",
@@ -84,7 +84,7 @@ var mcq_data = {
        */
       answer: [1],
 
-      audio: "../audios/page_67/farm_song.mp3",
+      audio: "../audios/supplied/farm-song.mp3",
 
       audioenable: "default",
 
