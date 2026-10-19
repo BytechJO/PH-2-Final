@@ -1,0 +1,147 @@
+GRADE 2 - ARTWORK REVIEW, 2026-10-19
+Supersedes the unreviewed statuses in Artwork_Review_Queue.csv.
+35 tracker entries compared: 28 present/resolved at the referenced activity; 7 require replacement artwork.
+Includes13 unit badges verified in browser. Source references corrected: U7 SB45 -> SB54; SB98 U12 -> U13; Review53 Q6 -> Q1.
+Four reported conversation references actually point to phonics activities. All referenced word pictures are present.
+No artwork or activity code changed during this review. Retain current dogs answer until matching cat artwork is supplied.
+Scope: these35 artwork entries, not a full answer/audio/responsive-layout audit. Browser screenshots and PDF renders used for comparison.
+
+ART-01 | Workbook U1 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-02 | Review U3 source page 31 | Present
+SB31 Q1 shop colouring picture matches the PDF.
+http://127.0.0.1:8766/units/Playhouse_G2_U3/Playhouse_Review_G1_U1/views/READ_COLOUR.html
+
+ART-03 | Review U6 source page 53 | Present; reference corrected
+SB53 is Q1, not Q6. Slide/playground colouring picture matches.
+http://127.0.0.1:8766/units/Playhouse_G2_U6/Playhouse_Review_G1_U1/views/READ_COLOUR.html
+
+ART-04 | Workbook U4 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-05 | Review U9 source page 74 | Replacement required
+SB74 Q2 requires cat/cats. Current pictures show dog/dogs and answer key is dogs. Supply both cat pictures; update key to cats together with artwork.
+http://127.0.0.1:8766/units/Playhouse_G2_U9/Playhouse_Review_G1_U1/views/fillin_text_in_sentences.html
+
+ART-06 | Workbook U4 source page 21 | Present
+Penn family picnic illustration matches WB21.
+http://127.0.0.1:8766/units/Playhouse_G2_U4/Playhouse_WB_G2_U4/views/fillin_text_p16_1.html
+
+ART-07 | Review U12 source page 96 | Present
+Safari river illustration matches SB96 Q1.
+http://127.0.0.1:8766/units/Playhouse_G2_U12/Playhouse_Review_G1_U1/views/fillin_text_in_sentences_2.html
+
+ART-08 | Workbook U5 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-09 | Review U15 source page 119 | Resolved previously
+User-supplied park/seesaw colouring art is installed.
+http://127.0.0.1:8766/units/Playhouse_G2_U15/Playhouse_Review_G1_U1/views/read_colour.html
+
+ART-10 | Workbook U6 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-11 | Student Book U2 source page 20 | Present; description mismatch
+SB20 Q3 is phonics, not conversation. Bike/drive/kite/ice images are present and correspond to words.
+http://127.0.0.1:8766/units/Playhouse_G2_U2/views/SB_G2_U2_P20_3.html
+
+ART-12 | Workbook U7 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-13 | Student Book U3 source page 22 | Present
+Both conversation faces match the printed SB22 example. No boy replacement needed for this reference.
+http://127.0.0.1:8766/units/Playhouse_G2_U3/views/playhouse_intro.html
+
+ART-14 | Workbook U8 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-15 | Workbook U9 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-16 | Workbook U10 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-17 | Workbook U10 source page 53 | Present
+Example shirt and its two model sentences are present and match WB53.
+http://127.0.0.1:8766/units/Playhouse_G2_U10/Playhouse_WB_G2/views/write_sentences.html
+
+ART-18 | Student Book U3 source page 26 | Present; description mismatch
+SB26 Q3 is home/rose/rope phonics. All three images are present; no conversation is printed for Q3.
+http://127.0.0.1:8766/units/Playhouse_G2_U3/views/fillin_complete_word.html
+
+ART-19 | Workbook U11 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-20 | Workbook U12 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-21 | Workbook U12 source page 60 | Resolved previously
+Four supplied animal pictures are installed; numbers and sentence subjects match.
+http://127.0.0.1:8766/units/Playhouse_G2_U12/Playhouse_WB_G2/views/circle_adverb_underline_verb.html
+
+ART-22 | Student Book U4 source page 36 | Present; description mismatch
+SB36 Q3 is tune/rule/mule/prune phonics; all four images are present.
+http://127.0.0.1:8766/units/Playhouse_G2_U4/views/fillin_complete_word.html
+
+ART-23 | Workbook U12 source page 63 | Resolved previously
+Supplied sleeping lion is installed for colouring and writing.
+http://127.0.0.1:8766/units/Playhouse_G2_U12/Playhouse_WB_G2/views/colour_picture_write_sentence.html
+
+ART-24 | Workbook U13 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-25 | Workbook U14 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-26 | Workbook U15 source page - | Present
+Correct Workbook unit badge confirmed in browser on a registered page. Shared unit header is present.
+
+
+ART-27 | Workbook U15 source page 77 | Present
+First chick picture matches WB77. Other sock/sick/clock images are present too.
+http://127.0.0.1:8766/units/Playhouse_G2_U15/Playhouse_WB_G2/views/Colour.html
+
+ART-28 | Student Book U6 source page 45 | Present
+Four mother/Yoshi dialogue panels appear in practice activity and match SB45.
+http://127.0.0.1:8766/units/Playhouse_G2_U6/views/slide_conversation_act_it_out.html
+
+ART-29 | Student Book U6 source page 48 | Present; description mismatch
+SB48 Q3 is Spain/rain/pail/tail phonics. All are present. Tail uses a dog rather than the printed lamb; meaning remains tail. No missing conversation on this page.
+http://127.0.0.1:8766/units/Playhouse_G2_U6/views/fillin_complete_word.html
+
+ART-30 | Student Book U7 source page 45 | Replacement required; reference corrected
+Unit7 Q4 is SB54, not SB45. Wash-hands illustration is present, but girl speech says What is number three? instead of Wash your hands! Supply corrected girl/speech artwork.
+http://127.0.0.1:8766/units/Playhouse_G2_U7/views/playhouse_intro.html
+
+ART-31 | Student Book U11 source page 82 | Replacement required
+Answer speech says That's a big dinosaur. Printed SB82: What's that? / It's a shark. Supply correct answer artwork.
+http://127.0.0.1:8766/units/Playhouse_G2_U11/views/playhouse_intro.html
+
+ART-32 | Student Book U12 source page 88 | Replacement required
+Wrong dinosaur conversation. Printed SB88: What's number twelve? / It's a flamingo. Supply both correct speech images.
+http://127.0.0.1:8766/units/Playhouse_G2_U12/views/playhouse_intro.html
+
+ART-33 | Student Book U12 source page 98 | Replacement required; reference corrected
+SB98 belongs to Unit13, not12. Wrong dinosaur conversation. Correct: Where were you born? / I was born in France. Supply both speech images.
+http://127.0.0.1:8766/units/Playhouse_G2_U13/views/playhouse_intro.html
+
+ART-34 | Student Book U14 source page 104 | Replacement required
+Wrong dinosaur conversation. Correct: What did number three do? / He played with a football. Supply both speech images.
+http://127.0.0.1:8766/units/Playhouse_G2_U14/views/playhouse_intro.html
+
+ART-35 | Student Book U15 source page 110 | Replacement required
+Wrong dinosaur conversation. Correct: What's number 12? / It's a watch. Supply both speech images.
+http://127.0.0.1:8766/units/Playhouse_G2_U15/views/playhouse_intro.html

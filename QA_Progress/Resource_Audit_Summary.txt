@@ -45,3 +45,5 @@ Both copies match source hashes and return HTTP200. Both page controls entered t
 The previous seven-unlinked-file list is superseded: five alternative instruction recordings remain unlinked; the two recordings named above are now linked with listening verification pending.
 
 Farm song follow-up: lyrics now own the audio click target. Subtitle no longer plays the song. No separate matching instruction recording found by filename in supplied files or repo. Browser verified subtitle has no audioIcon and lyrics enter playing state. Clicking lyrics restarts playback using existing shared behavior.
+
+2026-10-19 artwork content review: all35 tracker entries compared. 28 present/resolved;7 replacement-artwork cases confirmed. See Artwork_Review_2026-10-19.txt for corrected book references, expected speech, and URLs. These are content mismatches despite valid image file paths. No artwork modified.
