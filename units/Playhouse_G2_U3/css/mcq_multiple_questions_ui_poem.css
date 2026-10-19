@@ -176,3 +176,6 @@
         min-width: 36px;
     }
 }
+/* Let each poem row contain its clickable words without overlapping the next row. */
+.options .que, .options .que[data-qno="1"] { height: auto; min-height: 52px; }
+.options .q_part { margin-bottom: 0; }

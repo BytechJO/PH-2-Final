@@ -168,7 +168,7 @@ FillIn.prototype = {
     showFeedback(true, allCorrect);
 
     if (allCorrect) {
-      document.getElementsByClassName("resetBtn")[0].classList.add("disabled");
+      document.getElementsByClassName("resetBtn")[0].classList.remove("disabled");
     }
   },
   reset: function () {

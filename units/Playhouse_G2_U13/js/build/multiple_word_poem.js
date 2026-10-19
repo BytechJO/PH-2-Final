@@ -361,7 +361,7 @@ function validateHardSPoem(aObj) {
     var resetButton = document.querySelector(".resetBtn");
 
     if (resetButton) {
-      resetButton.classList.add("disabled");
+      resetButton.classList.remove("disabled");
     }
   }
 }
@@ -438,6 +438,6 @@ function resetHardSPoem() {
   }
 
   if (resetButton) {
-    resetButton.classList.add("disabled");
+    resetButton.classList.remove("disabled");
   }
 }

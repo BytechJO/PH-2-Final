@@ -26,7 +26,7 @@ var linedraw_data = {
     "subTitleTextLeft"      : "<span class='blue_text'>2</span> Match.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
-    "subTitleAudio"         : "",
+    "subTitleAudio"         : "../../audios/supplied/match.mp3",
     "activitysubheading"    : "",
     "activityicon"          : "",
     "connect"               : "single", // single (or) multiple

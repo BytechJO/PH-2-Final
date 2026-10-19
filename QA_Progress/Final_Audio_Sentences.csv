@@ -1,0 +1,11 @@
+﻿Page URL,Expected sentence (from filename),Missing assigned file,Status
+http://127.0.0.1:8766/units/Playhouse_G2_U7/views/add_the_apostrophes.html,Whats that over there,../audios/page_58/Whats_that_over_there.mp3,Missing file for visible sentence control
+http://127.0.0.1:8766/units/Playhouse_G2_U7/views/add_the_apostrophes.html,Its my new bike,../audios/page_58/Its_my_new_bike.mp3,Missing file for visible sentence control
+http://127.0.0.1:8766/units/Playhouse_G2_U7/views/add_the_apostrophes.html,On Tuesday were going on a field trip,../audios/page_58/On_Tuesday_were_going_on_a_field_trip.mp3,Missing file for visible sentence control
+http://127.0.0.1:8766/units/Playhouse_G2_U7/views/add_the_apostrophes.html,I think hes very nice,../audios/page_58/I_think_hes_very_nice.mp3,Missing file for visible sentence control
+http://127.0.0.1:8766/units/Playhouse_G2_U7/views/add_the_apostrophes.html,Im helping my mum in the house today,../audios/page_58/Im_helping_my_mum_in_the_house_today.mp3,Missing file for visible sentence control
+http://127.0.0.1:8766/units/Playhouse_G2_U7/views/add_the_apostrophes.html,Wheres Mindy,../audios/page_58/Wheres_Mindy.mp3,Missing file for visible sentence control
+http://127.0.0.1:8766/units/Playhouse_G2_U9/views/look_and_complete_conversation.html,How many dogs are barking,../audios/page_69/How_many_dogs_are_barking.mp3,Missing file for visible sentence control
+http://127.0.0.1:8766/units/Playhouse_G2_U9/views/look_and_complete_conversation.html,Two dogs are barking,../audios/page_69/Two_dogs_are_barking.mp3,Missing file for visible sentence control
+http://127.0.0.1:8766/units/Playhouse_G2_U9/views/look_and_complete_conversation.html,How many horses have they got,../audios/page_69/How_many_horses_have_they_got.mp3,Missing file for visible sentence control
+http://127.0.0.1:8766/units/Playhouse_G2_U9/views/look_and_complete_conversation.html,They have got three horses,../audios/page_69/They_have_got_three_horses.mp3,Missing file for visible sentence control

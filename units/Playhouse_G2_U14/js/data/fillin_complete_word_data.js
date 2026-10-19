@@ -113,7 +113,7 @@ var fillin_data = {
       "src='../images/pages/sb-icons/9-removebg-preview (1).png' " +
       "class='readHighlightsBtn imgToggle sentence_building_toggle' " +
       "data-img='showImg1' " +
-      "data-audio='../audios/page_102/Use_the_word_‘in‘_when_talking_about_a_place.mp3'" +
+      "data-audio='../../Playhouse_G2_U13/audios/page_102/Use_the_word_‘in‘_when_talking_about_a_place.mp3'" +
       ">",
 
     "<img " +
@@ -141,7 +141,7 @@ var fillin_data = {
       "src='../images/pages/sb-icons/9-removebg-preview.png' " +
       "class='readHighlightsBtn imgToggle sentence_building_toggle' " +
       "data-img='showImg2' " +
-      "data-audio='../audios/page_102/‘in‘_comes_before_a_noun.mp3'" +
+      "data-audio='../../Playhouse_G2_U13/audios/page_102/‘in‘_comes_before_a_noun.mp3'" +
       ">",
   ],
 };

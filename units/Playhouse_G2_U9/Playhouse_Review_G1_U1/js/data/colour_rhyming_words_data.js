@@ -7,7 +7,7 @@ var colour_rhyming_words_data = {
     right: "-18px",
   },
 
-  mainTitleAudio: "../audios/page_46/PHONICS.mp3",
+  mainTitleAudio: "../../../../audios/PHONICS.mp3",
 
   subTitleAudio: "",
   subTitleTextLeft:

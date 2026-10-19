@@ -24,7 +24,7 @@ var stereo_data = {
     "mainTitle"             : "",
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-20px"},
-    "mainTitleAudio"        : "../audios/page_34/GRAMMAR.mp3",
+    "mainTitleAudio"        : "../../../../audios/GRAMMAR.mp3",
     "subTitleTextLeft"      : '<span class="red_text">1</span> Read, look and match.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [""],

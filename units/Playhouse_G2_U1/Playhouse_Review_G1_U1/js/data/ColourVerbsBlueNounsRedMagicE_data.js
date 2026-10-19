@@ -33,6 +33,6 @@ var mcq_data = {
     { text: "lunch", type: "noun", magicE: false },
 
     { text: "wear", type: "verb", magicE: false },
-    { text: "pencil case", type: "noun", magicE: false },
+    { text: "pencil case", type: "noun", magicE: true },
   ],
 };

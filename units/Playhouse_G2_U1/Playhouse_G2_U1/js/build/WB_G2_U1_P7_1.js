@@ -216,7 +216,7 @@ $(document).ready(function () {
         if (allCorrect && document.getElementsByClassName("resetBtn")[0]) {
           document
             .getElementsByClassName("resetBtn")[0]
-            .classList.add("disabled");
+            .classList.remove("disabled");
         }
       };
     }

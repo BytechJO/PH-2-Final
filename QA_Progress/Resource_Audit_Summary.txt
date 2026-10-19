@@ -51,3 +51,5 @@ Farm song follow-up: lyrics now own the audio click target. Subtitle no longer p
 FOLLOW-UP: All seven replacement cases now have supplied artwork installed (13 unchanged PNGs). Cats accepted; dogs rejected. All six popups verified. Supplied SB82/SB88/SB110 speech images omit apostrophes in Whats/Its; source artwork correction remains. Earlier replacement requests above are superseded.
 
 2026-10-19 correction: User supplied six corrected SB82/SB88/SB110 images. Installed unchanged and hash-verified; What’s / It’s visually confirmed. Earlier apostrophe warning is resolved.
+
+2026-10-19 user verification: User confirmed listening/content of Use the words below and The cows on the farm. These two listening follow-ups are closed by user verification.

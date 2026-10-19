@@ -202,7 +202,7 @@ $(document).ready(function () {
         showFeedback(true, allCorrect);
 
         if (allCorrect) {
-          $(".resetBtn").addClass("disabled");
+          $(".resetBtn").removeClass("disabled");
         }
       };
     }

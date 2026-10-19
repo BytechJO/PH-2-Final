@@ -1,0 +1,61 @@
+﻿Unit,Page URL,Popup,Visible text,Missing reference,Classification
+1,http://127.0.0.1:8766/units/Playhouse_G2_U1/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+1,http://127.0.0.1:8766/units/Playhouse_G2_U1/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_10/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+1,http://127.0.0.1:8766/units/Playhouse_G2_U1/views/playhouse_intro.html,2,,../audios/page_10/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+1,http://127.0.0.1:8766/units/Playhouse_G2_U1/views/playhouse_intro.html,2,,../audios/page_10/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+2,http://127.0.0.1:8766/units/Playhouse_G2_U2/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+2,http://127.0.0.1:8766/units/Playhouse_G2_U2/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_16/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+2,http://127.0.0.1:8766/units/Playhouse_G2_U2/views/playhouse_intro.html,2,,../audios/page_16/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+2,http://127.0.0.1:8766/units/Playhouse_G2_U2/views/playhouse_intro.html,2,,../audios/page_16/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+3,http://127.0.0.1:8766/units/Playhouse_G2_U3/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+3,http://127.0.0.1:8766/units/Playhouse_G2_U3/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_22/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+3,http://127.0.0.1:8766/units/Playhouse_G2_U3/views/playhouse_intro.html,2,,../audios/page_22/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+3,http://127.0.0.1:8766/units/Playhouse_G2_U3/views/playhouse_intro.html,2,,../audios/page_22/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+4,http://127.0.0.1:8766/units/Playhouse_G2_U4/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+4,http://127.0.0.1:8766/units/Playhouse_G2_U4/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_32/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+4,http://127.0.0.1:8766/units/Playhouse_G2_U4/views/playhouse_intro.html,2,,../audios/page_32/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+4,http://127.0.0.1:8766/units/Playhouse_G2_U4/views/playhouse_intro.html,2,,../audios/page_32/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+5,http://127.0.0.1:8766/units/Playhouse_G2_U5/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+5,http://127.0.0.1:8766/units/Playhouse_G2_U5/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_38/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+5,http://127.0.0.1:8766/units/Playhouse_G2_U5/views/playhouse_intro.html,2,,../audios/page_38/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+5,http://127.0.0.1:8766/units/Playhouse_G2_U5/views/playhouse_intro.html,2,,../audios/page_38/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+6,http://127.0.0.1:8766/units/Playhouse_G2_U6/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+6,http://127.0.0.1:8766/units/Playhouse_G2_U6/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_44/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+6,http://127.0.0.1:8766/units/Playhouse_G2_U6/views/playhouse_intro.html,2,,../audios/page_44/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+6,http://127.0.0.1:8766/units/Playhouse_G2_U6/views/playhouse_intro.html,2,,../audios/page_44/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+7,http://127.0.0.1:8766/units/Playhouse_G2_U7/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+7,http://127.0.0.1:8766/units/Playhouse_G2_U7/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_54/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+7,http://127.0.0.1:8766/units/Playhouse_G2_U7/views/playhouse_intro.html,2,,../audios/page_54/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+7,http://127.0.0.1:8766/units/Playhouse_G2_U7/views/playhouse_intro.html,2,,../audios/page_54/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+8,http://127.0.0.1:8766/units/Playhouse_G2_U8/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+8,http://127.0.0.1:8766/units/Playhouse_G2_U8/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_60/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+8,http://127.0.0.1:8766/units/Playhouse_G2_U8/views/playhouse_intro.html,2,,../audios/page_60/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+8,http://127.0.0.1:8766/units/Playhouse_G2_U8/views/playhouse_intro.html,2,,../audios/page_60/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+9,http://127.0.0.1:8766/units/Playhouse_G2_U9/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+9,http://127.0.0.1:8766/units/Playhouse_G2_U9/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_66/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+9,http://127.0.0.1:8766/units/Playhouse_G2_U9/views/playhouse_intro.html,2,,../audios/page_66/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+9,http://127.0.0.1:8766/units/Playhouse_G2_U9/views/playhouse_intro.html,2,,../audios/page_66/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+10,http://127.0.0.1:8766/units/Playhouse_G2_U10/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+10,http://127.0.0.1:8766/units/Playhouse_G2_U10/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_76/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+10,http://127.0.0.1:8766/units/Playhouse_G2_U10/views/playhouse_intro.html,2,,../audios/page_76/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+10,http://127.0.0.1:8766/units/Playhouse_G2_U10/views/playhouse_intro.html,2,,../audios/page_76/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+11,http://127.0.0.1:8766/units/Playhouse_G2_U11/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+11,http://127.0.0.1:8766/units/Playhouse_G2_U11/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_82/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+11,http://127.0.0.1:8766/units/Playhouse_G2_U11/views/playhouse_intro.html,2,,../audios/page_82/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+11,http://127.0.0.1:8766/units/Playhouse_G2_U11/views/playhouse_intro.html,2,,../audios/page_82/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+12,http://127.0.0.1:8766/units/Playhouse_G2_U12/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+12,http://127.0.0.1:8766/units/Playhouse_G2_U12/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_88/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+12,http://127.0.0.1:8766/units/Playhouse_G2_U12/views/playhouse_intro.html,2,,../audios/page_88/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+12,http://127.0.0.1:8766/units/Playhouse_G2_U12/views/playhouse_intro.html,2,,../audios/page_88/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+13,http://127.0.0.1:8766/units/Playhouse_G2_U13/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+13,http://127.0.0.1:8766/units/Playhouse_G2_U13/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_98/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+13,http://127.0.0.1:8766/units/Playhouse_G2_U13/views/playhouse_intro.html,2,,../audios/page_98/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+13,http://127.0.0.1:8766/units/Playhouse_G2_U13/views/playhouse_intro.html,2,,../audios/page_98/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+14,http://127.0.0.1:8766/units/Playhouse_G2_U14/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+14,http://127.0.0.1:8766/units/Playhouse_G2_U14/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_104/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+14,http://127.0.0.1:8766/units/Playhouse_G2_U14/views/playhouse_intro.html,2,,../audios/page_104/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+14,http://127.0.0.1:8766/units/Playhouse_G2_U14/views/playhouse_intro.html,2,,../audios/page_104/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+15,http://127.0.0.1:8766/units/Playhouse_G2_U15/views/playhouse_intro.html,1,3 Read.,undefined,Unassigned Read heading
+15,http://127.0.0.1:8766/units/Playhouse_G2_U15/views/playhouse_intro.html,2,4 You do it. Ask and answer.,../audios/page_110/Pg4_1.2_Adult_Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+15,http://127.0.0.1:8766/units/Playhouse_G2_U15/views/playhouse_intro.html,2,,../audios/page_110/Pg5_2.2_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
+15,http://127.0.0.1:8766/units/Playhouse_G2_U15/views/playhouse_intro.html,2,,../audios/page_110/Pg5_2.3_Adult Lady.mp3,Copied legacy reference on visible dialogue/instruction control; needs correct content mapping
