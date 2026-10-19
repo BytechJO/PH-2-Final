@@ -80,7 +80,7 @@ function buildMcqBody(aObj) {
     htmlStmt += '<div class="activityHeading">';
 
     htmlStmt +=
-      '<div class="audioIcon off contant audioQuestionTitle" ' +
+      '<div class="contant audioQuestionTitle' + (aObj.subTitleAudio ? ' audioIcon off' : '') + '" ' +
       'data-slideNum="1" ' +
       'data-audio="' +
       (aObj.subTitleAudio || "") +
@@ -196,7 +196,7 @@ function buildMcqBody(aObj) {
             '<div class="q_part farm_song_side">';
 
           htmlStmt +=
-            '<div class="question farm_song_text">' +
+            '<div class="question farm_song_text audioIcon off" role="button" tabindex="0" aria-label="Play the farm song" data-audio="' + tpOb.audio + '">' +
             tpOb.question +
             "</div>";
 
@@ -456,3 +456,10 @@ function nextChar(c) {
     c.charCodeAt(0) + 1
   );
 }
+// Match the native keyboard activation expected by the song text button.
+$(document).on('keydown', '.farm_song_text[role="button"]', function (event) {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    $(this).trigger('click');
+  }
+});

@@ -37,7 +37,7 @@ var mcq_data = {
 
   subTitleIcons: [],
 
-  subTitleAudio: "../audios/supplied/farm-song.mp3",
+  subTitleAudio: "",
 
   // اختيار واحد فقط
   select: "single",

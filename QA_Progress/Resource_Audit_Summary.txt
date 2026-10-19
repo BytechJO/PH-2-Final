@@ -43,3 +43,5 @@ Linked supplied The cows on the farm go moo.mp3 to U9 farm-song controls, replac
 Both copies match source hashes and return HTTP200. Both page controls entered the on/playing UI state when clicked. Changed JS syntax checks passed.
 111 supplied files are now linked. Full spoken-content/complete-lyrics verification is still pending: audio input/transcription is unavailable in this session. These are filename/context mappings, not a claimed listening review.
 The previous seven-unlinked-file list is superseded: five alternative instruction recordings remain unlinked; the two recordings named above are now linked with listening verification pending.
+
+Farm song follow-up: lyrics now own the audio click target. Subtitle no longer plays the song. No separate matching instruction recording found by filename in supplied files or repo. Browser verified subtitle has no audioIcon and lyrics enter playing state. Clicking lyrics restarts playback using existing shared behavior.
