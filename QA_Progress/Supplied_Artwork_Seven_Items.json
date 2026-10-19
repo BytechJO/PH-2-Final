@@ -16,6 +16,7 @@
   ],
   "source": "D:/Playhouse/image/Grade 2",
   "unchanged_copies": true,
-  "pending": "Supplied speech art omits apostrophes: SB82 Whats/Its; SB88 Whats/Its; SB110 Whats/Its. No raster edits made.",
-  "validation": "Six dialogue popups rendered all supplied images; cats accepted and dogs rejected in browser. Plural rows rearranged to prevent overlap; final layout screenshot verified."
+  "pending": null,
+  "validation": "Six dialogue popups rendered all supplied images; cats accepted and dogs rejected in browser. Plural rows rearranged to prevent overlap; final layout screenshot verified.",
+  "correction": "2026-10-19: Six user-corrected SB82/SB88/SB110 images installed unchanged; What’s / It’s visually verified; copy hashes match sources."
 }

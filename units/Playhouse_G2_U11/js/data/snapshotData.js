@@ -109,8 +109,8 @@ var Popups_data = {
         titleTextRight: "<span class='red_text'> Ask and answer.</span>",
         titlesAudio: ["../audios/page_82/Pg4_1.2_Adult_Lady.mp3"],
         image: [
-          "../images/pages/page-1/sb82-dialogue-1.png",
-          "../images/pages/page-1/sb82-dialogue-2.png",
+          "../images/pages/page-1/sb82-dialogue-1.png?v=apostrophes-20261019",
+          "../images/pages/page-1/sb82-dialogue-2.png?v=apostrophes-20261019",
         ],
         audio: [
           "../audios/page_82/Pg5_2.2_Adult Lady.mp3",

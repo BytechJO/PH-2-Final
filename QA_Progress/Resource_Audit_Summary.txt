@@ -49,3 +49,5 @@ Farm song follow-up: lyrics now own the audio click target. Subtitle no longer p
 2026-10-19 artwork content review: all35 tracker entries compared. 28 present/resolved;7 replacement-artwork cases confirmed. See Artwork_Review_2026-10-19.txt for corrected book references, expected speech, and URLs. These are content mismatches despite valid image file paths. No artwork modified.
 
 FOLLOW-UP: All seven replacement cases now have supplied artwork installed (13 unchanged PNGs). Cats accepted; dogs rejected. All six popups verified. Supplied SB82/SB88/SB110 speech images omit apostrophes in Whats/Its; source artwork correction remains. Earlier replacement requests above are superseded.
+
+2026-10-19 correction: User supplied six corrected SB82/SB88/SB110 images. Installed unchanged and hash-verified; What’s / It’s visually confirmed. Earlier apostrophe warning is resolved.

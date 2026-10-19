@@ -58,7 +58,7 @@
     "review_status": "Supplied artwork installed and browser verified",
     "evidence": "SB74 Q2 requires cat/cats. Current pictures show dog/dogs and answer key is dogs. Supply both cat pictures; update key to cats together with artwork.",
     "url": "http://127.0.0.1:8766/units/Playhouse_G2_U9/Playhouse_Review_G1_U1/views/fillin_text_in_sentences.html",
-    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Supplied SB82/SB88/SB110 speech art still omits apostrophes; pending corrected source artwork."
+    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Corrected SB82/SB88/SB110 source artwork supplied and installed unchanged on 2026-10-19; apostrophes visually verified."
   },
   {
     "id": "ART-06",
@@ -359,7 +359,7 @@
     "review_status": "Supplied artwork installed and browser verified",
     "evidence": "Unit7 Q4 is SB54, not SB45. Wash-hands illustration is present, but girl speech says What is number three? instead of Wash your hands! Supply corrected girl/speech artwork.",
     "url": "http://127.0.0.1:8766/units/Playhouse_G2_U7/views/playhouse_intro.html",
-    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Supplied SB82/SB88/SB110 speech art still omits apostrophes; pending corrected source artwork."
+    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Corrected SB82/SB88/SB110 source artwork supplied and installed unchanged on 2026-10-19; apostrophes visually verified."
   },
   {
     "id": "ART-31",
@@ -372,7 +372,7 @@
     "review_status": "Supplied artwork installed and browser verified",
     "evidence": "Answer speech says That's a big dinosaur. Printed SB82: What's that? / It's a shark. Supply correct answer artwork.",
     "url": "http://127.0.0.1:8766/units/Playhouse_G2_U11/views/playhouse_intro.html",
-    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Supplied SB82/SB88/SB110 speech art still omits apostrophes; pending corrected source artwork."
+    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Corrected SB82/SB88/SB110 source artwork supplied and installed unchanged on 2026-10-19; apostrophes visually verified."
   },
   {
     "id": "ART-32",
@@ -385,7 +385,7 @@
     "review_status": "Supplied artwork installed and browser verified",
     "evidence": "Wrong dinosaur conversation. Printed SB88: What's number twelve? / It's a flamingo. Supply both correct speech images.",
     "url": "http://127.0.0.1:8766/units/Playhouse_G2_U12/views/playhouse_intro.html",
-    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Supplied SB82/SB88/SB110 speech art still omits apostrophes; pending corrected source artwork."
+    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Corrected SB82/SB88/SB110 source artwork supplied and installed unchanged on 2026-10-19; apostrophes visually verified."
   },
   {
     "id": "ART-33",
@@ -398,7 +398,7 @@
     "review_status": "Supplied artwork installed and browser verified",
     "evidence": "SB98 belongs to Unit13, not12. Wrong dinosaur conversation. Correct: Where were you born? / I was born in France. Supply both speech images.",
     "url": "http://127.0.0.1:8766/units/Playhouse_G2_U13/views/playhouse_intro.html",
-    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Supplied SB82/SB88/SB110 speech art still omits apostrophes; pending corrected source artwork."
+    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Corrected SB82/SB88/SB110 source artwork supplied and installed unchanged on 2026-10-19; apostrophes visually verified."
   },
   {
     "id": "ART-34",
@@ -411,7 +411,7 @@
     "review_status": "Supplied artwork installed and browser verified",
     "evidence": "Wrong dinosaur conversation. Correct: What did number three do? / He played with a football. Supply both speech images.",
     "url": "http://127.0.0.1:8766/units/Playhouse_G2_U14/views/playhouse_intro.html",
-    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Supplied SB82/SB88/SB110 speech art still omits apostrophes; pending corrected source artwork."
+    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Corrected SB82/SB88/SB110 source artwork supplied and installed unchanged on 2026-10-19; apostrophes visually verified."
   },
   {
     "id": "ART-35",
@@ -424,6 +424,6 @@
     "review_status": "Supplied artwork installed and browser verified",
     "evidence": "Wrong dinosaur conversation. Correct: What's number 12? / It's a watch. Supply both speech images.",
     "url": "http://127.0.0.1:8766/units/Playhouse_G2_U15/views/playhouse_intro.html",
-    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Supplied SB82/SB88/SB110 speech art still omits apostrophes; pending corrected source artwork."
+    "resolution": "2026-10-19: user supplied replacement artwork installed unchanged. SB74 key corrected to cats. Corrected SB82/SB88/SB110 source artwork supplied and installed unchanged on 2026-10-19; apostrophes visually verified."
   }
 ]

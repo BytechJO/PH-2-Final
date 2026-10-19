@@ -147,3 +147,5 @@ Wrong dinosaur conversation. Correct: What's number 12? / It's a watch. Supply b
 http://127.0.0.1:8766/units/Playhouse_G2_U15/views/playhouse_intro.html
 
 FOLLOW-UP: All seven replacement cases now have supplied artwork installed (13 unchanged PNGs). Cats accepted; dogs rejected. All six popups verified. Supplied SB82/SB88/SB110 speech images omit apostrophes in Whats/Its; source artwork correction remains. Earlier replacement requests above are superseded.
+
+2026-10-19 correction: User supplied six corrected SB82/SB88/SB110 images. Installed unchanged and hash-verified; What’s / It’s visually confirmed. Earlier apostrophe warning is resolved.
