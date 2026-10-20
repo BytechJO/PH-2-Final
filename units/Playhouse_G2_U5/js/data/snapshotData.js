@@ -64,6 +64,7 @@ var Popups_data = {
         titlesAudio: [
           "../audios/supplied/listen-and-say.mp3",
           "../audios/page_38/PLAYHOUSE_1_SB_UNIT_1_TRACK_02_02.mp3",
+          "../../../audios/Read.mp3",
         ],
         image: [
           "../images/pages/snapshots/page-1/popup-3-elem-1.png",
