@@ -24,13 +24,13 @@ DoubleLetterWords.prototype = {
     var activityArea = this.ob.activity_area;
 
     $(activityArea)
-      .off("input.doubleLetter", ".missing_letter_input")
-      .on("input.doubleLetter", ".missing_letter_input", function () {
+      .off("input.doubleLetter", ".missing_letter_input, .suffix_input")
+      .on("input.doubleLetter", ".missing_letter_input, .suffix_input", function () {
         if (this.readOnly) {
           return;
         }
 
-        this.value = this.value.replace(/[^a-zA-Z]/g, "").slice(0, 1);
+        this.value = this.value.replace(/[^a-zA-Z]/g, "").slice(0, this.classList.contains("suffix_input") ? 3 : 1);
 
         $(this)
           .closest(".double_letter_question")
@@ -110,7 +110,10 @@ DoubleLetterWords.prototype = {
       var optionCorrect =
         selectedNumber === parseInt(questionData.correctOption);
 
-      if (letterCorrect && optionCorrect) {
+      var suffixInput = questions[i].querySelector(".suffix_input");
+      var suffixCorrect = suffixInput && this.normalize(suffixInput.value) === this.normalize(questionData.suffix);
+
+      if (letterCorrect && suffixCorrect && optionCorrect) {
         iconWrap.style.display = "block";
         tick.style.display = "block";
       } else {
@@ -159,6 +162,7 @@ DoubleLetterWords.prototype = {
 
       if (parseInt(dataObj.defaultAnswer) === questionNumber) {
         input.value = questionData.missingLetter;
+        questions[i].querySelector(".suffix_input").value = questionData.suffix;
         input.readOnly = true;
 
         choices[questionData.correctOption - 1].classList.add("selected");
@@ -170,6 +174,7 @@ DoubleLetterWords.prototype = {
         }
       } else {
         input.value = "";
+        questions[i].querySelector(".suffix_input").value = "";
         input.readOnly = false;
       }
     }

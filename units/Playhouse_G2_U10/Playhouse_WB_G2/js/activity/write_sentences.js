@@ -509,7 +509,7 @@ WriteSentences.prototype = {
         )[0];
 
       if (resetButton) {
-        resetButton.classList.add(
+        resetButton.classList.remove(
           "disabled"
         );
       }

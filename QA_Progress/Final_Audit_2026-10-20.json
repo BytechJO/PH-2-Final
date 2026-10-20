@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-20",
+  "pages_scanned": 411,
+  "popups_checked": 30,
+  "audio_links_repaired": 8,
+  "instruction_texts_without_assigned_recording": 229,
+  "instruction_control_occurrences": 252,
+  "sentence_recordings_missing": 10,
+  "popup_missing_controls": 60,
+  "excluded_template_references": 1360,
+  "interactive_results": {
+    "Open response": 35,
+    "Pass": 271,
+    "Pass after fix": 1,
+    "Open response tested": 11,
+    "Pass (writing); colouring ungraded": 1,
+    "Content page loaded": 92
+  },
+  "limitations": "All 411 registered pages loaded; 319 activity pages have recorded interaction/open-response coverage and 92 are content pages. Checks cover configured correct answers, reset, and selected negative cases, not every possible wrong answer, every mobile size, or semantic listening to every clip. Free drawing/writing remains teacher-assessed. CVC past-tense activity grades writing only; letter colouring is ungraded. Two requested recordings confirmed by user.",
+  "coverage_pages": 411,
+  "additional_activity_pages_checked": 109,
+  "followup_repairs": [
+    "Kept Reset available after success in additional custom activities.",
+    "Repaired shared feedback handling for 15 drag-and-drop activities, preserving video elements and closing the correct modal.",
+    "Added missing button initializer in Unit 5 Workbook dialogue drag activity.",
+    "Exposed Reset in five word-search activities while retaining automatic completion checking.",
+    "Unit 14 Workbook double-letter activity now validates the suffix as well as the missing letter, and resets suffix fields.",
+    "Unit 10 adjective activity reserves space for navigation arrows so they do not cover answer choices at 1280px.",
+    "Corrected Unit 10 SB p80 answer key: no comma between round and bumpy. Verified correct answer acceptance and rejection of an extra comma."
+  ]
+}

@@ -144,3 +144,4 @@ function drop(ev) {
 
   detectDragend();
 }
+function disableBtns() { jQuery('.checkBtn, .resetBtn').addClass('disabled'); }

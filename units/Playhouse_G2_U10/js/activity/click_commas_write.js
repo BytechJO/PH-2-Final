@@ -244,7 +244,7 @@ ClickCommasWrite.prototype = {
       var resetButton = document.getElementsByClassName("resetBtn")[0];
 
       if (resetButton) {
-        resetButton.classList.add("disabled");
+        resetButton.classList.remove("disabled");
       }
     }
   },

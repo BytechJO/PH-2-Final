@@ -43,19 +43,11 @@ var click_commas_write_data = {
 
       sentence: "The round and bumpy dinosaur is my favourite dinosaur.",
 
-      /*
-        الفاصلة بعد كلمة round
-        index يبدأ من صفر
+      // Two adjectives joined by and do not need a comma.
 
-        The      = 0
-        round    = 1
-        and      = 2
-        bumpy    = 3
-      */
+      commaAfter: [],
 
-      commaAfter: [1],
-
-      writeAnswer: "The round, and bumpy dinosaur is my favourite dinosaur.",
+      writeAnswer: "The round and bumpy dinosaur is my favourite dinosaur.",
     },
 
     {

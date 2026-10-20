@@ -311,7 +311,7 @@ MCQ.prototype = {
       var resetBtn = document.getElementsByClassName("resetBtn")[0];
 
       if (resetBtn) {
-        resetBtn.classList.add("disabled");
+        resetBtn.classList.remove("disabled");
       }
     }
   },

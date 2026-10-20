@@ -232,3 +232,6 @@
     height: 35px;
   }
 }
+
+/* Keep answer controls clear of the fixed navigation arrows. */
+.read_choose_activity { padding-left: 95px; padding-right: 95px; }
