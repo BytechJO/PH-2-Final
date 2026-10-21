@@ -1,0 +1,24 @@
+/* Keep the labels aligned with the six arrows in the original artwork. */
+.activity_container {height:auto;padding-bottom:90px;}
+.drag_drop_options {width:90%;min-width:0;justify-content:center;position:relative;}
+.drag_drop_questions {position:relative;width:min(1000px,90%);aspect-ratio:2.162;margin:20px auto 60px;}
+.drag_drop_questions .image_container {position:absolute;left:22.5%;top:0;width:55%;height:auto;transform:none;}
+.drag_drop_questions > ul {position:absolute;inset:0;margin:0;padding:0;display:block!important;line-height:normal;}
+.drag_drop_questions > ul > li {position:absolute;width:21%!important;transform:translateY(-100%);display:block!important;}
+.drag_drop_questions > ul > li:nth-child(odd) {left:0;}
+.drag_drop_questions > ul > li:nth-child(even) {right:0;}
+.drag_drop_questions > ul > li:nth-child(1) {top:22.5%;}
+.drag_drop_questions > ul > li:nth-child(2) {top:30%;}
+.drag_drop_questions > ul > li:nth-child(3) {top:46.5%;}
+.drag_drop_questions > ul > li:nth-child(4) {top:70.5%;}
+.drag_drop_questions > ul > li:nth-child(5) {top:95%;}
+.drag_drop_questions > ul > li:nth-child(6) {top:93.5%;}
+.drag_drop_questions ul li .droppable_label .r_col {margin:0;width:100%;}
+.drag_drop_questions input[type="text"] {width:100%;max-width:100%;height:38px;font-size:clamp(14px,2vw,24px);background:transparent;text-align:center;}
+.drag_drop_questions .i_row {display:block!important;}
+.drag_drop_questions .activity_result {position:absolute;top:0;right:-30px;}.activity-content > div {width:100%;}
+.drag_drop_questions {width:min(1000px,90%,calc((100vh - 420px) * 2.162));min-width:320px;}
+.drag_drop_questions ul {line-height:0;}
+.drag_drop_questions input {display:block;}
+.drag_drop_options .draggable_div {padding:5px 12px;}
+@media(max-width:600px){.drag_drop_questions{min-width:0;width:94%;}.drag_drop_options .draggable_div{font-size:16px;padding:3px 8px;}}

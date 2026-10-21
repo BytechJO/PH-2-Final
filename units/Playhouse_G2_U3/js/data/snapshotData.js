@@ -120,8 +120,8 @@ var Popups_data = {
           "../images/pages/page-1/2-img-2-corrected.png",
         ],
         audio: [
-          "../audios/page_22/Pg5_2.2_Adult Lady.mp3",
-          "../audios/page_22/Pg5_2.3_Adult Lady.mp3",
+          "",
+          "",
         ],
       },
     },
