@@ -375,6 +375,9 @@ function buildFillInBody(aObj) {
       aObj.imageposition == "back"
     ) {
       htmlStmt += '<div class="image-container">';
+      if (aObj.imageCaption) {
+        htmlStmt += '<p class="image-caption">' + aObj.imageCaption + '</p>';
+      }
 
       htmlStmt += '<img src="' + aObj.image + '">';
 

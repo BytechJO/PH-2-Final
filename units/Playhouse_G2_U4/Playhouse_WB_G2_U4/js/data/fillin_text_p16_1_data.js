@@ -30,6 +30,7 @@ var fillin_data = {
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/under.mp3",
     "image"                 : "../images/pages/activities/1.png",
+    "imageCaption": "The Penn family is on a picnic.",
     "imageposition"         : "back",// "front" (or) "back"
     "defaultAnswer"         : 1,
     "numbering"             : "number", // "alphabet" (or) "number"

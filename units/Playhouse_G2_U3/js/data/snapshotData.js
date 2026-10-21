@@ -113,11 +113,11 @@ var Popups_data = {
         mainTitle_audio: "../audios/page_22/WORD_POWER.mp3",
         titleTexts: ["<span class='red_text'>4</span> You do it."],
         titleIcons: ["../images/pages/sb-icons/conv_1_icon.png"],
-        titleTextRight: "<span class='red_text'> Ask and answer.</span>",
-        titlesAudio: ["../audios/page_22/Pg4_1.2_Adult_Lady.mp3"],
+        titleTextRight: "<span class='red_text'> Ask and answer. Then play the memory game.</span>",
+        titlesAudio: ["../audios/supplied/you-do-it.mp3"],
         image: [
-          "../images/pages/page-1/2-img-1.png",
-          "../images/pages/page-1/2-img-2.png",
+          "../images/pages/page-1/2-img-1-corrected.png",
+          "../images/pages/page-1/2-img-2-corrected.png",
         ],
         audio: [
           "../audios/page_22/Pg5_2.2_Adult Lady.mp3",

@@ -57,7 +57,7 @@ function buildMcqBody(aObj) {
 				var tpOb = (aObj.questions)[currQueNum -1];
 				if(typeof tpOb != undefined && tpOb != null ){
 					htmlStmt += '<div class="que d-flex flex-column" id="que_'+currQueNum+'" data-qno="'+currQueNum+'">';
-					if(tpOb.question !=""){
+					if(String(tpOb.question || "").trim() !== ""){
 					htmlStmt += '<div class="d-flex q_part">';
 						console.log(x, y, currQueNum, tpOb); 					
                     
