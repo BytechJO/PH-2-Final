@@ -102,10 +102,18 @@ ColourCvcPast.prototype = {
   ===================================================== */
 
   colourLetter: function (letter) {
-    letter.style.color = this.currentColour;
+    // Clicking the same colour again removes an accidental selection.
+    if (letter.getAttribute("data-selected-colour") === this.currentColour) {
+      letter.style.color = "#ffffff";
+      letter.removeAttribute("data-selected-colour");
+    } else {
+      letter.style.color = this.currentColour;
+      letter.setAttribute("data-selected-colour", this.currentColour);
+    }
 
-    letter.setAttribute("data-selected-colour", this.currentColour);
-
+    var question = letter.closest(".cvc_question");
+    this.hideQuestionIcon(question);
+    question.querySelector(".cvc_answer_input").classList.remove("correct_input", "wrong_input");
     this.enableButtons();
   },
 
@@ -186,7 +194,16 @@ ColourCvcPast.prototype = {
 
       input.classList.remove("correct_input", "wrong_input");
 
-      if (userAnswer === correctAnswer) {
+      var letters = questions[i].querySelectorAll(".cvc_letter");
+      var requiredLetters = questionData.cvcIndices;
+      var colouringCorrect = Array.isArray(requiredLetters) && requiredLetters.length === 3;
+      for (var j = 0; j < letters.length; j++) {
+        var selected = !!letters[j].getAttribute("data-selected-colour");
+        var required = Array.isArray(requiredLetters) && requiredLetters.indexOf(j) !== -1;
+        if (selected !== required) colouringCorrect = false;
+      }
+
+      if (userAnswer === correctAnswer && colouringCorrect) {
         tick.style.display = "block";
 
         input.classList.add("correct_input");

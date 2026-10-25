@@ -58,16 +58,19 @@ var colour_cvc_past_data = {
   questions: [
     {
       word: "stop",
+      cvcIndices: [1, 2, 3],
       answer: "stopped",
       audio: "../audios/under.mp3",
     },
     {
       word: "skip",
+      cvcIndices: [1, 2, 3],
       answer: "skipped",
       audio: "../audios/under.mp3",
     },
     {
       word: "hop",
+      cvcIndices: [0, 1, 2],
       answer: "hopped",
       audio: "../audios/under.mp3",
     },
