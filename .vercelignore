@@ -1,0 +1,6 @@
+.env*
+.vercel/
+.git/
+.vscode/
+QA_Progress/
+EDIT_STATUS.txt
