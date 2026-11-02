@@ -135,3 +135,31 @@
  new ResizeObserver(fit).observe(document.querySelector('footer'));
  fit();
 })();
+(function () {
+  if (!document.body.classList.contains('ui-intro')) return;
+  const menu = new URL('../../../main.html', location.href).href;
+  // Keep the popup outside the scaled lesson stacking context.
+  if (window.jQuery) {
+    jQuery(document).on('show.bs.modal', '.mainContent .modal', function () {
+      document.body.appendChild(this);
+      this.classList.add('intro-popup');
+    });
+  }
+  // Capture navigation before the legacy single-slide handler hides the frame.
+  document.addEventListener('click', function (event) {
+    const nav = event.target.closest('.subFooterNav');
+    if (!nav) return;
+    const link = nav.querySelector('a');
+    const href = link && link.getAttribute('href');
+    if (href || nav.classList.contains('backNav')) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      location.href = href || menu;
+    }
+  }, true);
+  function enableBack() {
+    const back = document.querySelector('.backNav');
+    if (back) back.classList.remove('disabled');
+  }
+  addEventListener('load', function () { setTimeout(enableBack, 1500); });
+})();

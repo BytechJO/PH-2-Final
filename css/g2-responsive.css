@@ -100,3 +100,9 @@
 .ui-intro .mainContent{display:flow-root;}
 html:has(body.ui-intro),body.ui-intro{height:100vh;overflow:clip;}
 body.ui-intro{display:flow-root;} .ui-intro header{position:fixed!important;top:0!important;left:0;right:0;}
+
+/* Intro launchers must not intercept the page navigation. */
+.ui-intro .read_highlights_wrap { pointer-events:none; }
+.ui-intro .read_highlights_wrap .pop_launcher { pointer-events:auto; }
+.ui-intro .intro-popup { z-index:1050; }
+.ui-intro .intro-popup .modal-dialog { margin:24px auto; }
