@@ -163,3 +163,34 @@
   }
   addEventListener('load', function () { setTimeout(enableBack, 1500); });
 })();
+/* Center standalone dialogue artwork as one group without moving background hotspots. */
+(function () {
+ if (!document.body.classList.contains('ui-repair')) return;
+ let pending = false;
+ function centerDialogues() {
+  pending = false;
+  document.querySelectorAll('.image_with_text').forEach(group => {
+   group.querySelectorAll('.image_audio').forEach(el => { el.style.translate = ''; });
+   if (group.querySelector('.main_image img[src]:not([src=""])')) return;
+   const cards = Array.from(group.querySelectorAll('.image_audio')).filter(el => el.getBoundingClientRect().width && el.getBoundingClientRect().height);
+   if (!cards.length) return;
+   const boxes = cards.map(el => el.getBoundingClientRect());
+   const left = Math.min(...boxes.map(r => r.left)), right = Math.max(...boxes.map(r => r.right));
+   const top = Math.min(...boxes.map(r => r.top)), bottom = Math.max(...boxes.map(r => r.bottom));
+   let areaTop = document.querySelector('header')?.getBoundingClientRect().bottom || 0;
+   document.querySelectorAll('.audioQuestionTitle').forEach(el => { const r = el.getBoundingClientRect(); if (r.height) areaTop = Math.max(areaTop, r.bottom); });
+   let areaBottom = innerHeight - 80;
+   document.querySelectorAll('footer,.sub_footer').forEach(el => { const r = el.getBoundingClientRect(); if (r.height && r.top > areaTop) areaBottom = Math.min(areaBottom, r.top); });
+   let zoom = 1;
+   for (let el = group; el; el = el.parentElement) zoom *= parseFloat(getComputedStyle(el).zoom) || 1;
+   const dx = (innerWidth - left - right) / 2;
+   const dy = (areaTop + areaBottom - top - bottom) / 2;
+   cards.forEach(el => { el.style.translate = `${dx / zoom}px ${dy / zoom}px`; });
+  });
+ }
+ function queue() { if (!pending) { pending = true; requestAnimationFrame(() => requestAnimationFrame(centerDialogues)); } }
+ addEventListener('resize', queue); addEventListener('load', queue);
+ document.addEventListener('load', queue, true);
+ new MutationObserver(queue).observe(document.body, {childList:true, subtree:true});
+ document.fonts.ready.then(queue); queue();
+})();
