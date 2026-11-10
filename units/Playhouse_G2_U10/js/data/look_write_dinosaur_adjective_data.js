@@ -6,7 +6,7 @@ var stereo_data = {
 
   playListData: [
     {
-      audiourl: "../audios/page_78/Look_and_write.mp3",
+      audiourl: "../audios/supplied/look-and-write.mp3",
     },
     {
       url: "",
@@ -45,7 +45,7 @@ var linkedwriting_data = {
 
   subTitleIcons: ["../images/pages/sb-icons/gram_2_icon.png"],
 
-  subTitleAudio: "../audios/page_78/Look_and_write.mp3",
+  subTitleAudio: "../audios/supplied/look-and-write.mp3",
 
   /* =====================================================
      Separate instruction
@@ -54,7 +54,7 @@ var linkedwriting_data = {
   instructionText:
     "Look at the dinosaurs in the pictures and write an adjective to describe each one.",
 
-  instructionAudio: "../audios/page_78/Look_and_write.mp3",
+  instructionAudio: "../audios/supplied/look-and-write.mp3",
 
   /* =====================================================
      Writing settings
