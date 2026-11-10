@@ -180,6 +180,8 @@
    let areaTop = document.querySelector('header')?.getBoundingClientRect().bottom || 0;
    document.querySelectorAll('.audioQuestionTitle').forEach(el => { const r = el.getBoundingClientRect(); if (r.height) areaTop = Math.max(areaTop, r.bottom); });
    let areaBottom = innerHeight - 80;
+   const viewport = group.closest('.content_wrap')?.getBoundingClientRect();
+   if (viewport?.height) areaBottom = Math.min(areaBottom, viewport.bottom - 16);
    document.querySelectorAll('footer,.sub_footer').forEach(el => { const r = el.getBoundingClientRect(); if (r.height && r.top > areaTop) areaBottom = Math.min(areaBottom, r.top); });
    let zoom = 1;
    for (let el = group; el; el = el.parentElement) zoom *= parseFloat(getComputedStyle(el).zoom) || 1;
