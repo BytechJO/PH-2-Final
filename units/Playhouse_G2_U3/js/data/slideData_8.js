@@ -38,28 +38,28 @@ var reading_data = {
             "mainImage": [""],
             "convImage": [
                 {
-                    "img": "../images/pages/page-3/3-img-1.png",
+                    "img": "../images/pages/page-3/supplied/01.png",
                     "audio": "../audios/Pg6_2.1_Stella.mp3",
                     "imgPos": {"top": "183px", "left": "127px"}
                 },
                 {
-                    "img": "../images/pages/page-3/3-img-1-1.png",
+                    "img": "../images/pages/page-3/supplied/01-01.svg",
                     "audio": "../audios/Pg6_2.1_Stella.mp3",
                     "imgPos": {"top": "232px", "left": "204px"}
                 },
                 // * * * 
                 {
-                    "img": "../images/pages/page-3/3-img-2.png",
+                    "img": "../images/pages/page-3/supplied/02.png",
                     "audio": "../audios/Pg6_2.2_Modified Stella.mp3",
                     "imgPos": {"top": "343px", "left": "567px"}
                 },
                 {
-                    "img": "../images/pages/page-3/3-img-2-1.png",
+                    "img": "../images/pages/page-3/supplied/02-01.svg",
                     "audio": "../audios/Pg6_2.2_Modified Stella.mp3",
                     "imgPos": {"top": "378px", "left": "690px"}
                 },
                 {
-                    "img": "../images/pages/page-3/3-img-2-2.png",
+                    "img": "../images/pages/page-3/supplied/03-01.svg",
                     "audio": "../audios/Pg6_2.2_Modified Stella.mp3",
                     "imgPos": {"top": "466px", "left": "610px"}
                 }
